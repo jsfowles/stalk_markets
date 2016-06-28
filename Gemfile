@@ -17,6 +17,7 @@ gem 'paperclip'
 gem 'acts_as_votable'
 gem 'pagination'
 gem 'haml'
+gem 'devise'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
