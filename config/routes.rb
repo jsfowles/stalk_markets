@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'vendors/index'
+
+  get 'vendors/new'
+
+  get 'vendors/show'
+
+  get 'vendors/edit'
+
   devise_for :users, controllers: {
        sessions: 'users/sessions',
        registrations: 'users/registrations'
@@ -11,5 +19,4 @@ Rails.application.routes.draw do
   get '/about', to: 'static_pages#about', as: 'About'
 
   get '/about_us', to: 'static_pages#about_us', as: 'About_Us'
-
 end
