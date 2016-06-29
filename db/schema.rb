@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 20160629204707) do
     t.string   "name"
     t.date     "start_date"
     t.date     "end_date"
-    t.time     "start_time"
-    t.time     "end_time"
+    t.integer  "start_time"
+    t.integer  "end_time"
     t.string   "day_of_week"
     t.string   "address"
     t.string   "city"
@@ -61,11 +61,11 @@ ActiveRecord::Schema.define(version: 20160629204707) do
   create_table "vendors", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
-    t.string   "business_name"
-    t.string   "contact_phone"
-    t.string   "contact_email"
+    t.string   "business_name", null: false
+    t.string   "contact_phone", null: false
+    t.string   "contact_email", null: false
     t.string   "website_link"
-    t.string   "vendor_type"
+    t.string   "vendor_type",   null: false
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end

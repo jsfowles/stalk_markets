@@ -4,8 +4,8 @@ class CreateMarkets < ActiveRecord::Migration
       t.string :name
       t.date :start_date
       t.date :end_date
-      t.time :start_time
-      t.time :end_time
+      t.integer :start_time
+      t.integer :end_time
       t.string :day_of_week
       t.string :address
       t.string :city
