@@ -1,13 +1,4 @@
 Rails.application.routes.draw do
-
-  get 'vendors/index'
-
-  get 'vendors/new'
-
-  get 'vendors/show'
-
-  get 'vendors/edit'
-
   devise_for :users, controllers: {
        sessions: 'users/sessions',
        registrations: 'users/registrations'
