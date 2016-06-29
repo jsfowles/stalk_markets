@@ -10,7 +10,14 @@
 <body>
 
 <%= yield %>
-
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+    © 2016 Wasatch Market
+   	<a class="grey-text text-lighten-4 right" href="/about_us">About Us</a>
+    </div>
+  </div>
+</footer>
 <%= javascript_include_tag *webpack_asset_paths('application') %>
 </body>
 </html>

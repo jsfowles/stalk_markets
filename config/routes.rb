@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'markets/index'
 
   get 'markets/show'
@@ -18,6 +19,11 @@ Rails.application.routes.draw do
   get 'users/new'
 
   get 'users/edit'
+
+  # Static pages about the website
+  get '/about', to: 'static_pages#about', as: 'About'
+
+  get '/about_us', to: 'static_pages#about_us', as: 'About_Us'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,39 @@
+/* putting the numbers next to the li */
+ol {
+	list-style-position:inside;
+}
+
+/* centering all the text */
+h1, h3, p {
+	text-align: center;
+}
+
+/* enlarging all the p tags */
+p {
+	font-size: 20px;
+}
+
+/* Background color for Our Development Story */
+.story-color {
+	background-color: #175D5B;
+}
+
+/* Github picture with the repo link */
+.git-hub-link {
+	width: 350px;
+	height: auto;
+}
+/* The team */
+.dream-team {
+	background-color: #80cbc4;
+}
+
+/* Text Color */
+.section {
+	color: white;
+}
+
+/* DPL Logo */
+.dpl-logo {
+	margin-top: 20px;
+}

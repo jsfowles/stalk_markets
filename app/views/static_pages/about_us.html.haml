@@ -1,0 +1,39 @@
+.container
+	%h1.center-align About Us
+	.center-align
+		.row
+			.col.s12.responsive-img
+				=link_to(image_tag("about/octocat.png", class:'git-hub-link', :alt => "Github"), "https://github.com/jsfowles/wasatch_market")
+			%p.s12 Github
+
+-# MAKE IT A DIFFERENT COLOR
+.story-color.section
+	.container.row.center
+		%h5 Our Development Story
+		-# ADD more depth of our journey building this app
+		%p We started from the bottom now we here
+
+.container
+	.center
+		%h3 Our Goal
+		%p We want to demonstrate our web development skills to potential employers or clients. We want to Show that we are capable of building a full functional interactive website with an impressive front end and also back end.
+
+.dream-team.section
+	-# Style it with our pictures and links to our github/linkedin
+	%h3.center The Dream Team
+	.row
+		%h4.s12.m4 Taylor Wu
+		%h4.s12.m4 Jacob Fowles
+	.row
+		%h4.s6 Mara Behles Dean
+		%h4.s6 Faith Oladele
+
+.container
+	.center-align
+		.row
+			.col.s12.responsive-img
+				=link_to(image_tag("about/dpl-logo.png", class: 'dpl-logo', :alt => "DevPoint Labs"), "http://www.devpointlabs.com")
+	%h3 Where We Came From
+	%p Devpoint Labs is a coding bootcamp that teaches full stack ruby on rails. Over the course of 11 weeks we have learned many web development technologies like HTML5, CSS3, Ruby on Rails, JavaScript, React, SQL. We also learned TDD(test driven development), database design, JQuery, and Ajax. DPL has equipped us with new knowledge of current web-development technology being used in the real world.
+
+
