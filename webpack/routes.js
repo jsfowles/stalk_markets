@@ -9,7 +9,6 @@ import Vendor from './components/Vendor';
 import Home from './components/Home';
 
 export default (
-
   <Route>
     <Route path="/" component={App} >
     	<IndexRoute component={Home} />
@@ -21,5 +20,4 @@ export default (
 
     <Route path="*" status={404} component={NoMatch}/>
   </Route>
-
 )
