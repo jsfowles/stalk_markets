@@ -6,9 +6,10 @@ Rails.application.routes.draw do
      }
 
   root 'dashboard#index'
-
-  resources :markets
-  resources :vendors
+  namespace :api do
+    resources :markets
+    resources :vendors
+  end
 
   # Static pages about the website
   get '/about', to: 'static_pages#about', as: 'About'
