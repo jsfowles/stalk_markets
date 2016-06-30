@@ -38,7 +38,7 @@ class MarketsController < ApplicationController
   end
 
 
-  private 
+  private
 
     def market
      @market = Market.find_by(id: params[:id])
@@ -61,7 +61,7 @@ class MarketsController < ApplicationController
         :crafts,
         :alcohol,
         :prepared_food,
-        :image 
-      );
+        :image
+      )
     end
 end

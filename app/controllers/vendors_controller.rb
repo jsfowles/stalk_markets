@@ -18,7 +18,7 @@ class VendorsController < ApplicationController
     end
   end
 
-  def update	
+  def update
   	 if @vendor.update(vendor_params)
       render json: @vendor.reload
     else
@@ -41,18 +41,18 @@ class VendorsController < ApplicationController
   private
 
   	def vendor
-  		@vendor = Vendor.find_by(:id params[:id])
+  		@vendor = Vendor.find_by(id: params[:id])
   	end
 
   	def vendor_params
   		params.require(:vendor).permit(
 	  		:first_name,
 	      :last_name,
-	      :business_name, 
-	      :contact_phone, 
-	      :contact_email, 
+	      :business_name,
+	      :contact_phone,
+	      :contact_email,
 	      :website_link,
-	      :vendor_type 
+	      :vendor_type
   			)
   	end
 end
