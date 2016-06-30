@@ -14,7 +14,7 @@ export default (
     <Route path="/vendors/:id" component={Vendor} />
     <Route path="/markets" component={Markets} />
     <Route path="/markets/:id" component={Market} />
-    </Route>
+  </Route>
     <Route path="*" status={404} component={NoMatch}/>
   </Route>
 )
