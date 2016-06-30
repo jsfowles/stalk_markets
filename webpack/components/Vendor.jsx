@@ -106,4 +106,3 @@ class VendorCard extends React.Component {
 }
 
 export default VendorCard;
-
