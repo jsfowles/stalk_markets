@@ -2,7 +2,8 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from './containers/App';
 import NoMatch from './components/NoMatch';
-import Markets from './components/Market';
+import Market from './components/Market';
+import Markets from './components/Markets';
 import Vendors from './components/Vendors';
 import Vendor from './components/Vendor';
 
