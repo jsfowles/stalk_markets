@@ -4,26 +4,25 @@ import { Link } from 'react-router';
 class Market extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { market: null };
+		this.state = { market: {} };
 	}
 
 	componentWillMount() {
 		$.ajax({
-			url: `api/markets/${this.props.params.id}`,
+			url: `/api/markets/${this.props.params.id}`,
 			type: 'GET',
 			dataType: 'JSON'
 		}).done( market => {
-			debugger;
-			this.setState({ market });
+			this.setState({ market: market });
 		}).fail(data => {
 			console.log('fail' + data);
 			//TODO Handle it better
 		});
 	}
 
-	showMarket() {
-		return( 
-      <div className="col s12">
+	render() {
+		return(
+			<div className="col s12">
         <div className="card blue-grey darken-1">
           <div className="card-content white-text">
             <span className="card-title">{this.state.market.name}</span>
@@ -42,14 +41,6 @@ class Market extends React.Component {
           </div>
         </div>
       </div>
-		)
-	}
-
-	render() {
-		return(
-			<div>
-				{this.showMarket.bind(this)()}
-			</div>
 		)
 	}
 }
