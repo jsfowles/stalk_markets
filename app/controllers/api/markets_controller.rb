@@ -1,4 +1,4 @@
-class MarketsController < ApplicationController
+class Api::MarketsController < ApplicationController
 
   before_action :market, except: [:index, :create]
 
