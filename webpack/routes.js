@@ -9,17 +9,7 @@ import Vendor from './components/Vendor';
 import Home from './components/Home';
 
 export default (
-<<<<<<< HEAD
-	<Route> 
-	  <Route path="/" component={App} >
-		  <Route path="/vendors" component={Vendors} />
-		  <Route path="/vendors/:id" component={Vendor} />
-		  <Route path="/markets" component={Markets} />
-		  <Route path="/markets/:id" component={Market} />
-		</Route>
-  	<Route path="*" status={404} component={NoMatch}/>
-	</Route>
-=======
+
   <Route>
     <Route path="/" component={App} >
       <IndexRoute component={Home} />
@@ -31,5 +21,5 @@ export default (
     </Route>
     <Route path="*" status={404} component={NoMatch}/>
   </Route>
->>>>>>> ca6c148f52ddf665898d1b32cdba97f71befee8a
+
 )

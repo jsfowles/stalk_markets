@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 class Market extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { market: null };
+		this.state = { market: {} };
 	}
 
 	componentWillMount() {
