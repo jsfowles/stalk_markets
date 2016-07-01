@@ -11,8 +11,8 @@ const Home = () => (
             I am convenient because I require little markup to use effectively.</p>
         </div>
         <div className="card-action">
-          <a href="/vendors">This is a link</a>
-          <a href="/markets">This is a link</a>
+          <a href="/vendors">VENDORS</a>
+          <a href="/markets">MARKETS</a>
         </div>
       </div>
     </div>

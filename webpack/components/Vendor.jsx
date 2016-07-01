@@ -52,10 +52,13 @@ class VendorCard extends React.Component {
         <div>
           <h3>Edit Vendor: {this.state.vendor.name}</h3>
           <form onSubmit={this.handleEdit.bind(this)} >
-            <input ref='name'type='text' placeholder='Name' defaultValue={this.state.vendor.name} />
-            <input ref='description'type='text' placeholder='Description' defaultValue={this.state.vendor.description} />
-            <input ref='style'type='text' placeholder='Style' defaultValue={this.state.vendor.style} />
-            <input ref='alcoholContent'type='text' placeholder='Alcohol Content' defaultValue={this.state.vendor.alcohol_content} />
+            <input ref='first_name'type='text' placeholder='First Name' defaultValue={this.state.vendor.first_name} />
+            <input ref='last_name'type='text' placeholder='Last Name' defaultValue={this.state.vendor.last_name} />
+            <input ref='business_name'type='text' placeholder='Business Name' defaultValue={this.state.vendor.business_name} />
+            <input ref='contact_phone'type='text' placeholder='Phone' defaultValue={this.state.vendor.contact_phone} />
+            <input ref='contact_email'type='text' placeholder='Email' defaultValue={this.state.vendor.contact_email} />
+            <input ref='website_link'type='text' placeholder='Website Link' defaultValue={this.state.vendor.website_link} />
+            <input ref='vendor_type'type='text' placeholder='Vendor Type' defaultValue={this.state.vendor.vendor_type} />
             <input type='Submit' defaultValue='Update Vendor' className='btn' />
             <button type='button' onClick={this.toggleEdit} className='btn grey'>Cancel</button>
           </form>
