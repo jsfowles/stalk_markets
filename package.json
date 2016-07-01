@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "license": "MIT",
   "dependencies": {
-    "react-router": "^2.4.1",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
+    "react-google-maps": "^4.11.0",
+    "react-router": "^2.4.1",
     "stats-webpack-plugin": "^0.2.1",
     "webpack": "^1.9.11"
   },
