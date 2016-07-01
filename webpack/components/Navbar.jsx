@@ -17,9 +17,9 @@ class Navbar extends React.Component {
       return (
         <header>
           <ul id="dropdown1" className="dropdown-content">
-            <li><Link to='/' className='brand-logo contain'>Home</Link></li>
-            <li><Link to='/markets' className='brand-logo contain'>Markets</Link></li>
-            <li><Link to='/vendors' className='brand-logo contain'>Vendors</Link></li>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/markets'>Markets</Link></li>
+            <li><Link to='/vendors'>Vendors</Link></li>
             <li><a href='/about'>About</a></li>
             <li><Link to='/contact'>Contact</Link></li>
             {this.authLink()}
