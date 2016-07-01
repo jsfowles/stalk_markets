@@ -20,7 +20,20 @@ p {
 
 /* Github picture with the repo link */
 .git-hub-link {
-	width: 350px;
+	width: 170px;
+	height: auto;
+}
+
+/* linkedin logo resized and rounded */
+.linkedin-icon {
+	width: 80px;
+	height: auto;
+	border-radius: 30%;
+	margin-left: 20px;
+}
+
+.self-github {
+	width: 100px;
 	height: auto;
 }
 /* The team */
