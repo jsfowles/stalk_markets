@@ -31,13 +31,7 @@ class Market extends React.Component {
             <div>
               <label>Address:</label>
               <p>{this.state.market.address}</p>
-              <p>{`${this.state.market.city}, ${this.state.market.state} ${this.state.market.zip}`}</p>
-
-              <label>Description:</label>
-              <p></p>
-
-              <label>Alcohol Content:</label>
-              <p></p>
+              
             </div>
           </div>
         </div>
