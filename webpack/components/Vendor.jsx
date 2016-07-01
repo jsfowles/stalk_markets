@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router'
 
-class VendorCard extends React.Component {
+class Vendor extends React.Component {
   constructor(props) {
     super(props);
     this.state = { vendor: null, editView: false }
@@ -108,4 +108,5 @@ class VendorCard extends React.Component {
   }
 }
 
-export default VendorCard;
+
+export default Vendor;

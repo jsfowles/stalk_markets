@@ -1,6 +1,5 @@
 @import "materialize/components/color";
 /* change to primary color we want */
-$primary-color: color("teal", "darken-4") !default;
+$primary-color: #003C4F !default;
 @import 'materialize';
 @import 'static_pages';
-

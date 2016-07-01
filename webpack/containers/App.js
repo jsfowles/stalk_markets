@@ -1,8 +1,12 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 
 const App = ({ children }) => (
   <div>
-    { children }
+    <Navbar />
+    <div className='container'>
+      { children }
+    </div>
   </div>
 )
 
