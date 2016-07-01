@@ -4,7 +4,7 @@
 		.row
 			.col.s12.responsive-img
 				=link_to(image_tag("about/octocat.png", class:'git-hub-link', :alt => "Github"), "https://github.com/jsfowles/wasatch_market")
-			%p.s12 Github
+			%p.s12 Github Repository for Stalk Market
 
 -# MAKE IT A DIFFERENT COLOR
 .story-color.section
@@ -18,22 +18,48 @@
 		%h3 Our Goal
 		%p We want to demonstrate our web development skills to potential employers or clients. We want to Show that we are capable of building a full functional interactive website with an impressive front end and also back end.
 
-.dream-team.section
-	-# Style it with our pictures and links to our github/linkedin
-	%h3.center The Dream Team
-	.row
-		%h4.s12.m4 Taylor Wu
-		%h4.s12.m4 Jacob Fowles
-	.row
-		%h4.s6 Mara Behles Dean
-		%h4.s6 Faith Oladele
+.dream-team
+	.section.wrapper
+		.row
+			%h3.center The Dream Team
 
+			.col.s12.m6.center
+				=link_to(image_tag("about/person-icon.png", class:'git-hub-link', :alt => "Taylor"))
+				%h4 Taylor Wu
+				=link_to(image_tag("about/octocat.png", class:'self-github', :alt => "Github"), "https://github.com/TaylorWu21")
+				=link_to(image_tag("about/linkedin-icon.png", class:'linkedin-icon', :alt => "Taylor Wu's Linkedin"), "https://www.linkedin.com/in/taylorswu")
+				%p.container "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+
+			.col.s12.m6.center
+				=link_to(image_tag("about/person-icon.png", class:'git-hub-link', :alt => "Jacob"))
+				%h4 Jacob Fowles
+				=link_to(image_tag("about/octocat.png", class:'self-github', :alt => "Github"), "https://github.com/jsfowles")
+				=link_to(image_tag("about/linkedin-icon.png", class:'linkedin-icon', :alt => "Jacob Fowles's Linkedin"), "https://www.linkedin.com/in/jsfowles")
+				%p.container "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+		.row
+
+			.col.s12.m6.center
+				=link_to(image_tag("about/person-icon.png", class:'git-hub-link', :alt => "Mara"))
+				%h4.s12.m6 Mara Behles Dean
+				=link_to(image_tag("about/octocat.png", class:'self-github', :alt => "Github"), "https://github.com/marabd")
+				=link_to(image_tag("about/linkedin-icon.png", class:'linkedin-icon', :alt => "Mara Behles Dean's Linkedin"), "https://www.linkedin.com/in/marabd/en")
+				%p.container "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+
+			.col.s12.m6.center
+				=link_to(image_tag("about/person-icon.png", class:'git-hub-link', :alt => "Faith"))
+				%h4.s12.m6 Faith Oladele
+				=link_to(image_tag("about/octocat.png", class:'self-github', :alt => "Github"), "https://github.com/foladele")
+				=link_to(image_tag("about/linkedin-icon.png", class:'linkedin-icon', :alt => "Faith Oladele's Linkedin"), "https://www.linkedin.com/in/foladele")
+				%p.container "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+%br
 .container
 	.center-align
+		-# Better Photo here
+		.parallax-container 
+			=link_to(image_tag("about/dpl-parallax.jpg", class:'parallax', :alt => "big ass picture"), "https://github.com/jsfowles/wasatch_market")
 		.row
 			.col.s12.responsive-img
 				=link_to(image_tag("about/dpl-logo.png", class: 'dpl-logo', :alt => "DevPoint Labs"), "http://www.devpointlabs.com")
 	%h3 Where We Came From
 	%p Devpoint Labs is a coding bootcamp that teaches full stack ruby on rails. Over the course of 11 weeks we have learned many web development technologies like HTML5, CSS3, Ruby on Rails, JavaScript, React, SQL. We also learned TDD(test driven development), database design, JQuery, and Ajax. DPL has equipped us with new knowledge of current web-development technology being used in the real world.
-
 
