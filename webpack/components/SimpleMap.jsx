@@ -10,7 +10,7 @@ class SimpleMap extends React.Component{
         lat: 40.760779,
         lng: -111.891047,
       },
-      key: `Taiwan`,
+      key: `Utah`,
       defaultAnimation: 2,
       }],
     }
