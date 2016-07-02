@@ -1,6 +1,7 @@
 class CreateMarkets < ActiveRecord::Migration
   def change
     create_table :markets do |t|
+      t.belongs_to :user
       t.string :name
       t.date :start_date
       t.date :end_date
