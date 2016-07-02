@@ -31,7 +31,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       # t.datetime :locked_at
 
       ## Custom fields
-      t.string :role, 
+      t.string :role, null: false
       t.timestamps null: false
     end
 
