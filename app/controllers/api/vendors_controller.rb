@@ -1,4 +1,4 @@
-class Api::VendorsController < ApplicationController
+  class Api::VendorsController < ApplicationController
 
 	before_action :vendor, except: [:index, :create]
 
