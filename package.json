@@ -5,8 +5,12 @@
   "dependencies": {
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
-    "react-google-maps": "^4.11.0",
+    "react-redux": "^4.4.5",
     "react-router": "^2.4.1",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-auth-wrapper": "^0.5.2",
+    "redux-thunk": "^2.1.0",
     "stats-webpack-plugin": "^0.2.1",
     "webpack": "^1.9.11"
   },

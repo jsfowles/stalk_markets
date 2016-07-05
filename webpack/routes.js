@@ -9,6 +9,9 @@ import Vendor from './components/Vendor';
 import Home from './components/Home';
 import About from './components/About';
 import AboutUs from './components/AboutUs';
+import Login from './components/auth/Login';
+import { UserAuthWrapper } from 'redux-auth-wrapper';
+import { handleLogout } from './components/auth/actions';
 
 
 export default (
@@ -21,6 +24,8 @@ export default (
       <Route path="/markets/:id" component={Market} />
       <Route path="/About" component={About} />
       <Route path="/AboutUs" component={AboutUs} />
+      <Route path='/login' component={Login} />
+
     </Route>
 
     <Route path="*" status={404} component={NoMatch}/>

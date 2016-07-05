@@ -1,17 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router';
-// import {handleLogout} from './auth/actions';
-
+import { handleLogout } from './auth/actions';
+import { connect } from 'react-redux';
 
 class Navbar extends React.Component {
   constructor(props) {
       super(props);
   }
-  authLink() {
-    return (
-      <li><Link to='/login'>Login</Link></li>
-    )
-  }
+
+	logout(e) {
+		e.preventDefault();
+		this.props.dispatch(handleLogout(this.props.history));
+	}
+
+	authLink() {
+		if(this.props.auth)
+			return(<li><a href='#' onClick={this.logout.bind(this)}>Logout</a></li>)
+		else {
+			return(
+				<li><Link to ='/login'>Login</Link></li>
+			);
+		}
+	}
 
   render() {
     return (
@@ -64,4 +74,4 @@ class Navbar extends React.Component {
 */}
 
 
-export default Navbar;
+export default connect()(Navbar);
