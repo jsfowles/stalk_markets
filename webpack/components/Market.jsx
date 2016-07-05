@@ -35,7 +35,6 @@ class Market extends React.Component {
             <div>
               <label>Address:</label>
               <p>{this.state.market.address}</p>
-              
             </div>
           </div>
         </div>

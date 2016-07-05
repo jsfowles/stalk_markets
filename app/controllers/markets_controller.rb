@@ -3,7 +3,8 @@ class MarketsController < ApplicationController
   before_action :market, except: [:index, :create]
 
   def index
-    render json: Market.all
+    distance = Market.calc_distance(location1, location2)
+    render json: {Market.all, distance}
   end
 
   def show

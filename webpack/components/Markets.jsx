@@ -4,10 +4,14 @@ import { Link } from 'react-router';
 class Markets extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { markets: [] };
+		this.showPosition = this.showPosition.bind(this);
+		this.userLoc = this.userLoc.bind(this);
+		this.computeDistance = this.computeDistance.bind(this);
+		this.state = { markets: [], latitude: 0.00, longitude: 0.00 };
 	}
 
 	componentWillMount() {
+		this.userLoc();
 	    $.ajax({
 	    	url: '/api/markets',
 	    	type: 'GET',
@@ -20,7 +24,63 @@ class Markets extends React.Component {
 	    });
 	}
 
-	displayMarkets() {
+	// calcDistance(location) {
+	// 	<% market.calc_distance([this.state.latitude, this.state.longitude],location) %> 
+	// }
+
+	
+	userLoc() {
+		if (navigator.geolocation) {
+			navigator.geolocation.watchPosition(this.showPosition);
+		} else {
+			alert("Geolocation is not supported by this browser.");
+		}
+	}
+
+showPosition(position) {
+	  console.log("latitude");
+		console.log(position.coords.latitude);
+		console.log("longitude");
+		console.log(position.coords.longitude);
+
+  
+    this.setState({latitude: position.coords.latitude, longitude: position.coords.longitude});
+
+
+}
+
+
+computeDistance(lat, lng) {
+
+		console.log("market latitude");
+		console.log(lat);
+		console.log("market longitude");
+		console.log(lng);
+		console.log("state latitude");
+		console.log(this.state.latitude);
+		console.log("state longitude");
+		console.log(this.state.longitude);
+
+    let startLatRads = this.degreesToRadians(this.state.latitude);
+    let startLongRads = this.degreesToRadians(this.state.longitude);
+    let destLatRads = this.degreesToRadians(lat);
+    let destLongRads = this.degreesToRadians(lng);
+    let Radius = 6371; 
+    let distance = Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) +
+    Math.cos(startLatRads) * Math.cos(destLatRads) *
+    Math.cos(startLongRads - destLongRads)) * Radius;
+    console.log("distance");
+    console.log(distance);
+    return distance;
+	}
+
+	degreesToRadians(degrees) {
+    let radians = (degrees * Math.PI)/180;
+    return radians;
+	}
+
+
+displayMarkets() {
 
 		return this.state.markets.map( market => {
 			return(
@@ -34,6 +94,7 @@ class Markets extends React.Component {
             </div>
             <div className="card-action">
               <Link to={`/markets/${market.id}`} >Show</Link>
+              <button>{this.computeDistance(market.latitude, market.longitude)}</button>
             </div>
           </div>
         </div>
@@ -41,14 +102,13 @@ class Markets extends React.Component {
 
 		});
 
-	
-
 	}
 
 	render() {
+		// this.userLoc();
 		return(
 			<div className="row">
-		
+				
 				{this.displayMarkets.bind(this)()}
 			</div>
 		);
