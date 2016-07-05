@@ -32,7 +32,6 @@ class Api::MarketsController < ApplicationController
     render json: true
   end
 
-
   private
 
     def market
