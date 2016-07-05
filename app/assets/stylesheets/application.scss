@@ -3,3 +3,9 @@
 $primary-color: #003C4F !default;
 @import 'materialize';
 @import 'static_pages';
+@import 'home';
+
+html, body {
+  width: 100%;
+  height: 100vh;
+}

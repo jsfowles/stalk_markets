@@ -12,6 +12,7 @@ import AboutUs from './components/AboutUs';
 import Login from './components/auth/Login';
 import { UserAuthWrapper } from 'redux-auth-wrapper';
 import { handleLogout } from './components/auth/actions';
+import SignUp from './components/auth/SignUp';
 
 
 export default (
@@ -25,7 +26,8 @@ export default (
       <Route path="/About" component={About} />
       <Route path="/AboutUs" component={AboutUs} />
       <Route path='/login' component={Login} />
-
+      <Route path='/signup' component={SignUp} />
+      <Route path='/newvendor' component={NewVendor} />
     </Route>
 
     <Route path="*" status={404} component={NoMatch}/>

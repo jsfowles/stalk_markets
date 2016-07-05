@@ -19,10 +19,13 @@ class App extends React.Component {
 	}
 
 	render() {
+    let styleClasses;
+    if(this.props.children.type.name === 'Home')
+      styleClasses = 'home'
 		return(
-  		<div>
+  		<div className={`${styleClasses}`}>
   		  <Navbar auth={this.props.auth} history={this.props.history}/>
-  		  <div className='container'>
+  		  <div className='containeR'>
   		  { this.props.children }
   		  </div>
   		</div>

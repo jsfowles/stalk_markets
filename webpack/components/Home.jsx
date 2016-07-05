@@ -1,22 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router'
 
+
 const Home = () => (
-  <div className="row">
-    <div className="col s12 m6">
-      <div className="card blue-grey darken-1">
-        <div className="card-content white-text">
-          <span className="card-title">Card Title</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div className="card-action">
-          <a href="/vendors">VENDORS</a>
-          <a href="/markets">MARKETS</a>
-        </div>
+  <div className='row home-row'>
+    <div className="col s12 m3 offset-m3">
+      <div className="home-div-vendors valign-wrapper">
+        <a className='valign' href="/vendors">VENDORS</a>
+      </div>
+    </div>
+    <div className="col s12 m3">
+      <div className="home-div-markets valign-wrapper">
+        <a className='valign' href="/markets">MARKETS</a>
       </div>
     </div>
   </div>
+
 )
 
 export default Home;

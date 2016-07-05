@@ -36,6 +36,33 @@ export const handleLogin = (email, password, history) => {
 	})
 }
 
+export const handleSignUp = (email, password, password_confirmation, role, history) => {
+  return(dispatch => {
+		$.ajax({
+			url:'/users',
+			type: 'POST',
+      beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').last().attr('content'))},
+			data: { user: {email, password, password_confirmation, role }},
+			dataType: 'JSON'
+		}).done( response => {
+			// set localStorage apiKey
+			localStorage.setItem('apiKey', response.api_key);
+			// set localStorage userId
+			localStorage.setItem('userId', response.id);
+			// dispatch the action
+			dispatch(loggedIn(response.id, response.api_key));
+			// redirect
+      if (role === 'vendor')
+			   history.push('/newvendor')
+      else
+        histroy.push('/')
+		}).fail( response => {
+			// TODO: handle this better
+			console.log(response);
+		});
+	})
+}
+
 export const handleLogout = (history) => {
 	return(dispatch) => {
 		$.ajax({
