@@ -19,11 +19,6 @@ class MarketsController < ApplicationController
     end
   end
 
-  # def new
-  # end
-  # def edit
-  # end
-
   def update
     if @market.update(market_params)
       render json: @market.reload

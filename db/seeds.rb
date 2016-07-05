@@ -24,5 +24,7 @@ end
              pet_friendly: Faker::Boolean.boolean(0.2),
              crafts: Faker::Boolean.boolean(0.2),
              alcohol: Faker::Boolean.boolean(0.2),
-             prepared_food: Faker::Boolean.boolean(0.2))
+             prepared_food: Faker::Boolean.boolean(0.2),
+             latitude: Faker::Address.latitude,
+             longitude: Faker::Address.longitude)
 end
