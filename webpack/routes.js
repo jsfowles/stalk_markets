@@ -13,6 +13,7 @@ import Login from './components/auth/Login';
 import { UserAuthWrapper } from 'redux-auth-wrapper';
 import { handleLogout } from './components/auth/actions';
 import SignUp from './components/auth/SignUp';
+import NewVendor from './components/NewVendor';
 
 
 export default (
