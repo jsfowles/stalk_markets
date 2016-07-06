@@ -19,8 +19,25 @@ class NewVendor extends React.Component {
     const contact_email = this.refs.contactEmail.value
     const website_link = this.refs.websiteLink.value
     const vendor_type = this.refs.vendorType.value
-
+    $.ajax({
+      url: '/api/vendors',
+      type: 'POST',
+      data: {vendor: {first_name,
+                      last_name,
+                      business_name,
+                      contact_email,
+                      contact_phone,
+                      website_link,
+                      vendor_type}},
+      dataType: 'JSON'
+    }).done (data => {
+      this.props.history.push(`/vendors/${data.id}`)
+    }).fail (data => {
+      //TODO: handle errors better
+      console.log(data)
+    });
   }
+
   render() {
     return (
       <div className="row">

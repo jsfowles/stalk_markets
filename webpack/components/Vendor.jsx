@@ -85,7 +85,7 @@ class Vendor extends React.Component {
                   <label>Website Link</label>
                   <p>{this.state.vendor.website_link}</p>
 
-                  <label>Website Link</label>
+                  <label>Vendor Type</label>
                   <p>{this.state.vendor.vendor_type}</p>
                 </div>
 
