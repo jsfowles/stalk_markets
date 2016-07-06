@@ -1,5 +1,5 @@
 .home {
-  background: image-url('home/4.jpg') no-repeat;
+  background: url('http://res.cloudinary.com/jsfowles/image/upload/v1467844491/photo-1429081104093-c268ecee4b9a_zktd5s.jpg') no-repeat;
   background-size: cover;
   background-attachment:fixed;
   height: 100vh;
@@ -7,9 +7,9 @@
 
 .home-div-vendors,
 .home-div-markets{
-  background-color: rgba(255,255,255,.4);
+  background-color: rgba(0,0,0,.4);
   width: 100%;
-  height: 300px;
+  height: 500px;
 }
 
 
@@ -20,5 +20,16 @@
 }
 
 .home-row {
+
+}
+
+.home-sign-up-button {
+  background-color: #003C4F;
+}
+
+.home-markets-link,
+.home-vendors-link  {
+
+  font-size: 72px;
 
 }

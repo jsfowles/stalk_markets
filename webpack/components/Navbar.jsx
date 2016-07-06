@@ -31,6 +31,7 @@ class Navbar extends React.Component {
             <Link to="/" className="brand-logo center">Logo</Link>
             <a href="#" data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></a>
             <ul className="left hide-on-med-and-down">
+              <li><Link to="/">Home</Link></li>
               <li><Link to="/markets">Markets</Link></li>
               <li><Link to="/vendors">Vendors</Link></li>
               <li><Link to="/about">About</Link></li>
@@ -38,6 +39,7 @@ class Navbar extends React.Component {
               {this.authLink()}
             </ul>
             <ul className="side-nav" id="mobile-demo">
+              <li><Link to="/">Home</Link></li>
               <li><Link to="/markets">Markets</Link></li>
               <li><Link to="/vendors">Vendors</Link></li>
               <li><Link to="/about">About</Link></li>
