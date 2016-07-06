@@ -14,20 +14,18 @@ class Market extends React.Component {
 			type: 'GET',
 			dataType: 'JSON'
 		}).done( market => {
+
 			this.setState({ market });
+
 		}).fail(data => {
 			console.log('fail' + data);
 			//TODO Handle it better
 		});
 	}
 
-
 	render() {
 		return(
 			<div className="col s12">
-			  <div className='col s3'>
-			    <SimpleMap market={this.state.market} />
-			  </div>
         <div className="card blue-grey darken-1">
           <div className="card-content white-text">
             <span className="card-title">{this.state.market.name}</span>
