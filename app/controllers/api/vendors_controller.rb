@@ -33,6 +33,12 @@
   # def edit
   # end
 
+  #  show markets
+
+  def profile
+    render json: @vendor.markets
+  end
+
   def destroy
   	@vendor.destroy
   	render json: true

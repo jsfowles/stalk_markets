@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :markets
     resources :vendors
     resources :join_tables
+    get '/vendors/:id/profile', to: "vendors#profile", as: "vendor_profile"
   end
 
   get '*unmatched_route', to: 'dashboard#index'
