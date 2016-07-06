@@ -24,11 +24,6 @@ class Markets extends React.Component {
 	    });
 	}
 
-	// calcDistance(location) {
-	// 	<% market.calc_distance([this.state.latitude, this.state.longitude],location) %> 
-	// }
-
-	
 	userLoc() {
 		if (navigator.geolocation) {
 			navigator.geolocation.watchPosition(this.showPosition);
@@ -38,28 +33,12 @@ class Markets extends React.Component {
 	}
 
 showPosition(position) {
-	  console.log("latitude");
-		console.log(position.coords.latitude);
-		console.log("longitude");
-		console.log(position.coords.longitude);
 
-  
     this.setState({latitude: position.coords.latitude, longitude: position.coords.longitude});
-
-
 }
 
 
 computeDistance(lat, lng) {
-
-		console.log("market latitude");
-		console.log(lat);
-		console.log("market longitude");
-		console.log(lng);
-		console.log("state latitude");
-		console.log(this.state.latitude);
-		console.log("state longitude");
-		console.log(this.state.longitude);
 
     let startLatRads = this.degreesToRadians(this.state.latitude);
     let startLongRads = this.degreesToRadians(this.state.longitude);
@@ -69,9 +48,8 @@ computeDistance(lat, lng) {
     let distance = Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) +
     Math.cos(startLatRads) * Math.cos(destLatRads) *
     Math.cos(startLongRads - destLongRads)) * Radius;
-    console.log("distance");
-    console.log(distance);
-    return distance;
+    let location = (distance * 0.621371).toFixed(2);
+    return location;
 	}
 
 	degreesToRadians(degrees) {
@@ -94,7 +72,7 @@ displayMarkets() {
             </div>
             <div className="card-action">
               <Link to={`/markets/${market.id}`} >Show</Link>
-              <button>{this.computeDistance(market.latitude, market.longitude)}</button>
+              <button>{this.computeDistance(market.latitude, market.longitude)} mi</button>
             </div>
           </div>
         </div>
@@ -105,7 +83,7 @@ displayMarkets() {
 	}
 
 	render() {
-		// this.userLoc();
+
 		return(
 			<div className="row">
 				

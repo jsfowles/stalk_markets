@@ -89,6 +89,8 @@ class Vendor extends React.Component {
                   <p>{this.state.vendor.vendor_type}</p>
                 </div>
 
+                <VendorMarket />
+
               </div>
               <div className="card-action">
                 <Link to='/vendors'>All Vendors</Link>

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   namespace :api do
     resources :markets
     resources :vendors
+    resources :join_tables
   end
 
   get '*unmatched_route', to: 'dashboard#index'
