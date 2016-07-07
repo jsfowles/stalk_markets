@@ -18,7 +18,7 @@ class Navbar extends React.Component {
 			return(<li><a href='#' onClick={this.logout.bind(this)}>LOGOUT</a></li>)
 		else {
 			return(
-				<li><Link to ='/login'>LOGOUT</Link></li>
+				<li><Link to ='/login'>LOGIN</Link></li>
 			);
 		}
 	}

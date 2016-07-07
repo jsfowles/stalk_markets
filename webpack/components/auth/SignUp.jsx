@@ -33,8 +33,8 @@ class Signup extends React.Component {
               <input type='email' placeholder='Email' ref='email' required />
               <input type='password' placeholder='Password' ref='password' require />
               <input type='password' placeholder='Password Confirmation' ref='passwordConfirmation' require />
-              <select className='white-text' ref='roleSelection'>
-                <option value="" disabled selected>Choose your Role</option>
+              <select className='white-text' ref='roleSelection' defaultValue=''>
+                <option value="" disabled>Choose your Role</option>
                 <option value="shopper">Shopper</option>
                 <option value="vendor">Vendor</option>
               </select>

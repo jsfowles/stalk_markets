@@ -55,7 +55,7 @@ export const handleSignUp = (email, password, password_confirmation, role, histo
       if (role === 'vendor')
 			   history.push('/newvendor')
       else
-        histroy.push('/')
+        history.push('/')
 		}).fail( response => {
 			// TODO: handle this better
 			console.log(response);
