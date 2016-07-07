@@ -1,4 +1,6 @@
 import React from 'react';
+import AddVendorMarket from './AddVendorMarket';
+
 
 class NewVendor extends React.Component {
   constructor(props) {
@@ -63,6 +65,7 @@ class NewVendor extends React.Component {
           </select>
           <input type='submit' className='btn' value='Create Profile' />
         </form>
+        <AddVendorMarket />
         </div>
       </div>
     )

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
+import AddVendorMarket from './AddVendorMarket';
+
 
 class Markets extends React.Component {
 	constructor(props) {
@@ -74,10 +76,9 @@ class Markets extends React.Component {
 	}
 
 	render() {
-
 		return(
 			<div className='markets'>
-				{this.displayMarkets()}
+				{this.displayMarkets.bind(this)()}
 			</div>
 		);
 

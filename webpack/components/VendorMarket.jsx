@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router';
+import AddVendorMarket from './AddVendorMarket';
+
 
 
 class VendorMarket extends React.Component {
@@ -30,6 +33,7 @@ class VendorMarket extends React.Component {
 			return (
 				<div>
 					<h3>No Markets</h3>
+					<AddVendorMarket />
 				</div>
 			)
 		}

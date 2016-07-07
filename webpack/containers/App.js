@@ -3,6 +3,13 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { connect } from 'react-redux';
 import { loggedIn, logout } from '../components/auth/actions';
+import { getMarkets } from '../components/actions';
+
+//todo make a markets reducer
+// make a get markets action goes to the database gets markets and sets redux state
+// make a markets reducer reducers/markets.js
+//in component will mount dispatch an action
+
 
 class App extends React.Component {
 	constructor(props) {
@@ -12,8 +19,10 @@ class App extends React.Component {
 	componentWillMount() {
 		const userId = localStorage.getItem('userId');
 		const apiKey = localStorage.getItem('apiKey');
-		if(!this.props.auth && userId)
+		this.props.dispatch(getMarkets());
+		if(!this.props.auth && userId) {
 			this.props.dispatch(loggedIn(userId, apiKey))
+		}
 		else
 			this.props.dispatch(logout())
 	}
