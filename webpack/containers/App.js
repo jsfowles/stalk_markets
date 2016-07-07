@@ -28,6 +28,7 @@ class App extends React.Component {
   		  <div className='containeR'>
   		  { this.props.children }
   		  </div>
+
   		</div>
   	)
   }

@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20160706205033) do
   end
 
   create_table "markets", force: :cascade do |t|
+    t.integer  "user_id"
     t.string   "name"
     t.date     "start_date"
     t.date     "end_date"
@@ -60,6 +61,7 @@ ActiveRecord::Schema.define(version: 20160706205033) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
+    t.string   "role",                                null: false
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end
@@ -68,6 +70,7 @@ ActiveRecord::Schema.define(version: 20160706205033) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "vendors", force: :cascade do |t|
+    t.integer  "user_id"
     t.string   "first_name"
     t.string   "last_name"
     t.string   "business_name", null: false
