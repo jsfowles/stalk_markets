@@ -20,6 +20,7 @@ gem 'haml'
 gem 'devise'
 gem 'faker'
 gem 'geocoder'
+gem 'sprig'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
