@@ -25,16 +25,16 @@ class Signup extends React.Component {
   render() {
     return (
       <div className='row signup'>
-        <div className='col s12 m4 offset-m4'>
+        <div className='col s12 m4 offset-m3 center'>
           <div className='signup-div'>
             <div className='col s12 center signup-form-div'>
-            <h3 className='signup-title'>SIGN UP</h3>
+            <p className='signup-title'>SIGN UP</p>
             <form onSubmit={ this.handleSubmit.bind(this) } >
               <input type='email' placeholder='Email' ref='email' required />
               <input type='password' placeholder='Password' ref='password' require />
               <input type='password' placeholder='Password Confirmation' ref='passwordConfirmation' require />
-              <select className='white-text' ref='roleSelection'>
-                <option value="" disabled selected>Choose your Role</option>
+              <select className='white-text' ref='roleSelection' defaultValue=''>
+                <option value="" disabled>Choose your Role</option>
                 <option value="shopper">Shopper</option>
                 <option value="vendor">Vendor</option>
               </select>

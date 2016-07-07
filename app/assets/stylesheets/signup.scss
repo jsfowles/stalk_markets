@@ -1,15 +1,18 @@
 .signup {
-  background: url('http://res.cloudinary.com/jsfowles/image/upload/v1467858908/backgrounds/photo-1447624799968-c704f86dc931.jpg') no-repeat;
+  background-color: #003C4F;
   background-size: cover;
   background-attachment:fixed;
   height: 100vh;
 }
 
 .signup-div {
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(255,255,255,.05);
   width: 500px;
   height: 400px;
+  border-radius: 5px;
+  margin-top:2em;
 }
+
 .signup-form-div {
   width: 90%;
   height: 90%;

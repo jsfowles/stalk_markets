@@ -28,6 +28,7 @@ export default (
       <Route path="/AboutUs" component={AboutUs} />
       <Route path='/login' component={Login} />
       <Route path='/signup' component={SignUp} />
+      <Route path='/newvendor' component={NewVendor} />
     </Route>
 
     <Route path="*" status={404} component={NoMatch}/>

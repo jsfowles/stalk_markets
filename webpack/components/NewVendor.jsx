@@ -31,6 +31,7 @@ class NewVendor extends React.Component {
                       vendor_type}},
       dataType: 'JSON'
     }).done (data => {
+      console.log(data.id, data )
       this.props.history.push(`/vendors/${data.id}`)
     }).fail (data => {
       //TODO: handle errors better
