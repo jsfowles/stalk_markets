@@ -12,16 +12,16 @@ class Markets extends React.Component {
 
 	componentWillMount() {
 		this.userLoc();
-	    $.ajax({
-	    	url: '/api/markets',
-	    	type: 'GET',
-	    	dataType: 'JSON'
-	    }).done(markets => {
-	    	this.setState({ markets });
-	    }).fail(data => {
-	    	// TODO : handle fail
-	    	console.log(data);
-	    });
+		$.ajax({
+			url: '/api/markets',
+			type: 'GET',
+			dataType: 'JSON'
+		}).done(markets => {
+			this.setState({ markets });
+		}).fail(data => {
+			// TODO : handle fail
+			console.log(data);
+		});
 	}
 
 	userLoc() {
@@ -32,62 +32,52 @@ class Markets extends React.Component {
 		}
 	}
 
-showPosition(position) {
+	showPosition(position) {
 
-    this.setState({latitude: position.coords.latitude, longitude: position.coords.longitude});
-}
+		this.setState({latitude: position.coords.latitude, longitude: position.coords.longitude});
+	}
 
 
-computeDistance(lat, lng) {
+	computeDistance(lat, lng) {
 
-    let startLatRads = this.degreesToRadians(this.state.latitude);
-    let startLongRads = this.degreesToRadians(this.state.longitude);
-    let destLatRads = this.degreesToRadians(lat);
-    let destLongRads = this.degreesToRadians(lng);
-    let Radius = 6371; 
-    let distance = Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) +
-    Math.cos(startLatRads) * Math.cos(destLatRads) *
-    Math.cos(startLongRads - destLongRads)) * Radius;
-    let location = (distance * 0.621371).toFixed(2);
-    return location;
+		let startLatRads = this.degreesToRadians(this.state.latitude);
+		let startLongRads = this.degreesToRadians(this.state.longitude);
+		let destLatRads = this.degreesToRadians(lat);
+		let destLongRads = this.degreesToRadians(lng);
+		let Radius = 6371;
+		let distance = Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) +
+		Math.cos(startLatRads) * Math.cos(destLatRads) *
+		Math.cos(startLongRads - destLongRads)) * Radius;
+		let location = (distance * 0.621371).toFixed(2);
+		return location;
 	}
 
 	degreesToRadians(degrees) {
-    let radians = (degrees * Math.PI)/180;
-    return radians;
+		let radians = (degrees * Math.PI)/180;
+		return radians;
 	}
 
 
-displayMarkets() {
-
+	displayMarkets() {
 		return this.state.markets.map( market => {
 			return(
-
-				 <div key={`market-${market.id}`} className="col s12 m6">
-          <div className="card blue-grey darken-1">
-            <div className="card-content white-text">
-              <span className="card-title">{market.name}</span>
-              <p>{market.address}</p>
-              <p>{`${market.city}, ${market.state} ${market.zip}`}</p>
-            </div>
-            <div className="card-action">
-              <Link to={`/markets/${market.id}`} >Show</Link>
-              <button>{this.computeDistance(market.latitude, market.longitude)} mi</button>
-            </div>
-          </div>
-        </div>
+				<div key={`market-${market.id}`} className='row'>
+					<div className='col s12 m3 offset-m4'>
+						<span><Link to={`/markets/${market.id}`} className='markets-link'>{market.name}</Link></span>
+					</div>
+					<div className='col s12 m3'>
+						<span>{this.computeDistance(market.latitude, market.longitude)} mi</span>
+					</div>
+				</div>
 			);
-
 		});
-
 	}
 
 	render() {
 
 		return(
-			<div className="row">
-				
-				{this.displayMarkets.bind(this)()}
+			<div className='markets'>
+				{this.displayMarkets()}
 			</div>
 		);
 
@@ -97,10 +87,3 @@ displayMarkets() {
 }
 
 export default Markets
-
-
-
-
-
-
-
