@@ -1,5 +1,5 @@
 .home {
-  background: url('http://res.cloudinary.com/jsfowles/image/upload/v1467844491/photo-1429081104093-c268ecee4b9a_zktd5s.jpg') no-repeat;
+  background: url('http://res.cloudinary.com/jsfowles/image/upload/v1467844491/backgrounds/photo-1429081104093-c268ecee4b9a_zktd5s.jpg') no-repeat center center;
   background-size: cover;
   background-attachment:fixed;
   height: 100vh;
@@ -10,6 +10,7 @@
   background-color: rgba(0,0,0,.4);
   width: 100%;
   height: 500px;
+  margin-top: 1em;
 }
 
 
