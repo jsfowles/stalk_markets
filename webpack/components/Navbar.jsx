@@ -35,7 +35,6 @@ class Navbar extends React.Component {
               <li><Link to="/markets">Markets</Link></li>
               <li><Link to="/vendors">Vendors</Link></li>
               <li><Link to="/about">About</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
               {this.authLink()}
             </ul>
             <ul className="side-nav" id="mobile-demo">
@@ -43,7 +42,6 @@ class Navbar extends React.Component {
               <li><Link to="/markets">Markets</Link></li>
               <li><Link to="/vendors">Vendors</Link></li>
               <li><Link to="/about">About</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
               {this.authLink()}
             </ul>
           </div>
@@ -52,28 +50,5 @@ class Navbar extends React.Component {
     );
   }
 }
-
-{/* OLD NAVBAR
-  <header>
-    <ul id="dropdown1" className="dropdown-content">
-      <li><Link to='/'>Home</Link></li>
-      <li><Link to='/markets'>Markets</Link></li>
-      <li><Link to='/vendors'>Vendors</Link></li>
-      <li><Link to='/About'>About</Link></li>
-      <li><Link to='/contact'>Contact</Link></li>
-      {this.authLink()}
-    </ul>
-
-    <nav>
-      <div className="nav-wrapper">
-        <Link to='/' className='brand-logo center contain'>StalkMarket</Link>
-        <ul id="nav-mobile">
-          <li><Link className='dropdown-button' to="/" data-activates="dropdown1"><i className="material-icons right">reorder</i></Link></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-*/}
-
 
 export default connect()(Navbar);

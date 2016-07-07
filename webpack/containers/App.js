@@ -25,10 +25,10 @@ class App extends React.Component {
 		return(
   		<div className={`${styleClasses}`}>
   		  <Navbar auth={this.props.auth} history={this.props.history}/>
-  		  <div className='containeR'>
-  		  { this.props.children }
+  		  <div>
+  		  	{ this.props.children }
   		  </div>
-
+  		  <Footer />
   		</div>
   	)
   }

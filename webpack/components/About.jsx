@@ -6,13 +6,13 @@ const About = () => (
 		<div className="container">
 		  <h3>What Can You Do Here?</h3>
 		  <div className="row">
-		    <div className="col offset-m2	">
-		      <ol>
-		        <li>Find your favorite farmers market and vendors.</li>
-		        <li>Find out more information about the vendors you support.</li>
-		        <li>Learn more about farmers market you are interested in.</li>
-		        <li>Connect with local vendors and follow them!</li>
-		      </ol>
+		    <div>
+		      <ul className='center'>
+		        <li>1. Find your favorite farmers market and vendors.</li>
+		        <li>2. Find out more information about the vendors you support.</li>
+		        <li>3. Learn more about farmers market you are interested in.</li>
+		        <li>4. Connect with local vendors and follow them!</li>
+		      </ul>
 		    </div>
 		  </div>
 		  <h3 className="container">Why Did We Build This Website?</h3>
