@@ -7,7 +7,7 @@ const AboutUs = () => (
 		  <div className="center-align">
 		    <div className="row">
 		      <div className="col s12 responsive-img">
-		        <a href="https://github.com/jsfowles/wasatch_market"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467838483/About/octobiwan.jpg" className='git-hub-link' alt="Github" /></a>
+		        <a href="https://github.com/jsfowles/wasatch_market" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467838483/About/octobiwan.jpg" className='git-hub-link' alt="Github" /></a>
 		      </div>
 		      <p className="s12">Github Repository for Stalk Market</p>
 		    </div>
@@ -32,15 +32,15 @@ const AboutUs = () => (
 		      <div className="col s12 m6 center">
 		        <img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/person-icon_dngxdr.png" className='git-hub-link' alt="Taylor" />
 		        <h4>Taylor Wu</h4>
-		        <a href="https://github.com/TaylorWu21"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github' alt="Github" /></a>
-		        <a href="https://www.linkedin.com/in/taylorswu"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Taylor Wu's Linkedin" /></a>
+		        <a href="https://github.com/TaylorWu21" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github' alt="Github" /></a>
+		        <a href="https://www.linkedin.com/in/taylorswu" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Taylor Wu's Linkedin" /></a>
 		        <p className="container">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
 		      </div>
 		      <div className="col s12 m6 center">
 		        <img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/person-icon_dngxdr.png" className='git-hub-link'alt="Jacob" />
 		        <h4>Jacob Fowles</h4>
-		        <a href="https://github.com/jsfowles"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github' alt="Github" /></a>
-		        <a href="https://www.linkedin.com/in/jsfowles"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Jacob Fowles's Linkedin" /></a>
+		        <a href="https://github.com/jsfowles" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github' alt="Github" /></a>
+		        <a href="https://www.linkedin.com/in/jsfowles" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Jacob Fowles's Linkedin" /></a>
 		        <p className="container">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
 		      </div>
 		    </div>
@@ -48,15 +48,15 @@ const AboutUs = () => (
 		      <div className="col s12 m6 center">
 		        <img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/person-icon_dngxdr.png" className='git-hub-link' alt="Mara" />
 		        <h4 className="s12 m6">Mara Behles Dean</h4>
-		        <a hef="https://github.com/marabd"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github' alt="Github" /></a>
-		        <a href="https://www.linkedin.com/in/marabd/en"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Mara Behles Dean's Linkedin" /></a>
+		        <a hef="https://github.com/marabd" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github' alt="Github" /></a>
+		        <a href="https://www.linkedin.com/in/marabd/en" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Mara Behles Dean's Linkedin" /></a>
 		        <p className="container">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
 		      </div>
 		      <div className="col s12 m6 center">
 		        <img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/person-icon_dngxdr.png" className='git-hub-link' alt="Faith" />
 		        <h4 className="s12 m6">Faith Oladele</h4>
-		        <a href="https://github.com/foladele"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github'alt="Github" /></a>
-		        <a href="https://www.linkedin.com/in/foladele"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon'alt="Faith Oladele's Linkedin" /></a>
+		        <a href="https://github.com/foladele" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github'alt="Github" /></a>
+		        <a href="https://www.linkedin.com/in/foladele" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon'alt="Faith Oladele's Linkedin" /></a>
 		        <p className="container">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
 		      </div>
 		    </div>
