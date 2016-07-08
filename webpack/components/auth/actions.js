@@ -31,9 +31,29 @@ export const handleLogin = (email, password, history) => {
 			history.push('/')
 		}).fail( response => {
 			// TODO: handle this better
+			dispatch(logout());
 			console.log(response);
 		});
 	})
+}
+
+export const handleFacebookLogin = (auth, history) => {
+  return(dispatch) => {
+    $.ajax({
+      url: '/facebook_login',
+      type: 'POST',
+      data: { auth },
+      dataType: 'JSON'
+    }).done( response => {
+      localStorage.setItem('apiKey', response.api_key);
+      localStorage.setItem('userId', response.id);
+      dispatch(loggedIn(response.id, response.api_key));
+      history.push('/');
+    }).fail( response => {
+      // TODO: Handle this better
+      console.log(response);
+    })
+  }
 }
 
 export const handleSignUp = (email, password, password_confirmation, role, history) => {
@@ -58,6 +78,7 @@ export const handleSignUp = (email, password, password_confirmation, role, histo
         history.push('/')
 		}).fail( response => {
 			// TODO: handle this better
+			dispatch(logout());
 			console.log(response);
 		});
 	})
@@ -77,6 +98,7 @@ export const handleLogout = (history) => {
 			history.push('/');
 		}).fail( response => {
 			// TODO: handle this better
+			dispatch(logout());
 			console.log(response);
 		})
 	}

@@ -3,7 +3,11 @@ class Api::MarketsController < ApplicationController
   before_action :market, except: [:index, :create]
 
   def index
-    render json: Market.all
+    if params[:filter]
+      # do all the filter logic and return markets
+    else
+      render json: Market.all
+    end
   end
 
   def show

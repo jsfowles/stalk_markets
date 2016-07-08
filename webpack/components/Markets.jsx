@@ -64,10 +64,10 @@ class Markets extends React.Component {
 		return this.state.markets.map( market => {
 			return(
 				<div key={`market-${market.id}`} className='row'>
-					<div className='col s12 m3 offset-m4'>
+					<div className='col s12 m5 offset-m3 markets-name-div'>
 						<span><Link to={`/markets/${market.id}`} className='markets-link'>{market.name}</Link></span>
 					</div>
-					<div className='col s12 m3'>
+					<div className='col s12 m1 markets-mile-div'>
 						<span>{this.computeDistance(market.latitude, market.longitude)} mi</span>
 					</div>
 				</div>

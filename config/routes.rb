@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Commontator::Engine => '/commontator'
 
   devise_for :users, controllers: {
        sessions: 'users/sessions',
@@ -12,6 +13,9 @@ Rails.application.routes.draw do
     resources :join_tables
     get '/vendors/:id/profile', to: "vendors#profile", as: "vendor_profile"
   end
+
+  # Facebook Login
+  post 'facebook_login', to: 'third_party_auth#facebook'
 
   get '*unmatched_route', to: 'dashboard#index'
 

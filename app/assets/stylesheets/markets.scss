@@ -1,9 +1,27 @@
 .markets {
   background-color:  #003C4F;
   color:white;
-  height: 100vh;
+  background-size: cover;
+  background-attachment:fixed;
 }
 
 .markets-link {
   color: white;
+}
+
+.markets-mile-div {
+  background-color: rgba(255,255,255,.05);
+  width: 100px !important;
+  border-radius: 4px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center !important;
+
+}
+
+
+
+.markets-name-div {
+  height: 35px;
+  line-height: 35px;
 }

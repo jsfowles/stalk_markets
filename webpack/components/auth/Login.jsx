@@ -1,10 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { handleLogin } from './actions';
+import { handleLogin, handleFacebookLogin } from './actions';
+import FacebookLogin from 'react-facebook-login';
 
 class Login extends React.Component {
 	constructor(props) {
 		super(props);
+		this.responseFacebook = this.responseFacebook.bind(this);
+	}
+
+	responseFacebook(auth) {
+		this.props.dispatch(handleFacebookLogin(auth, this.props.history));
 	}
 
 	handleSubmit(e) {
@@ -25,6 +31,15 @@ class Login extends React.Component {
 
 					<input type='submit' className='btn' value='Login' />
 				</form>
+
+				{/*Facebook Login Button*/}
+				<FacebookLogin
+					appId="610827695753182"
+					autoLoad={ false }
+					fields="name, email"
+					cssClass="waves-effect waves-light btn blue"
+					icon="fa-facebook"
+					callback={this.responseFacebook} />
 			</div>
 		);
 	}
