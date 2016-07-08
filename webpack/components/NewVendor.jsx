@@ -1,7 +1,6 @@
 import React from 'react';
 import AddVendorMarket from './AddVendorMarket';
 
-
 class NewVendor extends React.Component {
   constructor(props) {
     super(props);
