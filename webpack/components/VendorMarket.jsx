@@ -33,6 +33,7 @@ class VendorMarket extends React.Component {
 			return (
 				<div>
 					<h3>No Markets</h3>
+					<Link to={`/join_tables`} className='jointable-link'>Add Markets</Link>
 				</div>
 			)
 		}

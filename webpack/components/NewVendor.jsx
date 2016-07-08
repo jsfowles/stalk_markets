@@ -1,5 +1,5 @@
 import React from 'react';
-import AddVendorMarket from './AddVendorMarket';
+import { Link } from 'react-router';
 
 class NewVendor extends React.Component {
   constructor(props) {
@@ -57,14 +57,13 @@ class NewVendor extends React.Component {
           <input ref="contactEmail" />
           <label>Website Link</label>
           <input ref="websiteLink" />
-          <select ref='vendorType'>
-            <option value="" disabled selected>What Type of Vendor Are You?</option>
+          <select ref='vendorType' defaultValue="">
+            <option value="" disabled>What Type of Vendor Are You?</option>
             <option value="crafts">Crafts</option>
             <option value="vendor">Food</option>
           </select>
           <input type='submit' className='btn' value='Create Profile' />
         </form>
-        <AddVendorMarket />
         </div>
       </div>
     )
