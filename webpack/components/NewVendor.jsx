@@ -59,7 +59,9 @@ class NewVendor extends React.Component {
           <select ref='vendorType'>
             <option value="" disabled selected>What Type of Vendor Are You?</option>
             <option value="crafts">Crafts</option>
-            <option value="vendor">Food</option>
+            <option value="produce">Produce</option>
+            <option value="prepared food">Prepared Food</option>
+
           </select>
           <input type='submit' className='btn' value='Create Profile' />
         </form>

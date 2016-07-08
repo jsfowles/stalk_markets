@@ -1,6 +1,5 @@
 import React from 'react';
-import VendorMarket from './VendorMarket';
-import { Link } from 'react-router';
+import { Link } from 'react-router'
 
 class Vendor extends React.Component {
   constructor(props) {
@@ -86,11 +85,9 @@ class Vendor extends React.Component {
                   <label>Website Link</label>
                   <p>{this.state.vendor.website_link}</p>
 
-                  <label>Vendor Type</label>
+                  <label>Website Link</label>
                   <p>{this.state.vendor.vendor_type}</p>
                 </div>
-
-                <VendorMarket vendor={this.state.vendor} />
 
               </div>
               <div className="card-action">
@@ -111,5 +108,9 @@ class Vendor extends React.Component {
   }
 }
 
+<<<<<<< fdd9e18f124ee953d4ec2562d7956c8661617dc8
 
 export default Vendor;
+=======
+export default VendorCard;
+>>>>>>> fixed ajax in market
