@@ -7,6 +7,11 @@ $primary-color: #003C4F !default;
 @import 'home';
 @import 'signup';
 @import 'markets';
+@import 'market';
+
+/*
+*= require commontator/application
+ */
 
 html, body {
   width: 100%;
