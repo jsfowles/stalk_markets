@@ -11,3 +11,4 @@ sprig [Market]
     contact_email: Faker::Internet.email,
     website_link: Faker::Internet.url,
     vendor_type: Faker::Commerce.department)
+end
