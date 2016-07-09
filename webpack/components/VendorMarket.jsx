@@ -37,4 +37,4 @@ class VendorMarket extends React.Component {
 
 }
 
-export default VendorMarket
+export default VendorMarket;

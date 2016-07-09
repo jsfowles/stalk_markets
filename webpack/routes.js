@@ -14,13 +14,17 @@ import { UserAuthWrapper } from 'redux-auth-wrapper';
 import { handleLogout } from './components/auth/actions';
 import SignUp from './components/auth/SignUp';
 import NewVendor from './components/NewVendor';
+// import AddVendorMarket from './components/AddVendorMarket';
 
+
+export default (
   <Route>
     <Route path="/" component={App} >
       <IndexRoute component={Home} />
       <Route path="/vendors" component={Vendors} />
       <Route path="/vendors/:id" component={Vendor} />
       <Route path="/markets" component={Markets} />
+      <Route path="/join_tables" component={AddVendorMarket} />
       <Route path="/markets/:id" component={Market} />
       <Route path="/About" component={About} />
       <Route path="/AboutUs" component={AboutUs} />
@@ -31,5 +35,4 @@ import NewVendor from './components/NewVendor';
 
     <Route path="*" status={404} component={NoMatch}/>
   </Route>
-
 )
