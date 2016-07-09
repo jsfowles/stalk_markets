@@ -1,0 +1,20 @@
+{
+  "records":[
+    {
+      "sprig_id":,
+      "name":"25th Street Market",
+      "start_date":"May 7",
+      "end_date":"October 15",
+      "start_time":9,
+      "end_time":1,
+      "day_of_week":"Saturday",
+      "address":"475 E 2500 N",
+      "city":"North Logan",
+      "state":"UT",
+      "zip":84341,
+      "contact_phone":"435.554.8191",
+      "pet_friendly":"yes",
+      "prepared_food":"yes",
+      "crafts":"yes",
+      "alcohol":"no"
+    },

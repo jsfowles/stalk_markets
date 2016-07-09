@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router'
+import VendorMarket from './VendorMarket';
+import { Link } from 'react-router';
+
 
 class Vendor extends React.Component {
   constructor(props) {
@@ -85,9 +87,11 @@ class Vendor extends React.Component {
                   <label>Website Link</label>
                   <p>{this.state.vendor.website_link}</p>
 
-                  <label>Website Link</label>
+                  <label>Vendor Type</label>
                   <p>{this.state.vendor.vendor_type}</p>
                 </div>
+
+                <VendorMarket vendor={this.state.vendor} />
 
               </div>
               <div className="card-action">

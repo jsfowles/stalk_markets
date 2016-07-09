@@ -1,0 +1,2 @@
+module JoinTablesHelper
+end

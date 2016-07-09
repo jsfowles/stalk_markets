@@ -4,20 +4,20 @@
   <title>Stalk Market</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj9cQqRUC1qwXogm5Eck2zJr7V7yWc4YQ&libraries=geometry,places,visualization">
+  </script>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
+  <script src="http://localhost:3808/webpack-dev-server.js"></script>
+  <!-- Materialize icons fontset -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <script src="http://localhost:3808/webpack-dev-server.js"></script>
 </head>
 <body>
 
 <%= yield %>
-<footer class="page-footer">
-  <div class="footer-copyright">
-    <div class="container">
-    © 2016 Stalk Market
-   	<a class="grey-text text-lighten-4 right" href="/about_us">About Us</a>
-    </div>
-  </div>
-</footer>
+
 <%= javascript_include_tag *webpack_asset_paths('application') %>
 </body>
 </html>

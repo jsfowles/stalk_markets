@@ -1,16 +1,17 @@
-class Api::VendorsController < ApplicationController
+  class Api::VendorsController < ApplicationController
 
-	before_action :vendor, except: [:index, :create]
+  before_action :vendor, except: [:index, :create]
 
   def index
-  	render json: Vendor.all
+    render json: Vendor.all
   end
 
-  # def new
-  # end
+  def show
+  	render json: @vendor
+  end
 
   def create
-  	 @vendor = Vendor.create(vendor_params)
+     @vendor = Vendor.create(vendor_params)
     if @vendor
       render json: @vendor
     else
@@ -19,19 +20,16 @@ class Api::VendorsController < ApplicationController
   end
 
   def update
-  	 if @vendor.update(vendor_params)
+     if @vendor.update(vendor_params)
       render json: @vendor.reload
     else
       render json: {errors: @vendor.errors.full_message}
     end
   end
 
-  def show
-  	render json: @vendor
+  def profile
+    render json: @vendor.markets
   end
-
-  # def edit
-  # end
 
   def destroy
   	@vendor.destroy

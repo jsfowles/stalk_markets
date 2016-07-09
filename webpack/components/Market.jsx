@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import SimpleMap from './SimpleMap';
 
 class Market extends React.Component {
 	constructor(props) {
@@ -13,36 +14,26 @@ class Market extends React.Component {
 			type: 'GET',
 			dataType: 'JSON'
 		}).done( market => {
-			debugger;
+
 			this.setState({ market });
+
 		}).fail(data => {
 			console.log('fail' + data);
 			//TODO Handle it better
 		});
 	}
 
-	showMarket() {
-		return(
-      <div className="col s12">
-        <div className="card blue-grey darken-1">
-          <div className="card-content white-text">
-            <span className="card-title">{this.state.market.name}</span>
-
-            <div>
-              <label>Address:</label>
-              <p>{this.state.market.address}</p>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-		)
-	}
-
 	render() {
 		return(
-			<div>
-				{this.showMarket.bind(this)()}
+			<div className='row center market'>
+			<SimpleMap market={this.state.market} />
+				<div className="col s12 ">
+					<div className="white-text">
+						<p>{this.state.market.name}</p>
+						<p>{this.state.market.address}</p>
+						<p>{this.state.market.city + ", " + this.state.market.state + " " + this.state.market.zip}</p>
+					</div>
+				</div>
 			</div>
 		)
 	}

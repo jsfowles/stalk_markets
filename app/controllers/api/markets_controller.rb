@@ -19,11 +19,6 @@ class Api::MarketsController < ApplicationController
     end
   end
 
-  # def new
-  # end
-  # def edit
-  # end
-
   def update
     if @market.update(market_params)
       render json: @market.reload
@@ -36,7 +31,6 @@ class Api::MarketsController < ApplicationController
     @market.destroy
     render json: true
   end
-
 
   private
 

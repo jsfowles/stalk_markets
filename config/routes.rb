@@ -9,12 +9,9 @@ Rails.application.routes.draw do
   namespace :api do
     resources :markets
     resources :vendors
+    resources :join_tables
+    get '/vendors/:id/profile', to: "vendors#profile", as: "vendor_profile"
   end
-
-  # Static pages about the website
-  get '/about', to: 'static_pages#about', as: 'About'
-
-  get '/about_us', to: 'static_pages#about_us', as: 'About_Us'
 
   get '*unmatched_route', to: 'dashboard#index'
 

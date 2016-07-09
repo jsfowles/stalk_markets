@@ -14,3 +14,4 @@
 # Added by webpack-rails
 /node_modules
 /public/webpack
+/coverage
