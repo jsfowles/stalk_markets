@@ -56,7 +56,7 @@ export const handleFacebookLogin = (auth, history) => {
   }
 }
 
-export const handleSignUp = (email, password, password_confirmation, role, history) => {
+export const handleSignUpShopper = (email, password, password_confirmation, role, history) => {
   return(dispatch => {
 		$.ajax({
 			url:'/users',
@@ -72,15 +72,65 @@ export const handleSignUp = (email, password, password_confirmation, role, histo
 			// dispatch the action
 			dispatch(loggedIn(response.id, response.api_key));
 			// redirect
-      if (role === 'vendor')
-			   history.push('/newvendor')
-      else
-        history.push('/')
+      history.push('/')
 		}).fail( response => {
 			// TODO: handle this better
 			dispatch(logout());
 			console.log(response);
 		});
+	})
+}
+
+export const handleSignUpVendor = (email,
+																	  password,
+																		password_confirmation,
+																		role,
+																		first_name,
+																		last_name,
+																		business_name,
+																		contact_email,
+																		contact_phone,
+																		website_link,
+																		vendor_type,
+																	  history ) => {
+  return(dispatch => {
+		$.ajax({
+			url:'/users',
+			type: 'POST',
+      beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').last().attr('content'))},
+			data: { user: {email,
+										 password,
+										 password_confirmation,
+										 role
+			 }},
+			dataType: 'JSON'
+		}).done( response => {
+			let id = response.id;
+			let api_key = response.api_key;
+			// set localStorage apiKey
+			localStorage.setItem('apiKey', api_key);
+			// set localStorage userId
+			localStorage.setItem('userId', id);
+			// dispatch the action
+			dispatch(loggedIn(id, api_key));
+			// redirect
+         //ajax call to create vendor here
+				 $.ajax({
+					 url: '/api/vendors',
+					 type: 'POST',
+					 data: {vendor: {first_name,
+													 last_name,
+													 business_name,
+													 contact_email,
+													 contact_phone,
+													 website_link,
+													 vendor_type}},
+					 dataType: 'JSON'
+				 }).done( data => {history.push(`/vendors/${data.id}`)})
+		}).fail( data => {
+			dispatch(logout());
+		});
+
 	})
 }
 

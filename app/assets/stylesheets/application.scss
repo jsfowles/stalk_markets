@@ -5,9 +5,11 @@ $primary-color: #003C4F !default;
 @import 'materialize';
 @import 'static_pages';
 @import 'home';
-@import 'signup';
+@import 'signup_shopper';
+@import 'signup_vendor';
 @import 'markets';
 @import 'market';
+@import 'vendors';
 
 /*
 *= require commontator/application
