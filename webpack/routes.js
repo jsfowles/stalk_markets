@@ -12,7 +12,8 @@ import AboutUs from './components/AboutUs';
 import Login from './components/auth/Login';
 import { UserAuthWrapper } from 'redux-auth-wrapper';
 import { handleLogout } from './components/auth/actions';
-import SignUp from './components/auth/SignUp';
+import SignUpShopper from './components/auth/SignUpShopper';
+import SignUpVendor from './components/auth/SignUpVendor';
 import NewVendor from './components/NewVendor';
 import AddVendorMarket from './components/AddVendorMarket';
 
@@ -29,7 +30,8 @@ export default (
       <Route path="/About" component={About} />
       <Route path="/AboutUs" component={AboutUs} />
       <Route path='/login' component={Login} />
-      <Route path='/signup' component={SignUp} />
+      <Route path='/signupshopper' component={SignUpShopper} />
+      <Route path='/signupvendor' component={SignUpVendor} />
       <Route path='/newvendor' component={NewVendor} />
     </Route>
 

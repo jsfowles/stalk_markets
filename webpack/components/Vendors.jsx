@@ -41,22 +41,9 @@ class Vendors extends React.Component {
   displayCards() {
     return this.state.vendors.map( vendor => {
       return(
-        <div key={`vendor-${vendor.id}`} className="col s12 m6">
-          <div className="card blue-grey darken-1">
-            <div className="card-content white-text">
-              <span className="card-title">{vendor.business_name}</span>
-              <p>{vendor.first_name}</p>
-              <p>{vendor.last_name}</p>
-              <p>{vendor.contact_phone}</p>
-              <p>{vendor.contact_email}</p>
-              <p>{vendor.website_link}</p>
-              <p>{vendor.vendor_type}</p>
-
-            </div>
-            <div className="card-action">
-              <Link to={`/vendors/${vendor.id}`}>Show</Link>
-              <button onClick={() => this.deleteVendor(vendor.id)} className='btn red'>Delete Vendor</button>
-            </div>
+        <div key={`vendor-${vendor.id}`} className="row">
+          <div className="col s12 m5 offset-m4 vendors-name-div">
+            <span><Link to={`/vendors/${vendor.id}`} className="vendors-link">{vendor.business_name}</Link></span>
           </div>
         </div>
       )
@@ -65,7 +52,7 @@ class Vendors extends React.Component {
 
   render() {
     return(
-      <div className='row'>
+      <div className='vendors'>
         {this.displayCards.bind(this)()}
       </div>
     )

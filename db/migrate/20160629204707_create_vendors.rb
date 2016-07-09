@@ -9,6 +9,7 @@ class CreateVendors < ActiveRecord::Migration
       t.string :contact_email, null: false
       t.string :website_link
       t.string :vendor_type, null: false
+      
 
       t.timestamps null: false
     end

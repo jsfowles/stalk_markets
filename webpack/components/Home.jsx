@@ -18,7 +18,7 @@ const Home = () => (
     </div>
     <div className='row'>
       <div className="col s12 center">
-        <a className='home-sign-up-button btn' href="/signup">SIGN UP</a>
+        <a className='home-sign-up-button btn' href="/signupshopper">SIGN UP</a>
       </div>
     </div>
   </div>

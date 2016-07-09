@@ -1,0 +1,32 @@
+1. build a Filter Component - alcohol, dogs - checkboxes and or input boxes for distance
+2. if you're dealing with a checkbox onChange or input it's onChange or on filter button click
+3. make ajax call to a rails route (eg. /filter_markets) - filter_controller.rb
+   the ajax call would pass all the filter data to the controller as params
+4. do active record where clause to filter the markets
+5. return those filtered markets as json
+6. set state of the component on success of ajax to those new filtered markets
+   which in turn calls render and displays filtered markets
+
+
+# Example Ajax Call
+let pet_friendly = this.refs.pet_friendly.value => true
+let alcohol = this.refs.alcohol.value => false
+
+$.ajax({
+  type: 'POST',
+  url: '/api/markets',
+  data: { filter: true, filter_data: { pet_friendly, alcohol } }
+  dataType: "JSON"
+
+})
+
+
+# Rails Controller
+def filter_markets
+  Market.all.where(pet_friendly: params[:pet_friendly], crafts: params[:crafts])
+end
+
+t.boolean  "pet_friendly"
+t.boolean  "crafts"
+t.boolean  "alcohol"
+t.boolean  "prepared_food"

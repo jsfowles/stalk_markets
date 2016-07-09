@@ -1,3 +1,25 @@
-// Place all the styles related to the vendors controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.vendors {
+  background-color:  #003C4F;
+  color:white;
+  background-size: cover;
+  background-attachment:fixed;
+}
+
+.vendors-link {
+  color: white;
+}
+
+.vendors-mile-div {
+  background-color: rgba(255,255,255,.05);
+  width: 100px !important;
+  border-radius: 4px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center !important;
+
+}
+
+.vendors-name-div {
+  height: 35px;
+  line-height: 35px;
+}
