@@ -14,7 +14,7 @@ import { UserAuthWrapper } from 'redux-auth-wrapper';
 import { handleLogout } from './components/auth/actions';
 import SignUp from './components/auth/SignUp';
 import NewVendor from './components/NewVendor';
-// import AddVendorMarket from './components/AddVendorMarket';
+import AddVendorMarket from './components/AddVendorMarket';
 
 
 export default (
