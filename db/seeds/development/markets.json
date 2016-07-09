@@ -543,7 +543,7 @@
     {
       "sprig_id":130,
       "name":"Winter Market",
-      "start_date":"Nov 5",
+      "start_date":"November 5",
       "end_date":"April 15",
       "day_of_week":"Saturday",
       "start_time":10,
@@ -557,6 +557,24 @@
       "prepared_food":"yes",
       "crafts":"no",
       "alcohol":"no"
+    },
+    {
+    "sprig_id":131,
+    "name":"Park City Farmers Market",
+    "start_date":"June 1",
+    "end_date":"October 26",
+    "day_of_week":"Wednesday",
+    "start_time":12,
+    "end_time":6,
+    "address":"1825 Canyons Resort Dr",
+    "city":"Park City",
+    "state":"UT",
+    "zip":84098,
+    "contact_phone":"",
+    "pet_friendly":"yes",
+    "prepared_food":"yes",
+    "crafts":"yes",
+    "alcohol":"no"
     }
   ]
 }

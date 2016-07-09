@@ -1,20 +1,164 @@
 {
   "records":[
     {
-      "sprig_id":,
-      "name":"25th Street Market",
-      "start_date":"May 7",
-      "end_date":"October 15",
-      "start_time":9,
-      "end_time":1,
-      "day_of_week":"Saturday",
-      "address":"475 E 2500 N",
-      "city":"North Logan",
-      "state":"UT",
-      "zip":84341,
-      "contact_phone":"435.554.8191",
-      "pet_friendly":"yes",
-      "prepared_food":"yes",
-      "crafts":"yes",
-      "alcohol":"no"
+      "sprig_id":500,
+      "first_name":"Casee",
+      "last_name":"Francis",
+      "business_name":"Amour Spreads",
+      "contact_phone":"888.554.6845",
+      "contact_email":"",
+      "website_link":"amourspreads.com",
+      "vendor_type":""
     },
+    {
+      "sprig_id":501,
+      "first_name":"Fusako",
+      "last_name":"Tomiyama Berardini",
+      "business_name":"Asian & Heirlooms",
+      "contact_phone":"801.891.8944",
+      "contact_email":"asian-heirlooms@msn.com",
+      "website_link":"https://www.facebook.com/Asian-Heirlooms-428654720614640/?fref=ts",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":502,
+      "first_name":"Pat",
+      "last_name":"Ford",
+      "business_name":"Beehive Cheeses",
+      "contact_phone":"801.645.0950",
+      "contact_email":"tom@beehivecheese.com",
+      "website_link":"www.beehivecheese.com",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":503,
+      "first_name":"Tamara",
+      "last_name":"Hed",
+      "business_name":"Blue Spring Farm",
+      "contact_phone":"435.279.0563",
+      "contact_email":"bluespringfarm.ut@gmail.com",
+      "website_link":"https://www.facebook.com/Blue-Spring-Farm-262100187173695/",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":504,
+      "first_name":"Julie",
+      "last_name":"Clifford",
+      "business_name":"Clifford Family Farm",
+      "contact_phone":"801.368.7250",
+      "contact_email":"cliffordfarm@aol.com",
+      "website_link":"http://www.cliffordfamilyfarm.com/",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":505,
+      "first_name":"",
+      "last_name":"",
+      "business_name":"Winder Farms",
+      "contact_phone":"800.946.3371",
+      "contact_email":"",
+      "website_link":"https://www.winderfarms.com/",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":506,
+      "first_name":"John",
+      "last_name":"Borski",
+      "business_name":"Borski Farms",
+      "contact_phone":"801.941.9620",
+      "contact_email":"borskifarms@outlook.com",
+      "website_link":"www.borskifarms.org",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":507,
+      "first_name":"Richard",
+      "last_name":"Drake",
+      "business_name":"Drake Family Farms",
+      "contact_phone":"801.255.6455",
+      "contact_email":"soap@drakefamilyfamrs.com",
+      "website_link":"www.drakefamilyfarms.org",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":508,
+      "first_name":"Bill",
+      "last_name":"Frost",
+      "business_name":"First Frost Farm",
+      "contact_phone":"435.770.5644",
+      "contact_email":"firstfrostfarm@gmail.com",
+      "website_link":"http://www.firstfrostfarm.com/",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":509,
+      "first_name":"Russel",
+      "last_name":"Kohler",
+      "business_name":"Heber Valley Artisan Cheese",
+      "contact_phone":"435.671.0896",
+      "contact_email":"russel@hebervalleycheese.com",
+      "website_link":"https://hebervalleyartisancheese.com",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":510,
+      "first_name":"Derek",
+      "last_name":"Kitchen",
+      "business_name":"Laziz Foods",
+      "contact_phone":"435.757.9310",
+      "contact_email":"info@laziz-foods.com",
+      "website_link":"http://www.laziz-foods.com/",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":511,
+      "first_name":"Mama",
+      "last_name":"Chari",
+      "business_name":"Mamachari Kombucha",
+      "contact_phone":"385.202.3391",
+      "contact_email":"info@mamachari.cc",
+      "website_link":"http://www.mamachari.cc/",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":512,
+      "first_name":"Wes",
+      "last_name":"Crandall",
+      "business_name":"Morgan Valley Lamb",
+      "contact_phone":"801.376.0038",
+      "contact_email":"info@morganvalleylamb.com",
+      "website_link":"http://morganvalleylamb.com/",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":513,
+      "first_name":"Wayne",
+      "last_name":"",
+      "business_name":"Pioneer Market",
+      "contact_phone":"801.376.1925",
+      "contact_email":"wayne@pioneermarket.com",
+      "website_link":"http://pioneermarket.com/",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":514,
+      "first_name":"John",
+      "last_name":"",
+      "business_name":"Ranui Gardens",
+      "contact_phone":"435.640.0894",
+      "contact_email":"chaos@ranui.com",
+      "website_link":"http://www.ranui.com/",
+      "vendor_type":""
+    },
+    {
+      "sprig_id":515,
+      "first_name":"",
+      "last_name":"",
+      "business_name":"Snuck Farm",
+      "contact_phone":"801.718.2650",
+      "contact_email":"info@snuckfarm.com",
+      "website_link":"http://snuckfarm.com/",
+      "vendor_type":""
+    }
+  ]
+}
