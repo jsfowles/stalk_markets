@@ -52,8 +52,11 @@ class Vendors extends React.Component {
 
   render() {
     return(
-      <div className='vendors'>
-        {this.displayCards.bind(this)()}
+      <div>
+        <Link to="/favorites">See Favorite Vendor</Link>
+        <div className='vendors'>
+          {this.displayCards.bind(this)()}
+        </div>
       </div>
     )
   }

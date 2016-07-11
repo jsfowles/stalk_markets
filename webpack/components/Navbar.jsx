@@ -15,7 +15,12 @@ class Navbar extends React.Component {
 
   authLink() {
     if(this.props.auth)
-    return(<li><a href='#' onClick={this.logout.bind(this)}>LOGOUT</a></li>)
+      return(
+        <div>
+          <li><a href='#' onClick={this.logout.bind(this)}>LOGOUT</a></li>
+          {/*<li><a href='#'>EDIT PROFILE</a></li>*/}
+        </div>
+      )
     else {
       return(
         <li><Link to ='/login'>LOGIN</Link></li>
@@ -35,7 +40,6 @@ class Navbar extends React.Component {
               <li><Link to="/markets">MARKETS</Link></li>
               <li><Link to="/vendors">VENDORS</Link></li>
               <li><Link to="/about">ABOUT</Link></li>
-              <li><Link to="/contact">CONTACT</Link></li>
               {this.authLink()}
             </ul>
           </div>

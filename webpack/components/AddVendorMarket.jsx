@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 class AddVendorMarket extends React.Component {
 	submitMarket(e) {
 		e.preventDefault();
-		debugger
 
 		let selectedMarkets = [];
 		const vendor_id = 6;

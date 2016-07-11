@@ -16,6 +16,7 @@ import SignUpShopper from './components/auth/SignUpShopper';
 import SignUpVendor from './components/auth/SignUpVendor';
 import NewVendor from './components/NewVendor';
 import AddVendorMarket from './components/AddVendorMarket';
+import Favorites from './components/Favorites';
 
 
 export default (
@@ -33,6 +34,7 @@ export default (
       <Route path='/signupshopper' component={SignUpShopper} />
       <Route path='/signupvendor' component={SignUpVendor} />
       <Route path='/newvendor' component={NewVendor} />
+      <Route path='/Favorites' component={Favorites} />
     </Route>
 
     <Route path="*" status={404} component={NoMatch}/>
