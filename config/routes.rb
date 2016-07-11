@@ -14,7 +14,9 @@ Rails.application.routes.draw do
     resources :markets
     resources :vendors
     resources :join_tables
-    resources :favorites
+    resources :favorites, except: :destroy
+    delete '/favorites', to: 'favorites#destroy'
+    get '/has_favorite', to: 'favorites#has_favorite'
     get '/vendors/:id/profile', to: "vendors#profile", as: "vendor_profile"
   end
 

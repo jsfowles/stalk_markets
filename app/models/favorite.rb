@@ -1,3 +1,3 @@
 class Favorite < ActiveRecord::Base
-	# vendor = Vendor.find_by[:id]
+	has_many :vendors
 end

@@ -18,9 +18,14 @@ class Api::FavoritesController < ApplicationController
   end
 
   def destroy
-    favorite = Favorite.find_by(params[:id])
+    favorite = Favorite.where(user_id: current_user.id, vendor_id: params[:vendor_id]).first
     favorite.destroy
     render json: true
+  end
+
+  def has_favorite
+    favorite = Favorite.where(user_id: current_user, vendor_id: params[:vendor_id])
+    render json: favorite.count > 0 ? true : false
   end
 
   private

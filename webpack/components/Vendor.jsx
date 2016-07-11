@@ -1,4 +1,5 @@
 import React from 'react';
+import Star from './Star';
 import VendorMarket from './VendorMarket';
 import { Link } from 'react-router';
 
@@ -59,7 +60,19 @@ class Vendor extends React.Component {
       console.log('saved')
     }).fail( error => {
       console.log(error)
-    })
+    });
+  }
+
+  deleteFavorite() {
+    $.ajax({
+      url: '/api/favorites',
+      type: 'DELETE',
+      data: { vendor_id: this.state.vendor.id }
+    }).done( data => {
+      console.log('deleted')
+    }).fail( error => {
+      console.log(error)
+    });
   }
 
   render() {
@@ -111,7 +124,7 @@ class Vendor extends React.Component {
               <div className="card-action">
                 <Link to='/vendors'>All Vendors</Link>
                 {/*<button className='btn' onClick={this.toggleEdit}>Edit</button>*/}
-                <i className="material-icons clickable" onClick={this.addFavorite}>star</i>
+                <Star vendorId={this.state.vendor.id} addFavorite={ this.addFavorite.bind(this) } deleteFavorite={this.deleteFavorite.bind(this)} />
               </div>
             </div>
           </div>
