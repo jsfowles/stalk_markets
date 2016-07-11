@@ -12,4 +12,5 @@ class ThirdPartyAuthController < ApplicationController
   		render json: { errors: auth }, status: 401
   	end
   end
+
 end
