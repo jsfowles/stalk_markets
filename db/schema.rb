@@ -129,6 +129,7 @@ ActiveRecord::Schema.define(version: 20160711203822) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "business_name", null: false
+    t.text     "description"
     t.string   "contact_phone", null: false
     t.string   "contact_email", null: false
     t.string   "website_link"

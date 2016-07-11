@@ -5,11 +5,12 @@ class CreateVendors < ActiveRecord::Migration
       t.string :first_name
       t.string :last_name
       t.string :business_name, null: false
+      t.text :description
       t.string :contact_phone, null: false
       t.string :contact_email, null: false
       t.string :website_link
       t.string :vendor_type, null: false
-      
+
 
       t.timestamps null: false
     end
