@@ -8,6 +8,7 @@ class Vendor extends React.Component {
     super(props);
     this.state = { vendor: null, editView: false }
     this.toggleEdit = this.toggleEdit.bind(this);
+    this.addFavorite = this.addFavorite.bind(this);
   }
 
   componentWillMount() {
@@ -36,6 +37,7 @@ class Vendor extends React.Component {
     let website_link = this.refs.website_link.value;
     let vendor_type = this.refs.vendor_type.value;
 
+
     $.ajax({
       url: `/api/vendors/${this.state.vendor.id}`,
       type: 'PUT',
@@ -46,6 +48,18 @@ class Vendor extends React.Component {
     }).fail( data => {
       console.log( data )
     });
+  }
+
+  addFavorite() {
+    $.ajax({
+      url: '/api/favorites',
+      type: 'POST',
+      data: { id: this.state.vendor.id}
+    }).done( data => {
+      console.log('saved')
+    }).fail( error => {
+      console.log(error)
+    })
   }
 
   render() {
@@ -96,7 +110,8 @@ class Vendor extends React.Component {
               </div>
               <div className="card-action">
                 <Link to='/vendors'>All Vendors</Link>
-                <button className='btn' onClick={this.toggleEdit}>Edit</button>
+                {/*<button className='btn' onClick={this.toggleEdit}>Edit</button>*/}
+                <i className="material-icons clickable" onClick={this.addFavorite}>star</i>
               </div>
             </div>
           </div>

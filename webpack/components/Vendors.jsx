@@ -55,7 +55,6 @@ class Vendors extends React.Component {
             </div>
             <div className="card-action">
               <Link to={`/vendors/${vendor.id}`}>Show</Link>
-              <button onClick={() => this.deleteVendor(vendor.id)} className='btn red'>Delete Vendor</button>
             </div>
           </div>
         </div>
@@ -65,8 +64,11 @@ class Vendors extends React.Component {
 
   render() {
     return(
-      <div className='row'>
-        {this.displayCards.bind(this)()}
+      <div>
+        <Link to="/favorites">See Favorite Vendor</Link>
+        <div className='row'>
+          {this.displayCards.bind(this)()}
+        </div>
       </div>
     )
   }

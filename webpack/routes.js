@@ -15,6 +15,7 @@ import { handleLogout } from './components/auth/actions';
 import SignUp from './components/auth/SignUp';
 import NewVendor from './components/NewVendor';
 import AddVendorMarket from './components/AddVendorMarket';
+import Favorites from './components/Favorites';
 
 
 export default (
@@ -31,6 +32,7 @@ export default (
       <Route path='/login' component={Login} />
       <Route path='/signup' component={SignUp} />
       <Route path='/newvendor' component={NewVendor} />
+      <Route path='/Favorites' component={Favorites} />
     </Route>
 
     <Route path="*" status={404} component={NoMatch}/>

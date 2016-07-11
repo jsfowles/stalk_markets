@@ -36,6 +36,15 @@
   	render json: true
   end
 
+  def favorites
+    vendors = []
+    favorites = Favorite.where(user_id: current_user.id)
+    favorites.each do |fav|
+      vendors << Vendor.find(fav.vendor_id)
+    end
+    render json: vendors
+  end
+
   private
 
   	def vendor
