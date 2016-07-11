@@ -124,6 +124,7 @@ ActiveRecord::Schema.define(version: 20160708222344) do
     t.string   "vendor_type",   null: false
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.textarea "description"
   end
 
 end
