@@ -18,7 +18,7 @@ class Navbar extends React.Component {
       return(
         <div>
           <li><a href='#' onClick={this.logout.bind(this)}>LOGOUT</a></li>
-          {/*<li><a href='#'>EDIT PROFILE</a></li>*/}
+          <li><a href='/vendors/:id'>EDIT PROFILE</a></li>
         </div>
       )
     else {
@@ -41,6 +41,7 @@ class Navbar extends React.Component {
               <li><Link to="/vendors">VENDORS</Link></li>
               <li><Link to="/about">ABOUT</Link></li>
               {this.authLink()}
+              <li><Link to="/signupshopper">SIGN UP</Link></li>
             </ul>
           </div>
         </nav>
