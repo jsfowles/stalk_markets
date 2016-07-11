@@ -61,9 +61,4 @@ class Star extends React.Component{
 
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> added favorites fully functional
 export default Star;
