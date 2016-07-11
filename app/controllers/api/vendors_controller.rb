@@ -59,7 +59,8 @@
 	      :contact_phone,
 	      :contact_email,
 	      :website_link,
-	      :vendor_type
+	      :vendor_type,
+        :avatar
   			)
   	end
 end

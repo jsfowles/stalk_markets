@@ -59,7 +59,8 @@ class Api::MarketsController < ApplicationController
         :crafts,
         :alcohol,
         :prepared_food,
-        :image
+        :image,
+        :avatar
       )
     end
 end
