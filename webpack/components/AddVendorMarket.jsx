@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 class AddVendorMarket extends React.Component {
+
 	submitMarket(e) {
 		e.preventDefault();
 
@@ -22,7 +23,7 @@ class AddVendorMarket extends React.Component {
 	  	data: {selectedMarkets, vendor_id },
 	  	dataType: 'JSON'
 	  }).done(data => {
-
+	  	this.props.history.push('/vendors')
 	  }).fail(data => {
 	  	console.log(data);
 	  })   
