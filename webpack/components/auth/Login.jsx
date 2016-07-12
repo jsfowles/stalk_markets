@@ -23,23 +23,28 @@ class Login extends React.Component {
 
 	render() {
 		return(
-			<div>
-				<h3>LOGIN</h3>
-				<form onSubmit={ this.handleSubmit.bind(this) } >
-					<input type='email' placeholder='Email' ref='email' required />
-					<input type='password' placeholder='Password' ref='password' required />
+			<div className='row signupvendor'>
+        <div className='col s12'>
+          <div className='signupvendor-div'>
+            <div className='col s12 center signupvendor-form-div'>
+	            <p className='signupvendor-title'>VENDOR SIGN UP</p>
+							<form onSubmit={ this.handleSubmit.bind(this) } >
+							<input type='email' placeholder='Email' ref='email' required />
+							<input type='password' placeholder='Password' ref='password' required />
+							<input type='submit' className='btn' value='Login' />
+							</form>
 
-					<input type='submit' className='btn' value='Login' />
-				</form>
-
-				{/*Facebook Login Button*/}
-				<FacebookLogin
-					appId="610827695753182"
-					autoLoad={ false }
-					fields="name, email"
-					cssClass="waves-effect waves-light btn blue"
-					icon="fa-facebook"
-					callback={this.responseFacebook} />
+							{/*Facebook Login Button*/}
+							<FacebookLogin
+							appId="610827695753182"
+							autoLoad={ false }
+							fields="name, email"
+							cssClass="waves-effect waves-light btn blue"
+							icon="fa-facebook"
+							callback={this.responseFacebook} />
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	}

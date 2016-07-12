@@ -18,8 +18,8 @@ class Navbar extends React.Component {
       return(
         <div>
           <li><Link to="/favorites">FAVORITES</Link></li>
-          <li><a href='#' onClick={this.logout.bind(this)}>LOGOUT</a></li>
           <li><a href='/vendors/:id'>EDIT PROFILE</a></li>
+          <li><a href='#' onClick={this.logout.bind(this)}>LOGOUT</a></li>
         </div>
       )
     else {

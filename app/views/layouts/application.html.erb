@@ -9,7 +9,9 @@
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
-  <script src="http://localhost:3808/webpack-dev-server.js"></script>
+  <% if Rails.env.development? %>
+    <script src="http://localhost:3808/webpack-dev-server.js"></script>
+  <% end %>
   <!-- Materialize icons fontset -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <script src="http://localhost:3808/webpack-dev-server.js"></script>
