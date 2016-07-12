@@ -1,5 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { handleLogin, handleFacebookLogin } from './actions';
+import FacebookLogin from 'react-facebook-login';
 
 class Login extends React.Component {
 	constructor(props) {
