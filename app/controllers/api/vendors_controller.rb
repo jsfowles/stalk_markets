@@ -28,7 +28,28 @@
   end
 
   def profile
-    render json: @vendor.markets
+    vendors = JoinTable.where(vendor_id: @vendor)
+    market_Arry = []
+    vendors.each do |vendor|
+      market_Arry.push(vendor.market_id)
+    end
+    
+    a_Mark = []
+
+    market_Arry.each do |market|
+      get_market = Market.where(id: market)
+      a_Mark.push(get_market)
+    end
+
+
+    @b_Mark = []
+
+    a_Mark.each do |market|
+      @b_Mark.push(market.first.name)
+    end
+
+    render json: @b_Mark
+    # render json: @vendor.markets
   end
 
   def destroy
