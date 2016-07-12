@@ -23,7 +23,10 @@ class Navbar extends React.Component {
       )
     else {
       return(
-        <li><Link to ='/login'>LOGIN</Link></li>
+        <div className="nav-wrapper">
+          <li><Link to='/login'>LOGIN</Link></li>
+          <li><Link to="/signupshopper">SIGN UP</Link></li>
+        </div>
       );
     }
   }
@@ -41,7 +44,6 @@ class Navbar extends React.Component {
               <li><Link to="/vendors">VENDORS</Link></li>
               <li><Link to="/about">ABOUT</Link></li>
               {this.authLink()}
-              <li><Link to="/signupshopper">SIGN UP</Link></li>
             </ul>
           </div>
         </nav>
