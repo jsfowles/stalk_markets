@@ -11,6 +11,7 @@ $primary-color: #003C4F !default;
 @import 'market';
 @import 'vendors';
 @import 'favorites';
+@import 'dashboard';
 
 /*
 *= require commontator/application
@@ -46,4 +47,9 @@ footer {
 .google-map {
   width:500px;
   height: 300px;
+  margin-top: 10px;
+}
+
+.btn {
+	margin: 10px;
 }

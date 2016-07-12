@@ -17,14 +17,15 @@ class Navbar extends React.Component {
     if(this.props.auth)
       return(
         <div>
+          <li><Link to="/favorites">FAVORITES</Link></li>
           <li><a href='#' onClick={this.logout.bind(this)}>LOGOUT</a></li>
           <li><a href='/vendors/:id'>EDIT PROFILE</a></li>
         </div>
       )
     else {
       return(
-        <div className="nav-wrapper">
-          <li><Link to='/login'>LOGIN</Link></li>
+        <div>
+          <li><Link to ='/login'>LOGIN</Link></li>
           <li><Link to="/signupshopper">SIGN UP</Link></li>
         </div>
       );

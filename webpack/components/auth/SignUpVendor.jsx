@@ -45,7 +45,7 @@ class SignUpVendor extends React.Component {
   render() {
     return (
       <div className='row signupvendor'>
-        <div className='col s12 m4 offset-m3 center'>
+        <div className='col s12'>
           <div className='signupvendor-div'>
             <div className='col s12 center signupvendor-form-div'>
             <p className='signupvendor-title'>VENDOR SIGN UP</p>
@@ -60,13 +60,14 @@ class SignUpVendor extends React.Component {
               <label>Business Name</label>
               <input defaultValue='asdf'ref="businessName" />
               <label>Contact Phone</label>
-              <input defaultValue='8888888888'ref="contactPhone" />
+              <input defaultValue='888.888.8888'ref="contactPhone" />
               <label>Contact Email</label>
-              <input defaultValue='asdf@asdf.com'ref="contactEmail" />
+              <input defaultValue='YourEmail@email.com'ref="contactEmail" />
               <label>Website Link</label>
               <input defaultValue='asdf.com'ref="websiteLink" />
               <input type='hidden' className='white-text' ref='roleSelection' defaultValue='vendor'>
-             </input>
+              </input>
+              <label>Type of Vendor?</label>
               <select ref='vendorType' defaultValue="food">
                 <option value="" disabled>What Type of Vendor Are You?</option>
                 <option value="crafts">Crafts</option>

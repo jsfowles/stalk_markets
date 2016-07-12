@@ -28,7 +28,7 @@ class SignUpShopper extends React.Component {
   render() {
     return (
       <div className='row signupshopper'>
-        <div className='col s12 m4 offset-m3 center'>
+        <div className='col s12 center'>
           <div className='signupshopper-div'>
             <div className='col s12 center signupshopper-form-div'>
             <p className='signupshopper-title'>SIGN UP</p>

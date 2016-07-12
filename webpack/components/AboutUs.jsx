@@ -71,7 +71,7 @@ const AboutUs = () => (
 		<div className="container">
 		  <div className='container center'>
 			  <h3>Where We Came From</h3>
-			  <p>Devpoint Labs is a coding bootcamp that teaches full stack ruby on rails. Over the course of 11 weeks we have learned many web development technologies like HTML5, CSS3, Ruby on Rails, JavaScript, React, SQL. We also learned TDD(test driven development), database design, JQuery, and Ajax. DPL has equipped us with new knowledge of current web-development technology being used in the real world.</p>
+			  <h6>Devpoint Labs is a coding bootcamp that teaches full stack ruby on rails. Over the course of 11 weeks we have learned many web development technologies like HTML5, CSS3, Ruby on Rails, JavaScript, React, SQL. We also learned TDD(test driven development), database design, JQuery, and Ajax. DPL has equipped us with new knowledge of current web-development technology being used in the real world.</h6>
 			</div>
 		</div>
 	</div>

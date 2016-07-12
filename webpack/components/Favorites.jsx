@@ -23,9 +23,9 @@ class Favorites extends React.Component {
 	displayFavorites() {
 		return this.state.vendors.map( vendor => {
 			return(
-				<div key={`vendor-${vendor.id}`} className='col s12'>
+				<div key={`vendor-${vendor.id}`} className='col s12 center'>
 					<Link to={`/vendors/${vendor.id}`}>{vendor.business_name}</Link>
-					<p>{vendor.contact_phone}</p>
+					<span className="phone-number">{vendor.contact_phone}</span>
 				</div>
 			);
 		});
@@ -34,7 +34,7 @@ class Favorites extends React.Component {
 	render() {	
 		return(
 			<div>
-				<h1>Favorite Vendors</h1>
+				<h1 className="container center">Favorite Vendors</h1>
 				<div className='row'>
 					{this.displayFavorites.bind(this)()}
 				</div>

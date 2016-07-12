@@ -43,7 +43,7 @@ class NewVendor extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className='col s12 m4 offset-m4'>
+        <div className='col s12 m4'>
         <form ref="todoForm" onSubmit={ (e) => this.handleSubmit(e) }>
           <label>First Name</label>
           <input ref="firstName" />
@@ -62,7 +62,6 @@ class NewVendor extends React.Component {
             <option value="crafts">Crafts</option>
             <option value="produce">Produce</option>
             <option value="prepared food">Prepared Food</option>
-
           </select>
           <input type='submit' className='btn' value='Create Profile' />
         </form>
