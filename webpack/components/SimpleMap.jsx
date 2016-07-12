@@ -10,6 +10,8 @@ class SimpleMap extends React.Component{
     let market = this.props.market;
     let markers = [];
     if(market.latitude && market.longitude) {
+      console.log(market.latitude);
+      console.log(market.longitude);
       markers =  [{
         position: {
           lat: market.latitude,
