@@ -2,14 +2,17 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 class AddVendorMarket extends React.Component {
+
 	submitMarket(e) {
 		e.preventDefault();
 
 		let selectedMarkets = [];
-		const vendor_id = 6;
+
+		const vendor_id = this.props.vendorId;
 
 		$("input:checkbox[name=markets]:checked").each(function(){
     	selectedMarkets.push($(this).val());
+    	console.log(selectedMarkets)
 		});
 		
 		// const market_id = '';
@@ -20,7 +23,7 @@ class AddVendorMarket extends React.Component {
 	  	data: {selectedMarkets, vendor_id },
 	  	dataType: 'JSON'
 	  }).done(data => {
-
+	  	this.props.history.push('/vendors')
 	  }).fail(data => {
 	  	console.log(data);
 	  })   
@@ -31,7 +34,7 @@ class AddVendorMarket extends React.Component {
 			let key = `market-id${market.id}`
 		  return ( 
 		  	<div key={key}>
-		  		<input name="markets" type="checkbox" id={market.id} />
+		  		<input name="markets" type="checkbox" id={market.id} value={market.id} />
 		  		<label htmlFor={market.id}>{market.name}</label>
 		  	</div> 
 		  	)
@@ -48,7 +51,7 @@ class AddVendorMarket extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-	return { markets: state.markets }
+	return { markets: state.markets, vendorId: state.auth.id }
 }
 
 export default connect(mapStateToProps)(AddVendorMarket);

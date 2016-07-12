@@ -23,9 +23,18 @@ class VendorMarket extends React.Component {
   }
 	render() {
 		if (this.state.vendorMarket.length > 0) {
-			return(
+			console.log(this.state.vendorMarket);
+			let allMarket = this.state.vendorMarket.map(market => {
+				return(
+					<div>
+						{market}
+					</div>
+				)
+			})
+
+			return (
 				<div>
-					{this.state.vendorMarket}
+					{allMarket}
 				</div>
 			)
 		}

@@ -10,7 +10,11 @@ class Api::JoinTablesController < ApplicationController
   end
 
   def create
-    @table = JoinTable.create(table_params)
+    @table = []
+    params[:selectedMarkets].each do |market_id|
+      joins = JoinTable.create(market_id: market_id, vendor_id: params[:vendor_id])
+      @table.push(joins)
+    end
     if @table
       render json: @table
     else
@@ -39,6 +43,6 @@ class Api::JoinTablesController < ApplicationController
 
     def table_params
       params.require(:join_table).permit(
-        :table_id, :vendor_id )
+        :market_id, :vendor_id )
     end
 end

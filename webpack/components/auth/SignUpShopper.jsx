@@ -5,6 +5,7 @@ import { browserHistory } from 'react-router'
 import FacebookLogin from 'react-facebook-login'
 
 
+
 class SignUpShopper extends React.Component {
   constructor(props) {
     super(props);
