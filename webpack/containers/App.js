@@ -32,13 +32,15 @@ class App extends React.Component {
     if(this.props.children.type.name === 'Home')
       styleClasses = 'home'
 		return(
-  		<div className={`${styleClasses}`}>
-  		  <Navbar auth={this.props.auth} history={this.props.history}/>
-  		  <div>
-  		  	{ this.props.children }
-  		  </div>
-  		  <Footer />
-  		</div>
+			<div>
+	  		<div className={`${styleClasses} page-wrapper`}>
+	  		  <Navbar auth={this.props.auth} history={this.props.history}/>
+	  		  <div>
+	  		  	{ this.props.children }
+	  		  </div>
+	  		</div>
+				<Footer />
+			</div>
   	)
   }
 }

@@ -1,5 +1,24 @@
 .market {
   background-color:  #003C4F;
   color:white;
-  height: 100vh;
+  height: 100% !important;
+}
+
+.market-text {
+  font-size: 28px;
+  width: 100%;
+    text-align: center;
+}
+
+.market-image {
+  background: url('http://res.cloudinary.com/jsfowles/image/upload/v1467844491/backgrounds/photo-1429081104093-c268ecee4b9a_zktd5s.jpg') no-repeat center center;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  margin:0 !important;
+  text-align: center;
+}
+
+.market-margin {
+  margin: 0;
 }

@@ -67,8 +67,10 @@ class Markets extends React.Component {
 					<div className='col s12 m5 offset-m3 markets-name-div'>
 						<span><Link to={`/markets/${market.id}`} className='markets-link'>{market.name}</Link></span>
 					</div>
-					<div className='col s12 m1 markets-mile-div'>
-						<span>{this.computeDistance(market.latitude, market.longitude)} mi</span>
+					<div className='col s12 m1 markets-mile-line-div'>
+						<div className='markets-mile-div'>
+							<span>{this.computeDistance(market.latitude, market.longitude)} mi</span>
+						</div>
 					</div>
 				</div>
 			);
@@ -78,7 +80,7 @@ class Markets extends React.Component {
 	render() {
 		return(
 			<div className='markets'>
-				{this.displayMarkets.bind(this)()}
+			{this.displayMarkets.bind(this)()}
 			</div>
 		);
 

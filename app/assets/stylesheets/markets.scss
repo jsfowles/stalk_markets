@@ -7,21 +7,36 @@
 
 .markets-link {
   color: white;
+    border-bottom: 2px white !important;
+}
+
+.markets-mile-line-div {
+  height: 45px;
+  line-height: 35px;
+  text-align: center !important;
+  border-bottom-width:.5px;
+  border-bottom-color:White;
+  border-bottom-style: solid;
+}
+
+
+.markets-name-div {
+
+  width: 500px !important;
+  height: 45px;
+  line-height: 35px;
+  border-bottom-width:.5px;
+  border-bottom-color:White;
+  border-bottom-style: solid;
+
 }
 
 .markets-mile-div {
   background-color: rgba(255,255,255,.05);
   width: 100px !important;
-  border-radius: 4px;
   height: 35px;
+  border-radius: 5px;
   line-height: 35px;
   text-align: center !important;
 
-}
-
-
-
-.markets-name-div {
-  height: 35px;
-  line-height: 35px;
 }

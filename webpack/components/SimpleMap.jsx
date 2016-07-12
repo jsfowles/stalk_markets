@@ -24,10 +24,7 @@ class SimpleMap extends React.Component{
           containerElement={
             <div
               {...this.props}
-              style={{
-                height: '300px',
-                width: '500px',
-              }}
+              className='google-map'
             />
           }
           googleMapElement={

@@ -45,6 +45,7 @@ class Navbar extends React.Component {
               <li><Link to="/about">ABOUT</Link></li>
               {this.authLink()}
             </ul>
+              <a className='home-sign-up-button btn right' href="/signupshopper">SIGNUP</a>
           </div>
         </nav>
       </header>

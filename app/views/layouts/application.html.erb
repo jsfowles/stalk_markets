@@ -5,19 +5,19 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj9cQqRUC1qwXogm5Eck2zJr7V7yWc4YQ&libraries=geometry,places,visualization">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj9cQqRUC1qwXogm5Eck2zJr7V7yWc4YQ&libraries=geometry,places,visualization">
   </script>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
   <script src="http://localhost:3808/webpack-dev-server.js"></script>
   <!-- Materialize icons fontset -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <script src="http://localhost:3808/webpack-dev-server.js"></script>
+  <script src="http://localhost:3808/webpack-dev-server.js"></script>
 </head>
 <body>
 
-<%= yield %>
+  <%= yield %>
 
-<%= javascript_include_tag *webpack_asset_paths('application') %>
+  <%= javascript_include_tag *webpack_asset_paths('application') %>
 </body>
 </html>

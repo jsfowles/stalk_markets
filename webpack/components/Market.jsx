@@ -22,14 +22,18 @@ class Market extends React.Component {
 			//TODO Handle it better
 		});
 	}
-
+ASDFASDF
 	render() {
 		return(
-			<div className='row center market'>
-			<SimpleMap market={this.state.market} />
-				<div className="col s12 ">
+			<div className='row market'>
+				<div className='col s12 m6 offset-m4 market-margin'>
+					<p className='market-text market-image valign-wrapper'>{this.state.market.name}</p>
+				</div>
+				<div className='col s12 m6 offset-m4 market-margin'>
+					<SimpleMap market={this.state.market}/>
+				</div>
+				<div className="col s12 m6 offset-m4 market-margin">
 					<div className="white-text">
-						<p>{this.state.market.name}</p>
 						<p>{this.state.market.address}</p>
 						<p>{this.state.market.city + ", " + this.state.market.state + " " + this.state.market.zip}</p>
 					</div>
