@@ -33,6 +33,7 @@ class Vendor extends React.Component {
     let first_name = this.refs.first_name.value;
     let last_name = this.refs.last_name.value;
     let business_name = this.refs.business_name.value;
+    let description = this.refs.description.value;
     let contact_phone = this.refs.contact_phone.value;
     let contact_email = this.refs.contact_email.value;
     let website_link = this.refs.website_link.value;
@@ -42,7 +43,7 @@ class Vendor extends React.Component {
     $.ajax({
       url: `/api/vendors/${this.state.vendor.id}`,
       type: 'PUT',
-      data: { vendor: { first_name, last_name, business_name, contact_phone, contact_email, website_link,vendor_type } },
+      data: { vendor: { first_name, last_name, business_name, description, contact_phone, contact_email, website_link,vendor_type } },
       dataType: 'JSON'
     }).done( vendor => {
       this.setState({ vendor, editView: false });
@@ -84,6 +85,7 @@ class Vendor extends React.Component {
             <input ref='first_name'type='text' placeholder='First Name' defaultValue={this.state.vendor.first_name} />
             <input ref='last_name'type='text' placeholder='Last Name' defaultValue={this.state.vendor.last_name} />
             <input ref='business_name'type='text' placeholder='Business Name' defaultValue={this.state.vendor.business_name} />
+            <input ref='description'type='text' placeholder='Description' defaultValue={this.state.vendor.description} />
             <input ref='contact_phone'type='text' placeholder='Phone' defaultValue={this.state.vendor.contact_phone} />
             <input ref='contact_email'type='text' placeholder='Email' defaultValue={this.state.vendor.contact_email} />
             <input ref='website_link'type='text' placeholder='Website Link' defaultValue={this.state.vendor.website_link} />
@@ -102,6 +104,9 @@ class Vendor extends React.Component {
                 <span className="card-title">{this.state.vendor.business_name}</span>
 
                 <div>
+                  <label>Description:</label>
+                  <p>{this.state.vendor.description} </p>
+
                   <label>Owner name:</label>
                   <p>{this.state.vendor.first_name} </p>
 
