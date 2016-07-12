@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { handleLogin, handleSignUpShopper, handleFacebookLogin } from './actions';
 import { browserHistory } from 'react-router'
+import FacebookLogin from 'react-facebook-login'
 
 
 class SignUpShopper extends React.Component {
