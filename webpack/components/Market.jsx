@@ -22,7 +22,7 @@ class Market extends React.Component {
 			//TODO Handle it better
 		});
 	}
-ASDFASDF
+
 	render() {
 		return(
 			<div className='row market'>

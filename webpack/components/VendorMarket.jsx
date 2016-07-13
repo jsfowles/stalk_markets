@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
 import AddVendorMarket from './AddVendorMarket';
-
+import { connect } from 'react-redux';
 
 
 class VendorMarket extends React.Component {
 	constructor(props){
 		super(props);
-		this.state = { vendorMarket: [] };
+		this.state = { markets: [] };
 	}
 
 	componentWillMount() {
@@ -15,34 +15,60 @@ class VendorMarket extends React.Component {
       url: `/api/vendors/${this.props.vendor.id}/profile`,
       type: 'GET',
       dataType: 'JSON'
-    }).done( vendorMarket => {
-      this.setState({ vendorMarket });
+    }).done( markets => {
+      this.setState({ markets });
     }).fail( data => {
       console.log(data);
     });
   }
+
+  deleteMarket(mId){
+  	console.log("deleting");
+  	console.log(mId);
+			$.ajax({
+			url: `/api/join_tables/${mId}`,
+			data: { vendor_id: this.props.vendor.id},
+			type: 'DELETE',
+			dataType: 'JSON'
+		}).done ( market => {
+			let markets = this.state.markets;
+			let index = markets.findIndex(x => x.id === mId);
+			this.setState({
+				markets: [
+					...markets.slice(0, index),
+					...markets.slice(index + 1, markets.length )
+				]
+			});
+
+		}).fail (data => {
+			console.log(data);
+		})
+	}
+
 	render() {
-		if (this.state.vendorMarket.length > 0) {
-			console.log(this.state.vendorMarket);
-			let allMarket = this.state.vendorMarket.map(market => {
+		if (this.state.markets.length > 0) {
+			let allMarket = this.state.markets.map(market => {
 				return(
-					<div>
-						{market}
+					<div key={market.id}>
+						{market.name}
+						<button className="btn red" onClick={() => this.deleteMarket(market.id)}>X</button>
 					</div>
 				)
 			})
 
 			return (
 				<div>
+				<h6>Vendor Markets</h6>
 					{allMarket}
+					<Link to={`/join_tables`} className='jointable-link'>Add Market/s</Link>
 				</div>
 			)
 		}
 		else {
 			return (
 				<div>
-					<h3>No Markets</h3>
-					<Link to={`/join_tables`} className='jointable-link'>Add Markets</Link>
+					<h6>No Markets</h6>
+					<Link to={`/join_tables`} className='jointable-link'>Add Market/s</Link>
 				</div>
 			)
 		}
@@ -50,4 +76,12 @@ class VendorMarket extends React.Component {
 
 }
 
-export default VendorMarket;
+const mapStateToProps = (state) => {
+	return { joinTable: state.vendorMarket }
+}
+
+
+export default connect(mapStateToProps)(VendorMarket);
+
+
+

@@ -1,5 +1,5 @@
 class Api::JoinTablesController < ApplicationController
- before_action :table, except: [:index, :create]
+ before_action :table, except: [:index, :create, :destroy]
 
   def index
     render json: JoinTable.all
@@ -31,7 +31,8 @@ class Api::JoinTablesController < ApplicationController
   end
 
   def destroy
-    @table.destroy
+    tables = JoinTable.where("vendor_id = ? AND market_id = ?", params[:vendor_id], params[:id])
+    tables.destroy_all
     render json: true
   end
 

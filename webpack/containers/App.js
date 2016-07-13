@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { connect } from 'react-redux';
 import { loggedIn, logout } from '../components/auth/actions';
-import { getMarkets } from '../components/actions';
+import { getMarkets, getVendorMarket } from '../components/actions';
 
 //todo make a markets reducer
 // make a get markets action goes to the database gets markets and sets redux state
@@ -20,6 +20,7 @@ class App extends React.Component {
 		const userId = localStorage.getItem('userId');
 		const apiKey = localStorage.getItem('apiKey');
 		this.props.dispatch(getMarkets());
+		this.props.dispatch(getVendorMarket());
 		if(!this.props.auth && userId) {
 			this.props.dispatch(loggedIn(userId, apiKey))
 		}

@@ -11,3 +11,17 @@ export const getMarkets = () => {
 		});
 	})
 }
+
+export const getVendorMarket = () => {
+  return(dispatch => {
+		$.ajax({
+			url:'/api/join_tables',
+			type: 'GET',
+		}).done( vendorMarket => {
+			let obj = { type: 'GET_VENDORMARKET', vendorMarket }
+			dispatch(obj);
+		}).fail( response => {
+			console.log(response);
+		});
+	})
+}
