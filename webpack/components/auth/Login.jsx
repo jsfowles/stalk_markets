@@ -31,8 +31,8 @@ class Login extends React.Component {
             <div className='col s12 center signupvendor-form-div'>
 	            <p className='signupvendor-title'>VENDOR SIGN UP</p>
 							<form onSubmit={ this.handleSubmit.bind(this) } >
-							<input type='email' placeholder='Email' ref='email' required />
-							<input type='password' placeholder='Password' ref='password' required />
+							<input type='email' className='white-text' placeholder='Email' ref='email' required />
+							<input type='password' className='white-text' placeholder='Password' ref='password' required />
 							<input type='submit' className='btn' value='Login' />
 							</form>
 

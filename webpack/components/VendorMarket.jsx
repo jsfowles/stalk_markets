@@ -43,6 +43,21 @@ class VendorMarket extends React.Component {
 		})
 	}
 
+	addMarkets(allMarket){
+		if(this.props.vendor.user_id === parseInt(localStorage.getItem('userId')))
+			if(allMarket)
+				return (
+					<div>
+						{allMarket}
+						<Link to={`/join_tables`} className='jointable-link'>Add Markets</Link>
+					</div>
+				)
+			else
+				return (
+					<Link to={`/join_tables`} className='jointable-link'>Add Markets</Link>
+				)
+	}
+
 	render() {
 		if (this.state.markets.length > 0) {
 			let allMarket = this.state.markets.map(market => {
@@ -57,8 +72,7 @@ class VendorMarket extends React.Component {
 			return (
 				<div>
 				<h6>Vendor Markets</h6>
-					{allMarket}
-					<Link to={`/join_tables`} className='jointable-link'>Add Market/s</Link>
+					{ this.addMarkets(allMarket) }
 				</div>
 			)
 		}
@@ -66,7 +80,7 @@ class VendorMarket extends React.Component {
 			return (
 				<div>
 					<h6>No Markets</h6>
-					<Link to={`/join_tables`} className='jointable-link'>Add Market/s</Link>
+					{ this.addMarkets() }
 				</div>
 			)
 		}
@@ -80,6 +94,3 @@ const mapStateToProps = (state) => {
 
 
 export default connect(mapStateToProps)(VendorMarket);
-
-
-

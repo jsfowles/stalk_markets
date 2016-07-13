@@ -126,7 +126,8 @@ export const handleSignUpVendor = (email,
 													 contact_email,
 													 contact_phone,
 													 website_link,
-													 vendor_type}},
+													 vendor_type,
+												 	 user_id: id}},
 					 dataType: 'JSON'
 				 }).done( data => {history.push(`/vendors/${data.id}`)})
 		}).fail( data => {
