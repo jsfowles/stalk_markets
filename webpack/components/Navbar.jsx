@@ -36,7 +36,7 @@ class Navbar extends React.Component {
     return (
       <header>
         <nav>
-          <div className="nav-wrapper z-depth-3">
+          <div className="nav-wrapper z-depth-2">
             <Link to="/" className="brand-logo center"><img src='http://res.cloudinary.com/jsfowles/image/upload/v1467906890/stalkmarket-white_b3e7on.png' className='nav-logo'/></Link>
             <a href="#" data-activates="mobile-demo" className="button-collapse show-on-large"><i className="material-icons">menu</i></a>
             <ul className="side-nav" id="mobile-demo">
