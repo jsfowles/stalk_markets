@@ -28,7 +28,7 @@ export const handleLogin = (email, password, redirect, history) => {
 			// dispatch the action
 			dispatch(loggedIn(response.id, response.api_key));
 			// redirect
-			history.push('redirect')
+			history.push('/')
 		}).fail( response => {
 			// TODO: handle this better
 			dispatch(logout());
@@ -48,7 +48,7 @@ export const handleFacebookLogin = (auth, history) => {
       localStorage.setItem('apiKey', response.api_key);
       localStorage.setItem('userId', response.id);
       dispatch(loggedIn(response.id, response.api_key));
-      history.push('redirect');
+      history.push('/');
     }).fail( response => {
       // TODO: Handle this better
       console.log(response);
@@ -72,7 +72,7 @@ export const handleSignUpShopper = (email, password, password_confirmation, role
 			// dispatch the action
 			dispatch(loggedIn(response.id, response.api_key));
 			// redirect
-      history.push('redirect')
+      history.push('/')
 		}).fail( response => {
 			// TODO: handle this better
 			dispatch(logout());
@@ -121,7 +121,7 @@ export const handleSignUpVendor = (email,
 					 type: 'POST',
 					 data: {vendor: {first_name,
 													 last_name,
-													 description,												 
+													 description,
 													 business_name,
 													 contact_email,
 													 contact_phone,
