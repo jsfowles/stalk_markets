@@ -63,24 +63,25 @@ class Markets extends React.Component {
 	displayMarkets() {
 		return this.state.markets.map( market => {
 			return(
-				<div key={`market-${market.id}`} className='row'>
-					<div className='col s12 m5 offset-m3 markets-name-div'>
-						<span><Link to={`/markets/${market.id}`} className='markets-link'>{market.name}</Link></span>
-					</div>
-					<div className='col s12 m1 markets-mile-line-div'>
-						<div className='markets-mile-div'>
-							<span>{this.computeDistance(market.latitude, market.longitude)} mi</span>
+					<div key={`market-${market.id}`} className='row'>
+						<div className='col s12 m8 offset-m2 l6 offset-l3 markets-name-div'>
+							<span><Link to={`/markets/${market.id}`} className='markets-link'>{market.name}</Link></span>
+							<span className='white-text distance'>{this.computeDistance(market.latitude, market.longitude)} mi</span>
 						</div>
 					</div>
-				</div>
 			);
 		});
 	}
 
 	render() {
 		return(
-			<div className='markets'>
-			{this.displayMarkets.bind(this)()}
+			<div>
+				<div className='markets center'>
+					<p>YOUR NEAREST MARKETS</p>
+				</div>
+				<div className='col s4 m4 l4 box-shadow'>
+					{this.displayMarkets.bind(this)()}
+				</div>
 			</div>
 		);
 

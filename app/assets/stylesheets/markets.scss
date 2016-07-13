@@ -1,8 +1,9 @@
 .markets {
-  background-color:  #003C4F;
+  // background-color:  #003C4F;
   color:white;
-  background-size: cover;
-  background-attachment:fixed;
+  // background-size: cover;
+  // background-attachment:fixed;
+  // margin-top: 25px;
 }
 
 .markets-link {
@@ -19,16 +20,24 @@
   border-bottom-style: solid;
 }
 
+.box-shadow{
+  background-color: rgba(255,255,255,.05);
+}
+
+.yellow {
+  background: yellow !important;
+}
+
+.distance {
+  float: right;
+}
 
 .markets-name-div {
-
-  width: 500px !important;
-  height: 45px;
+  height: 100%;
   line-height: 35px;
   border-bottom-width:.5px;
   border-bottom-color:White;
   border-bottom-style: solid;
-
 }
 
 .markets-mile-div {

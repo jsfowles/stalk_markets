@@ -26,8 +26,10 @@ class Market extends React.Component {
 	render() {
 		return(
 			<div className='row market'>
-				<div className='col s12 m6 offset-m4 market-margin'>
-					<p className='market-text market-image valign-wrapper'>{this.state.market.name}</p>
+				<div className='col s12 m4 offset-m4 market-margin'>
+				  <div className="center">
+					  <p className='market-text market-image valign-wrapper'>{this.state.market.name}</p>
+					</div>
 				</div>
 				<div className='col s12 m6 offset-m4 market-margin'>
 					<SimpleMap market={this.state.market}/>
@@ -36,6 +38,11 @@ class Market extends React.Component {
 					<div className="white-text">
 						<p>{this.state.market.address}</p>
 						<p>{this.state.market.city + ", " + this.state.market.state + " " + this.state.market.zip}</p>
+						<p>{this.state.market.contact_phone}</p>
+						<p>{this.state.market.pet_friendly}</p>
+						<p>{this.state.market.crafts}</p>
+						<p>{this.state.market.alcohol}</p>
+						<p>{this.state.market.prepared_food}</p>
 					</div>
 				</div>
 			</div>
