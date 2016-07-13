@@ -23,8 +23,6 @@ class VendorMarket extends React.Component {
   }
 
   deleteMarket(mId){
-  	console.log("deleting");
-  	console.log(mId);
 			$.ajax({
 			url: `/api/join_tables/${mId}`,
 			data: { vendor_id: this.props.vendor.id},

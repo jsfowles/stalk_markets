@@ -12,7 +12,6 @@ class AddVendorMarket extends React.Component {
 
 		$("input:checkbox[name=markets]:checked").each(function(){
     	selectedMarkets.push($(this).val());
-    	console.log(selectedMarkets)
 		});
 		
 		// const market_id = '';
@@ -31,13 +30,26 @@ class AddVendorMarket extends React.Component {
 
 	render() {
 		let markets = this.props.markets.map( market => {
-			let key = `market-id${market.id}`
-		  return ( 
-		  	<div key={key}>
-		  		<input name="markets" type="checkbox" id={market.id} value={market.id} />
-		  		<label htmlFor={market.id}>{market.name}</label>
-		  	</div> 
-		  	)
+			let tables = this.props.joinTable.map( table => {
+				let checked = table.market_id == market.id;
+				let key = `market-id${market.id}`
+				if( checked ) {
+					return( 
+						<div key={key}>
+				  		<input name="markets" type="checkbox" id={market.id} value={market.id} />
+				  		<label htmlFor={market.id}>{market.name}</label>
+				  	</div> 
+					)
+				} else {
+				  return ( 
+				  	<div key={key}>
+				  		<input name="markets" type="checkbox" id={market.id} value={market.id} />
+				  		<label htmlFor={market.id}>{market.name}</label>
+				  	</div> 
+				  	)
+			  }
+			})
+
 		});
 		return(
 			<div>
@@ -51,7 +63,7 @@ class AddVendorMarket extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-	return { markets: state.markets, vendorId: state.auth.id }
+	return { markets: state.markets, vendorId: state.auth.id, joinTable: state.vendorMarket }
 }
 
 export default connect(mapStateToProps)(AddVendorMarket);
