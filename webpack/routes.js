@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
+import { Route, IndexRoute, browserHistory } from 'react-router';
 import App from './containers/App';
 import NoMatch from './components/NoMatch';
 import Market from './components/Market';
@@ -17,7 +17,15 @@ import SignUpVendor from './components/auth/SignUpVendor';
 import NewVendor from './components/NewVendor';
 import AddVendorMarket from './components/AddVendorMarket';
 import Favorites from './components/Favorites';
+import Admin from './components/Admin';
 
+
+const UserIsAuthenticated = UserAuthWrapper({
+  authSelector: state => state.auth,
+  predicate: auth => auth.isAuthenticated,
+  redirectAction: () => handleLogout(browserHistory),
+  wrapperDisplayName: 'UserIsAuthenticated'
+})
 
 export default (
   <Route>
@@ -28,13 +36,14 @@ export default (
       <Route path="/markets" component={Markets} />
       <Route path="/join_tables" component={AddVendorMarket} />
       <Route path="/markets/:id" component={Market} />
-      <Route path="/About" component={About} />
-      <Route path="/AboutUs" component={AboutUs} />
+      <Route path="/about" component={About} />
+      <Route path="/aboutUs" component={AboutUs} />
       <Route path='/login' component={Login} />
       <Route path='/signupshopper' component={SignUpShopper} />
       <Route path='/signupvendor' component={SignUpVendor} />
       <Route path='/newvendor' component={NewVendor} />
-      <Route path='/Favorites' component={Favorites} />
+      <Route path='/favorites' component={Favorites} />
+      <Route path="/admin" component={UserIsAuthenticated(Admin)} />
     </Route>
 
     <Route path="*" status={404} component={NoMatch}/>

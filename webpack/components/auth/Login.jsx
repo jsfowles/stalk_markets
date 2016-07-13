@@ -6,7 +6,9 @@ import FacebookLogin from 'react-facebook-login';
 class Login extends React.Component {
 	constructor(props) {
 		super(props);
+		const redirectLocation = '/'
 		this.responseFacebook = this.responseFacebook.bind(this);
+		this.state = { error: false, redirectRoute: redirectLocation }
 	}
 
 	responseFacebook(auth) {
@@ -18,7 +20,7 @@ class Login extends React.Component {
 		const email = this.refs.email.value;
 		const password = this.refs.password.value;
 		// TODO: dispatch a login action
-		this.props.dispatch(handleLogin(email, password, this.props.history));
+		this.props.dispatch(handleLogin(email, password, this.state.redirectRoute, this.props.history));
 	}
 
 	render() {
@@ -50,4 +52,8 @@ class Login extends React.Component {
 	}
 }
 
-export default connect()(Login);
+const mapStateToProps = (state) => {
+  return { auth: state.auth.api_key }
+}
+
+export default connect(mapStateToProps, null)(Login)

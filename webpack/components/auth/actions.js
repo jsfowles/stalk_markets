@@ -12,7 +12,7 @@ export const logout = () => {
 	}
 }
 
-export const handleLogin = (email, password, history) => {
+export const handleLogin = (email, password, redirect, history) => {
   return(dispatch => {
 		$.ajax({
 			url:'/users/sign_in',
@@ -87,6 +87,7 @@ export const handleSignUpVendor = (email,
 																		role,
 																		first_name,
 																		last_name,
+																		description,
 																		business_name,
 																		contact_email,
 																		contact_phone,
@@ -120,6 +121,7 @@ export const handleSignUpVendor = (email,
 					 type: 'POST',
 					 data: {vendor: {first_name,
 													 last_name,
+													 description,
 													 business_name,
 													 contact_email,
 													 contact_phone,
