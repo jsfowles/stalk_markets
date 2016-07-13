@@ -24,6 +24,7 @@ class SignUpVendor extends React.Component {
     const first_name = this.refs.firstName.value
     const last_name = this.refs.lastName.value
     const business_name = this.refs.businessName.value
+    const description = this.refs.description.value
     const contact_phone = this.refs.contactPhone.value
     const contact_email = this.refs.contactEmail.value
     const website_link = this.refs.websiteLink.value
@@ -35,6 +36,7 @@ class SignUpVendor extends React.Component {
                                      first_name,
                                      last_name,
                                      business_name,
+                                     description,
                                      contact_email,
                                      contact_phone,
                                      website_link,
@@ -50,28 +52,30 @@ class SignUpVendor extends React.Component {
             <div className='col s12 center signupvendor-form-div'>
             <p className='signupvendor-title'>VENDOR SIGN UP</p>
             <form onSubmit={ this.handleSubmit.bind(this) } >
-              <input type='email' placeholder='Email' ref='email' required />
-              <input type='password' placeholder='Password' ref='password' require />
-              <input type='password' placeholder='Password Confirmation' ref='passwordConfirmation' require />
+              <input type='email' className='white-text' placeholder='Email' ref='email' required />
+              <input type='password' className='white-text' placeholder='Password' ref='password' require />
+              <input type='password' className='white-text' placeholder='Password Confirmation' ref='passwordConfirmation' require />
               <label>First Name</label>
-              <input defaultValue='asdf' ref="firstName" />
+              <input defaultValue='' className='white-text' ref="firstName" />
               <label>Last Name</label>
-              <input defaultValue='asdf'ref="lastName" />
+              <input defaultValue='' className='white-text' ref="lastName" />
               <label>Business Name</label>
-              <input defaultValue='asdf'ref="businessName" />
+              <input defaultValue='' className='white-text' ref="businessName" />
+              <label>Description</label>
+              <input defaultValue='' className='white-text' ref="description" />
               <label>Contact Phone</label>
-              <input defaultValue='888.888.8888'ref="contactPhone" />
+              <input defaultValue='' className='white-text' ref="contactPhone" />
               <label>Contact Email</label>
-              <input defaultValue='YourEmail@email.com'ref="contactEmail" />
+              <input defaultValue='' className='white-text' ref="contactEmail" />
               <label>Website Link</label>
-              <input defaultValue='asdf.com'ref="websiteLink" />
+              <input defaultValue='' className='white-text' ref="websiteLink" />
               <input type='hidden' className='white-text' ref='roleSelection' defaultValue='vendor'>
               </input>
               <label>Type of Vendor?</label>
-              <select ref='vendorType' defaultValue="food">
+              <select className='white-text' ref='vendorType' defaultValue="food">
                 <option value="" disabled>What Type of Vendor Are You?</option>
-                <option value="crafts">Crafts</option>
-                <option value="vendor">Food</option>
+                <option className='white-text' value="crafts">Crafts</option>
+                <option className='white-text' value="vendor">Food</option>
               </select>
 
               <input type='submit' className='btn' value='Sign up' />

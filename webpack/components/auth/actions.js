@@ -12,7 +12,7 @@ export const logout = () => {
 	}
 }
 
-export const handleLogin = (email, password, history) => {
+export const handleLogin = (email, password, redirect, history) => {
   return(dispatch => {
 		$.ajax({
 			url:'/users/sign_in',
@@ -28,7 +28,7 @@ export const handleLogin = (email, password, history) => {
 			// dispatch the action
 			dispatch(loggedIn(response.id, response.api_key));
 			// redirect
-			history.push('/')
+			history.push('redirect')
 		}).fail( response => {
 			// TODO: handle this better
 			dispatch(logout());
@@ -48,7 +48,7 @@ export const handleFacebookLogin = (auth, history) => {
       localStorage.setItem('apiKey', response.api_key);
       localStorage.setItem('userId', response.id);
       dispatch(loggedIn(response.id, response.api_key));
-      history.push('/');
+      history.push('redirect');
     }).fail( response => {
       // TODO: Handle this better
       console.log(response);
@@ -72,7 +72,7 @@ export const handleSignUpShopper = (email, password, password_confirmation, role
 			// dispatch the action
 			dispatch(loggedIn(response.id, response.api_key));
 			// redirect
-      history.push('/')
+      history.push('redirect')
 		}).fail( response => {
 			// TODO: handle this better
 			dispatch(logout());
