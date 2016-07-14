@@ -33,7 +33,7 @@
     # vendors.each do |vendor|
     #   market_Arry.push(vendor.market_id)
     # end
-    
+
     # a_Mark = []
 
     # market_Arry.each do |market|
@@ -80,7 +80,8 @@
 	      :contact_email,
 	      :website_link,
 	      :vendor_type,
-        :avatar
+        :avatar,
+        :user_id
   			)
   	end
 end

@@ -76,20 +76,31 @@ class Vendor extends React.Component {
     });
   }
 
+  editButton() {
+    if(this.state.vendor.user_id === parseInt(localStorage.getItem('userId'))) {
+      return (
+        <div>
+          <button className='btn' onClick={this.toggleEdit}>Edit</button>
+          <button className='btn red'>Delete</button>
+        </div>
+      );
+    }
+  }
+
   render() {
     if(this.state.editView) {
       return(
         <div>
           <h3>Edit Vendor: {this.state.vendor.name}</h3>
           <form onSubmit={this.handleEdit.bind(this)} >
-            <input ref='first_name'type='text' placeholder='First Name' defaultValue={this.state.vendor.first_name} />
-            <input ref='last_name'type='text' placeholder='Last Name' defaultValue={this.state.vendor.last_name} />
-            <input ref='business_name'type='text' placeholder='Business Name' defaultValue={this.state.vendor.business_name} />
-            <input ref='description'type='text' placeholder='Description' defaultValue={this.state.vendor.description} />
-            <input ref='contact_phone'type='text' placeholder='Phone' defaultValue={this.state.vendor.contact_phone} />
-            <input ref='contact_email'type='text' placeholder='Email' defaultValue={this.state.vendor.contact_email} />
-            <input ref='website_link'type='text' placeholder='Website Link' defaultValue={this.state.vendor.website_link} />
-            <input ref='vendor_type'type='text' placeholder='Vendor Type' defaultValue={this.state.vendor.vendor_type} />
+            <input ref='first_name' className='white-text' type='text' placeholder='First Name' defaultValue={this.state.vendor.first_name} />
+            <input ref='last_name' className='white-text' type='text' placeholder='Last Name' defaultValue={this.state.vendor.last_name} />
+            <input ref='business_name' className='white-text' type='text' placeholder='Business Name' defaultValue={this.state.vendor.business_name} />
+            <input ref='description' className='white-text' type='text' placeholder='Description' defaultValue={this.state.vendor.description} />
+            <input ref='contact_phone' className='white-text' type='text' placeholder='Phone' defaultValue={this.state.vendor.contact_phone} />
+            <input ref='contact_email' className='white-text' type='text' placeholder='Email' defaultValue={this.state.vendor.contact_email} />
+            <input ref='website_link' className='white-text' type='text' placeholder='Website Link' defaultValue={this.state.vendor.website_link} />
+            <input ref='vendor_type' className='white-text' type='text' placeholder='Vendor Type' defaultValue={this.state.vendor.vendor_type} />
             <input type='Submit' defaultValue='Update Vendor' className='btn' />
             <button type='button' onClick={this.toggleEdit} className='btn grey'>Cancel</button>
           </form>
@@ -127,13 +138,13 @@ class Vendor extends React.Component {
 
               </div>
               <div className="card-action">
+                { this.editButton() }
                 <Link to='/vendors'>All Vendors</Link>
-                {/*<button className='btn' onClick={this.toggleEdit}>Edit</button>*/}
                 <Star vendorId={this.state.vendor.id} addFavorite={ this.addFavorite.bind(this) } deleteFavorite={this.deleteFavorite.bind(this)} />
               </div>
             </div>
           </div>
-        )
+        );
       } else {
         return(
           <div className='row'>

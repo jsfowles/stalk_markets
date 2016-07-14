@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  has_one :vendor
+
   acts_as_commontator
 
 	def self.from_third_party_auth(provider, auth)

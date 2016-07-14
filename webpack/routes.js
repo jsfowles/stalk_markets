@@ -17,8 +17,6 @@ import SignUpVendor from './components/auth/SignUpVendor';
 import NewVendor from './components/NewVendor';
 import AddVendorMarket from './components/AddVendorMarket';
 import Favorites from './components/Favorites';
-import Admin from './components/Admin';
-
 
 const UserIsAuthenticated = UserAuthWrapper({
   authSelector: state => state.auth,
@@ -43,7 +41,6 @@ export default (
       <Route path='/signupvendor' component={SignUpVendor} />
       <Route path='/newvendor' component={NewVendor} />
       <Route path='/favorites' component={Favorites} />
-      <Route path="/admin" component={UserIsAuthenticated(Admin)} />
     </Route>
 
     <Route path="*" status={404} component={NoMatch}/>
