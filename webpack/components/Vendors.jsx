@@ -42,8 +42,9 @@ class Vendors extends React.Component {
     return this.state.vendors.map( vendor => {
       return(
         <div key={`vendor-${vendor.id}`} className="row">
-          <div className="col s12 m5 offset-m4 vendors-name-div">
+          <div className="col s12 m8 offset-m2 l6 offset-l3 markets-name-div">
             <span><Link to={`/vendors/${vendor.id}`} className="vendors-link">{vendor.business_name}</Link></span>
+            <span className='white-text distance'>{vendor.contact_phone}</span>
           </div>
         </div>
       )
@@ -53,7 +54,13 @@ class Vendors extends React.Component {
   render() {
     return(
       <div>
-        <div className='vendors'>
+        <div className='row'>
+          <div className="col s12 m8 offset-m2 l6 offset-l3 markets-name-div top-margin">
+            <span className='markets-link'>VENDORS</span>
+            <span className='white-text distance'>PHONE</span>
+          </div>
+        </div>
+        <div className='col s4 m4 l4 box-shadow'>
           {this.displayCards.bind(this)()}
         </div>
       </div>

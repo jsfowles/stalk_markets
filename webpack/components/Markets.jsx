@@ -76,9 +76,12 @@ class Markets extends React.Component {
 	render() {
 		return(
 			<div>
-				<div className='markets center'>
-					<p>YOUR NEAREST MARKETS</p>
-				</div>
+				<div className='row'>
+          <div className="col s12 m8 offset-m2 l6 offset-l3 markets-name-div top-margin">
+            <span className='markets-link'>MARKETS</span>
+            <span className='white-text distance'>DISTANCE</span>
+          </div>
+        </div>
 				<div className='col s4 m4 l4 box-shadow'>
 					{this.displayMarkets.bind(this)()}
 				</div>
