@@ -3,8 +3,8 @@ class CreateMarkets < ActiveRecord::Migration
     create_table :markets do |t|
       t.belongs_to :user
       t.string :name
-      t.date :start_date
-      t.date :end_date
+      t.string :start_date
+      t.string :end_date
       t.integer :start_time
       t.integer :end_time
       t.string :day_of_week
@@ -13,10 +13,10 @@ class CreateMarkets < ActiveRecord::Migration
       t.string :state
       t.integer :zip
       t.string :contact_phone
-      t.boolean :pet_friendly
-      t.boolean :crafts
-      t.boolean :alcohol
-      t.boolean :prepared_food
+      t.string :pet_friendly
+      t.string :crafts
+      t.string :alcohol
+      t.string :prepared_food
       t.attachment :image
 
       t.timestamps null: false
