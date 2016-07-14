@@ -36,13 +36,25 @@ class Market extends React.Component {
 				</div>
 				<div className="col s12 m6 offset-m4 market-margin">
 					<div className="white-text">
-						<p>{this.state.market.address}</p>
-						<p>{this.state.market.city + ", " + this.state.market.state + " " + this.state.market.zip}</p>
-						<p>{this.state.market.contact_phone}</p>
-						<p>{this.state.market.pet_friendly}</p>
-						<p>{this.state.market.crafts}</p>
-						<p>{this.state.market.alcohol}</p>
-						<p>{this.state.market.prepared_food}</p>
+						<div className='row col s12 m12 l12'>
+							<div className='col s12 m4 offest-m3'>
+								<p>Address:</p>
+								<p>{this.state.market.address}</p>
+								<p>{this.state.market.city + ", " + this.state.market.state + " " + this.state.market.zip}</p>
+							</div>
+							<div className='col s12 m1 offest-m3'>
+								<p>{"Season Open: " + this.state.market.start_date + "  -  " + this.state.market.end_date}</p>
+								<p>{"Hours: " + this.state.market.start_time + "  -  " + this.state.market.end_time}</p>
+								<p>{"Days Open: " + this.state.market.day_of_week}</p>
+							</div>
+							<div className='container'>
+								<p>{"Contact Phone: " + this.state.market.contact_phone}</p>
+								<p>{"Pet Friendly: " + this.state.market.pet_friendly}</p>
+								<p>{"Crafts: " + this.state.market.crafts}</p>
+								<p>{"Alcohol Served: " + this.state.market.alcohol}</p>
+								<p>{"Prepared Foods: " + this.state.market.prepared_food}</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

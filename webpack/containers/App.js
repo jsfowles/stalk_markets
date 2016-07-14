@@ -34,7 +34,7 @@ class App extends React.Component {
       styleClasses = 'home'
 		return(
 			<div>
-	  		<div className={`${styleClasses} page-wrapper`}>
+	  		<div className={`${styleClasses}`}>
 	  		  <Navbar auth={this.props.auth} history={this.props.history}/>
 	  		  <div>
 	  		  	{ this.props.children }
