@@ -43,7 +43,7 @@ class VendorMarket extends React.Component {
 		})
 	}
 
-	addMarkets(allMarket){
+	addMarkets(allMarket) {
 		if(this.props.vendor.user_id === parseInt(localStorage.getItem('userId')))
 			if(allMarket)
 				return (
@@ -55,7 +55,7 @@ class VendorMarket extends React.Component {
 			else
 				return (
 					<Link to={`/join_tables`} className='jointable-link'>Add Markets</Link>
-				)
+				);
 	}
 
 	render() {
@@ -75,8 +75,7 @@ class VendorMarket extends React.Component {
 					{ this.addMarkets(allMarket) }
 				</div>
 			)
-		}
-		else {
+		} else {
 			return (
 				<div>
 					<h6>No Markets</h6>
