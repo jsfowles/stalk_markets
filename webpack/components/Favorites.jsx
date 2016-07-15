@@ -23,9 +23,11 @@ class Favorites extends React.Component {
 	displayFavorites() {
 		return this.state.vendors.map( vendor => {
 			return(
-				<div key={`vendor-${vendor.id}`} className='col s12 center'>
-					<Link to={`/vendors/${vendor.id}`}>{vendor.business_name}</Link>
-					<span className="phone-number">{vendor.contact_phone}</span>
+				<div key={`vendor-${vendor.id}`} className="row">
+				  <div className="col s12 m8 offset-m2 l6 offset-l3 markets-name-div">
+				    <span><Link to={`/vendors/${vendor.id}`} className="vendors-link">{vendor.business_name}</Link></span>
+				    <span className='white-text distance'>{vendor.contact_phone}</span>
+				  </div>
 				</div>
 			);
 		});
@@ -35,10 +37,16 @@ class Favorites extends React.Component {
 	render() {
 		return(
 			<div>
-				<h1 className="container center">Favorite Vendors</h1>
-				<div className='row'>
-					{this.displayFavorites.bind(this)()}
-				</div>
+			  <div className='row'>
+					<p className="about-title center">YOUR FAVORITES</p>
+			    <div className="col s12 m8 offset-m2 l6 offset-l3 markets-name-div top-margin">
+			      <span className='markets-link'>VENDORS</span>
+			      <span className='white-text distance'>PHONE</span>
+			    </div>
+			  </div>
+			  <div className='col s4 m4 l4 box-shadow'>
+			    {this.displayFavorites.bind(this)()}
+			  </div>
 			</div>
 		)
 	}

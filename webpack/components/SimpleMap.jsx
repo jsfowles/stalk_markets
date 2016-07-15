@@ -18,7 +18,7 @@ class SimpleMap extends React.Component{
           lng: market.longitude,
         },
         key: `market-${market.id}`,
-        defaultAnimation: 2,
+        defaultAnimation: 2
       }]
 
     let lat = market.latitude || 40.760779;
@@ -34,7 +34,7 @@ class SimpleMap extends React.Component{
           googleMapElement={
             <GoogleMap
               ref={(map) => (this._googleMapComponent = map)}
-              defaultZoom={10}
+              defaultZoom={15}
               defaultCenter={{ lat, lng }}
             >
             {markers.map((marker, index) => {

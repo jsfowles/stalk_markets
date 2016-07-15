@@ -51,7 +51,9 @@ class SignUpShopper extends React.Component {
               cssClass="waves-effect waves-light btn blue"
               icon="fa-facebook"
               callback={this.responseFacebook} />
-              <a className='home-sign-up-button btn' href="/signupvendor">VENDOR SIGN UP</a>
+            <div>
+              <a href="/signupvendor">Sign Up as a Vendor</a>
+            </div>
           </div>
         </div>
       </div>
