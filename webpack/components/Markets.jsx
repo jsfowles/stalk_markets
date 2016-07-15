@@ -84,6 +84,7 @@ class Markets extends React.Component {
         </div>
 				<div className='col s4 m4 l4 box-shadow'>
 					{this.displayMarkets.bind(this)()}
+					
 				</div>
 			</div>
 		);

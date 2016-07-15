@@ -6,7 +6,7 @@ class Api::MarketsController < ApplicationController
     if params[:filter]
       # do all the filter logic and return markets
     else
-      render json: Market.all
+      render json: Market.paginate(:page => params[:page], :per_page => 5)
     end
   end
 
