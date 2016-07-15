@@ -76,6 +76,12 @@ class Vendor extends React.Component {
     });
   }
 
+  deleteVendor() {
+    $.ajax({
+      
+    })
+  }
+
   editButton() {
     if(this.state.vendor.user_id === parseInt(localStorage.getItem('userId'))) {
       return (
