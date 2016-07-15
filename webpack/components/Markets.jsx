@@ -59,18 +59,27 @@ class Markets extends React.Component {
 		return radians;
 	}
 
-
 	displayMarkets() {
-		return this.state.markets.map( market => {
-			return(
+		let all_market = [];
+		let unordered_markets = this.state.markets.map( market => {
+			return ( {id: market.id, name: market.name, distance: this.computeDistance(market.latitude, market.longitude)})
+		});
+    let ordered_markets = unordered_markets.sort( (a, b) => {
+    	return (a.distance - b.distance)
+    })
+		
+		let markets = ordered_markets.map( market => {
+			all_market.push(
 					<div key={`market-${market.id}`} className='row'>
 						<div className='col s12 m8 offset-m2 l6 offset-l3 markets-name-div'>
 							<span><Link to={`/markets/${market.id}`} className='markets-link'>{market.name}</Link></span>
-							<span className='white-text distance'>{this.computeDistance(market.latitude, market.longitude)} mi</span>
+							<span className='white-text distance'>{market.distance} mi</span>
 						</div>
 					</div>
 			);
 		});
+		console.log(all_market);
+		return (all_market)
 	}
 
 	render() {

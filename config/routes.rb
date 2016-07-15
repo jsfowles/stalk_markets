@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     delete '/favorites', to: 'favorites#destroy'
     get '/has_favorite', to: 'favorites#has_favorite'
     get '/vendors/:id/profile', to: "vendors#profile", as: "vendor_profile"
+    get '/markets/:id/profile', to: "markets#profile", as: "market_profile"
   end
 
   # Facebook Login
