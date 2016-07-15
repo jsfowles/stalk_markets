@@ -25,6 +25,11 @@ export const handleLogin = (email, password, redirect, history) => {
 			localStorage.setItem('apiKey', response.api_key);
 			// set localStorage userId
 			localStorage.setItem('userId', response.id);
+			if(response.vendor_id) {
+				localStorage.setItem('vendorId', response.vendor_id);
+			} else {
+				localStorage.removeItem('vendorId');
+			}
 			// dispatch the action
 			dispatch(loggedIn(response.id, response.api_key));
 			// redirect

@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
+    this.authLink = this.authLink.bind(this);
   }
 
   logout(e) {
@@ -13,16 +14,27 @@ class Navbar extends React.Component {
     this.props.dispatch(handleLogout(this.props.history));
   }
 
+  editLink() {
+    if(localStorage.getItem('vendorId')) {
+      return(
+        <li><Link to={`/vendors/${parseInt(localStorage.getItem('vendorId'))}`}>EDIT PROFILE</Link></li>
+      )
+    } else {
+      // return an edit shopper link that connects to a new shopper component
+    }
+  }
+
   authLink() {
-    if(this.props.auth)
+    if(this.props.auth) {
+
       return(
         <div>
           <li><Link to="/favorites">FAVORITES</Link></li>
-          <li><a href='/vendors/:id'>EDIT PROFILE</a></li>
+          { this.editLink() }
           <li><a href='#' onClick={this.logout.bind(this)}>LOGOUT</a></li>
         </div>
       )
-    else {
+    } else {
       return(
         <div>
           <li><Link to ='/login'>LOGIN</Link></li>
