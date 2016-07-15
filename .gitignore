@@ -15,4 +15,5 @@
 /node_modules
 /public/webpack
 /coverage
+/config/sendgrid.yml
 .Jake Notes
