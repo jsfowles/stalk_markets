@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import SimpleMap from './SimpleMap';
+import MarketVendor from './MarketVendor'
 
 class Market extends React.Component {
 	constructor(props) {
@@ -45,6 +46,7 @@ class Market extends React.Component {
 						<p>{this.state.market.prepared_food}</p>
 					</div>
 				</div>
+				<MarketVendor market={this.state.market}/>
 			</div>
 		)
 	}

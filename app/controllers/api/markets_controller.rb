@@ -13,6 +13,10 @@ class Api::MarketsController < ApplicationController
   def show
     render json: @market
   end
+  
+  def profile
+    render json: @market.vendors
+  end
 
   def create
     @market = Market.create(market_params)
