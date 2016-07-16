@@ -1,5 +1,5 @@
 import React from 'react';
-import {GoogleMapLoader, GoogleMap, Marker} from "react-google-maps";
+import { GoogleMapLoader, GoogleMap, Marker } from "react-google-maps";
 
 class SimpleMap extends React.Component{
   constructor(props) {
@@ -36,7 +36,10 @@ class SimpleMap extends React.Component{
               ref={(map) => (this._googleMapComponent = map)}
               defaultZoom={15}
               defaultCenter={{ lat, lng }}
+              scrollwheel={false}
+              draggable={false}
             >
+
             {markers.map((marker, index) => {
               return (
                 <Marker
@@ -44,6 +47,7 @@ class SimpleMap extends React.Component{
                 />
               );
             })}
+            }
             </GoogleMap>
           }
         />

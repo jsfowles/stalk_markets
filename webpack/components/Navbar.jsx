@@ -49,7 +49,7 @@ class Navbar extends React.Component {
       <header>
         <nav>
           <div className="nav-wrapper z-depth-2">
-            <Link to="/" className="brand-logo center"><img src='http://res.cloudinary.com/jsfowles/image/upload/v1467906890/stalkmarket-white_b3e7on.png' className='nav-logo'/></Link>
+            <Link to="/" className="brand-logo center"><img src='https://res.cloudinary.com/jsfowles/image/upload/v1467906890/stalkmarket-white_b3e7on.png' className='nav-logo'/></Link>
             <a href="#" data-activates="mobile-demo" className="button-collapse show-on-large"><i className="material-icons">menu</i></a>
             <ul className="side-nav" id="mobile-demo">
               <li><Link to="/">HOME</Link></li>
@@ -58,7 +58,6 @@ class Navbar extends React.Component {
               <li><Link to="/about">ABOUT</Link></li>
               {this.authLink()}
             </ul>
-              <a className='right' href="/signupshopper">SIGNUP</a>
           </div>
         </nav>
       </header>

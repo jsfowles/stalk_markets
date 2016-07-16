@@ -8,6 +8,10 @@ ol {
 	font-size: 30px;
 }
 
+.team-margin {
+	margin-bottom: 30px;
+}
+
 /* enlarging all the p tags */
 
 
@@ -52,6 +56,7 @@ ol {
 }
 
 .parallax-container {
+	position: relative;
   height: 650px;
   z-index: 100;
 }
@@ -59,7 +64,8 @@ ol {
 /*.img-holder {position: relative;}*/
 .img-holder .link {
   position: absolute;
-  bottom: 45%; /*your button position*/
-  right: 45%; /*your button position*/
+  right: 40%;
+  left: 40%; /*your button position*/
+  top: 45%; /*your button position*/
   z-index: 95;
 }

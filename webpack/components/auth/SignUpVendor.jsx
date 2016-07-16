@@ -52,31 +52,49 @@ class SignUpVendor extends React.Component {
             <div className='col s12 center signupvendor-form-div'>
             <p className='signupvendor-title'>VENDOR SIGN UP</p>
             <form onSubmit={ this.handleSubmit.bind(this) } >
-              <input type='email' className='white-text' placeholder='Email' ref='email' required />
-              <input type='password' className='white-text' placeholder='Password' ref='password' require />
-              <input type='password' className='white-text' placeholder='Password Confirmation' ref='passwordConfirmation' require />
-              <label>First Name</label>
-              <input defaultValue='' className='white-text' ref="firstName" />
-              <label>Last Name</label>
-              <input defaultValue='' className='white-text' ref="lastName" />
-              <label>Business Name</label>
-              <input defaultValue='' className='white-text' ref="businessName" />
-              <label>Description</label>
-              <input defaultValue='' className='white-text' ref="description" />
-              <label>Contact Phone</label>
-              <input defaultValue='' className='white-text' ref="contactPhone" />
-              <label>Contact Email</label>
-              <input defaultValue='' className='white-text' ref="contactEmail" />
-              <label>Website Link</label>
-              <input defaultValue='' className='white-text' ref="websiteLink" />
-              <input type='hidden' className='white-text' ref='roleSelection' defaultValue='vendor'>
-              </input>
-              <label>Type of Vendor?</label>
-              <select className='white-text' ref='vendorType' defaultValue="food">
-                <option value="" disabled>What Type of Vendor Are You?</option>
-                <option className='white-text' value="crafts">Crafts</option>
-                <option className='white-text' value="vendor">Food</option>
-              </select>
+              <div>
+                <input type='email' className='white-text' placeholder='Email' ref='email' required />
+                <input type='password' className='white-text' placeholder='Password' ref='password' require />
+                <input type='password' className='white-text' placeholder='Password Confirmation' ref='passwordConfirmation' require />
+              </div>
+              <div>
+                <label>First Name</label>
+                <input defaultValue='' className='white-text' ref="firstName" />
+              </div>
+              <div>
+                <label>Last Name</label>
+                <input defaultValue='' className='white-text' ref="lastName" />
+              </div>
+              <div>
+                <label>Business Name</label>
+                <input defaultValue='' className='white-text' ref="businessName" />
+              </div>
+              <div>
+                <label>Description</label>
+                <input defaultValue='' className='white-text' ref="description" />
+              </div>
+              <div>
+                <label>Contact Phone</label>
+                <input defaultValue='' className='white-text' ref="contactPhone" />
+              </div>
+              <div>
+                <label>Contact Email</label>
+                <input defaultValue='' className='white-text' ref="contactEmail" />
+              </div>
+              <div>
+                <label>Website Link</label>
+                <input defaultValue='' className='white-text' ref="websiteLink" />
+              </div>
+              <div>
+                <input type='hidden' className='white-text' ref='roleSelection' defaultValue='vendor'>
+                </input>
+                <label>Type of Vendor?</label>
+                <select className='white-text' ref='vendorType' defaultValue="food">
+                  <option value="" disabled>What Type of Vendor Are You?</option>
+                  <option className='white-text' value="crafts">Crafts</option>
+                  <option className='white-text' value="vendor">Food</option>
+                </select>
+              </div>
 
               <input type='submit' className='btn' value='Sign up' />
             </form>
