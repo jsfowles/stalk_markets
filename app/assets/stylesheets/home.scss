@@ -8,9 +8,9 @@
 
 .home-div-vendors,
 .home-div-markets{
-  background-color: rgba(0,0,0,.4);
+/*  background-color: rgba(0,0,0,.4);
   margin-top: 10em;
-  margin-bottom: 10em;
+  margin-bottom: 10em;*/
 }
 
 
@@ -21,15 +21,14 @@
 }
 
 
-.home-sign-up-button {
-  background-color: #1F8A70;
-  margin-top: 12px;
-  margin-left: -12px;
+.home-text-size {
+  font-size: 72px;
 }
 
-.home-markets-link,
-.home-vendors-link  {
+.home-markets-link {
+  margin-top: 2em;
+}
 
-  font-size: 72px;
-
+.home-vendors-link {
+  margin-top: 1em;
 }

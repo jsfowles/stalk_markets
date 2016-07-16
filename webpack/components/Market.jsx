@@ -25,52 +25,52 @@ class Market extends React.Component {
 	}
 
 	preparedFoodBoolean() {
-	        if(this.state.market.prepared_food === "yes") {
-	            return(
-	                <i className="material-icons">check_box</i>
-	            )
-	        } else {
-	            return(
-	                <i className="material-icons">check_box_outline_blank</i>
-	            )
-	        }
-	    }
+	  if(this.state.market.prepared_food === "yes") {
+      return(
+        <i className="material-icons">check_box</i>
+      )
+	  } else {
+      return(
+        <i className="material-icons">check_box_outline_blank</i>
+      )
+	  }
+  }
 
-	    petFriendlyBoolean() {
-	        if(this.state.market.pet_friendly === "yes") {
-	            return(
-	                <i className="material-icons">check_box</i>
-	            )
-	        } else {
-	            return(
-	                <i className="material-icons">check_box_outline_blank</i>
-	            )
-	        }
-	    }
+  petFriendlyBoolean() {
+  if(this.state.market.pet_friendly === "yes") {
+    return(
+      <i className="material-icons">check_box</i>
+    )
+  } else {
+	  return(
+	    <i className="material-icons">check_box_outline_blank</i>
+	  )
+  }
+  }
 
-	    alcoholBoolean() {
-	        if(this.state.market.alcohol === "yes") {
-	            return(
-	                <i className="material-icons">check_box</i>
-	            )
-	        } else {
-	            return(
-	                <i className="material-icons">check_box_outline_blank</i>
-	            )
-	        }
-	    }
+  alcoholBoolean() {
+	  if(this.state.market.alcohol === "yes") {
+      return(
+          <i className="material-icons">check_box</i>
+      )
+	  } else {
+	    return(
+	        <i className="material-icons">check_box_outline_blank</i>
+	    )
+	  }
+  }
 
-	    craftsBoolean() {
-	        if(this.state.market.crafts === "yes") {
-	            return(
-	                <i className="material-icons">check_box</i>
-	            )
-	        } else {
-	            return(
-	                <i className="material-icons">check_box_outline_blank</i>
-	            )
-	        }
-	    }
+  craftsBoolean() {
+    if(this.state.market.crafts === "yes") {
+      return(
+        <i className="material-icons">check_box</i>
+      )
+    } else {
+      return(
+        <i className="material-icons">check_box_outline_blank</i>
+      )
+    }
+  }
 
 
 	render() {
@@ -109,8 +109,8 @@ class Market extends React.Component {
 							</div>
 						</div>
 					</div>
+					<MarketVendor market={this.state.market}/>
 				</div>
-				<MarketVendor market={this.state.market}/>
 			</div>
 		)
 	}

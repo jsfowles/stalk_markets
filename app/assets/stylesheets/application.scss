@@ -24,10 +24,9 @@ html, body {
 
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-
   background-color:  #003C4F;
   display: flex;
-  min-height: 95vh;
+  min-height: 100vh;
   flex-direction: column;
 }
 
@@ -43,8 +42,8 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 main {
-    flex: 1 0 auto;
-  }
+  flex: 1 0 auto;
+}
 
 .google-map {
   width:500px;

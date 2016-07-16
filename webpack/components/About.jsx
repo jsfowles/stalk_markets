@@ -20,7 +20,7 @@ const About = () => (
 		  </div>
 		  <p className="about-title center">What Problems Did We Solve?</p>
 		  <div className='container'>
-		  	<p className="center container">We have made it easier to find your favorite farmers market and give you a chance to connect with hardworking vendors who want to share their amazing produce with people like you!</p>
+		  	<p className="center container about-bottom-margin">We have made it easier to find your favorite farmers market and give you a chance to connect with hardworking vendors who want to share their amazing produce with people like you!</p>
 		  </div>
 		</div>
 	</div>
