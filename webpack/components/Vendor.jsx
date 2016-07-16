@@ -109,38 +109,36 @@ class Vendor extends React.Component {
     } else {
       if(this.state.vendor) {
         return(
-          <div className="col s12 m6">
-            <div className="card blue-grey darken-1">
-              <div className="card-content white-text">
-                <span className="card-title">{this.state.vendor.business_name}</span>
+          <div className='row market'>
+            <div className="col s12 m4 offset-m4 market-margin">
+              <div className="center">
+                <p className="market-text vendor-image valign-wrapper">{this.state.vendor.business_name}</p>
+                  <div>
+                    <label>Description:</label>
+                    <p>{this.state.vendor.description} </p>
 
-                <div>
-                  <label>Description:</label>
-                  <p>{this.state.vendor.description} </p>
+                    <label>Owner name:</label>
+                    <p>{this.state.vendor.first_name} </p>
 
-                  <label>Owner name:</label>
-                  <p>{this.state.vendor.first_name} </p>
+                    <label>Contact Phone:</label>
+                    <p>{this.state.vendor.contact_phone}</p>
 
-                  <label>Contact Phone:</label>
-                  <p>{this.state.vendor.contact_phone}</p>
+                    <label>Contact Email</label>
+                    <p>{this.state.vendor.contact_email}</p>
 
-                  <label>Contact Email</label>
-                  <p>{this.state.vendor.contact_email}</p>
+                    <label>Website Link</label>
+                    <p>{this.state.vendor.website_link}</p>
 
-                  <label>Website Link</label>
-                  <p>{this.state.vendor.website_link}</p>
+                    <label>Vendor Type</label>
+                    <p>{this.state.vendor.vendor_type}</p>
+                  </div>
 
-                  <label>Vendor Type</label>
-                  <p>{this.state.vendor.vendor_type}</p>
+                  <VendorMarket vendor={this.state.vendor} />
+                <div className="card-action">
+                  { this.editButton() }
+                  <Link to='/vendors'>All Vendors</Link>
+                  <Star vendorId={this.state.vendor.id} addFavorite={ this.addFavorite.bind(this) } deleteFavorite={this.deleteFavorite.bind(this)} />
                 </div>
-
-                <VendorMarket vendor={this.state.vendor} />
-
-              </div>
-              <div className="card-action">
-                { this.editButton() }
-                <Link to='/vendors'>All Vendors</Link>
-                <Star vendorId={this.state.vendor.id} addFavorite={ this.addFavorite.bind(this) } deleteFavorite={this.deleteFavorite.bind(this)} />
               </div>
             </div>
           </div>

@@ -35,9 +35,7 @@ class MarketVendor extends React.Component {
 				</div>
 			)
 	}
-	
+
 }
 
 export default MarketVendor
-
-
