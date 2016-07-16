@@ -2,6 +2,7 @@ import React from 'react';
 import Star from './Star';
 import VendorMarket from './VendorMarket';
 import { Link } from 'react-router';
+import { } from './'
 
 
 class Vendor extends React.Component {
@@ -76,11 +77,11 @@ class Vendor extends React.Component {
     });
   }
 
-  deleteVendor() {
-    $.ajax({
-      
-    })
-  }
+  // deleteVendor() {
+  //   $.ajax({
+  //
+  //   })
+  // }
 
   editButton() {
     if(this.state.vendor.user_id === parseInt(localStorage.getItem('userId'))) {
