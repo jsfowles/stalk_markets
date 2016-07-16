@@ -24,6 +24,55 @@ class Market extends React.Component {
 		});
 	}
 
+	preparedFoodBoolean() {
+	        if(this.state.market.prepared_food === "yes") {
+	            return(
+	                <i className="material-icons">check_box</i>
+	            )
+	        } else {
+	            return(
+	                <i className="material-icons">check_box_outline_blank</i>
+	            )
+	        }
+	    }
+
+	    petFriendlyBoolean() {
+	        if(this.state.market.pet_friendly === "yes") {
+	            return(
+	                <i className="material-icons">check_box</i>
+	            )
+	        } else {
+	            return(
+	                <i className="material-icons">check_box_outline_blank</i>
+	            )
+	        }
+	    }
+
+	    alcoholBoolean() {
+	        if(this.state.market.alcohol === "yes") {
+	            return(
+	                <i className="material-icons">check_box</i>
+	            )
+	        } else {
+	            return(
+	                <i className="material-icons">check_box_outline_blank</i>
+	            )
+	        }
+	    }
+
+	    craftsBoolean() {
+	        if(this.state.market.crafts === "yes") {
+	            return(
+	                <i className="material-icons">check_box</i>
+	            )
+	        } else {
+	            return(
+	                <i className="material-icons">check_box_outline_blank</i>
+	            )
+	        }
+	    }
+
+
 	render() {
 
 		return(
@@ -51,12 +100,12 @@ class Market extends React.Component {
 								<p>Contact Phone: <a href={"tel:" + this.state.market.contact_phone}>{this.state.market.contact_phone}</a></p>
 							</div>
 							<div className='col s6 m4 market-extras'>
-								<p>{"Pet Friendly: " + this.state.market.pet_friendly}</p>
-								<p>{"Crafts: " + this.state.market.crafts}</p>
+								<p>Pet Friendly: {this.petFriendlyBoolean.bind(this)()}</p>
+								<p>Crafts: {this.craftsBoolean.bind(this)()}</p>
 							</div>
 							<div className='col s3 m6 '>
-								<p>{"Alcohol Served: " + this.state.market.alcohol}</p>
-								<p>{"Prepared Foods: " + this.state.market.prepared_food}</p>
+								<p>Alcohol Served: {this.alcoholBoolean.bind(this)()}</p>
+								<p>Prepared Foods: {this.preparedFoodBoolean.bind(this)()}</p>
 							</div>
 						</div>
 					</div>
