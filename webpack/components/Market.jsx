@@ -77,39 +77,34 @@ class Market extends React.Component {
 
 		return(
 			<div className='row market'>
-				<div className='col s12 m4 offset-m4 market-margin'>
-				  <div className="center">
-					  <p className='market-text market-image valign-wrapper'>{this.state.market.name}</p>
-					</div>
+				<div className='col s12 m8 offset-m2 l6 offset-l4 market-div-map-title'>
+					<p className='market-text market-image valign-wrapper'>{this.state.market.name}</p>
 				</div>
-				<div className='col s12 m6 offset-m4 market-margin'>
+				<div className='col s12 m8 offset-m2 l6 offset-l4 market-div-map-title'>
 					<SimpleMap market={this.state.market}/>
 				</div>
-				<div className="col s12 m6 offset-m4 market-margin">
+				<div className="col s12 m10 offset-m2 l6 offset-l4 market-margin">
 					<div className="white-text">
-						<div className='row col s12 m12 l12'>
-							<div className='col s12 m4 offest-m3 market-address'>
-								<p>Address:</p>
+						<div className='row col s12 m12 l12 market-div-props'>
+							<div className='col s12 m7 offest-m3 market-address'>
+								<p>ADDRESS:</p>
 								<p>{this.state.market.address}</p>
 								<p>{this.state.market.city + ", " + this.state.market.state + " " + this.state.market.zip}</p>
+								<br></br>
+								<p>{"SEASON: " + this.state.market.start_date + "  -  " + this.state.market.end_date}</p>
+								<p>{"HOURS: " + this.state.market.start_time + "  -  " + this.state.market.end_time}</p>
+								<p>{"DAYS OPEN: " + this.state.market.day_of_week}</p>
+								<p>PHONE: <a href={"tel:" + this.state.market.contact_phone}>{this.state.market.contact_phone}</a></p>
 							</div>
-							<div className='col s6 m6 market-hours'>
-								<p>{"Season Open: " + this.state.market.start_date + "  -  " + this.state.market.end_date}</p>
-								<p>{"Hours: " + this.state.market.start_time + "  -  " + this.state.market.end_time}</p>
-								<p>{"Days Open: " + this.state.market.day_of_week}</p>
-								<p>Contact Phone: <a href={"tel:" + this.state.market.contact_phone}>{this.state.market.contact_phone}</a></p>
-							</div>
-							<div className='col s6 m4 market-extras'>
-								<p>Pet Friendly: {this.petFriendlyBoolean.bind(this)()}</p>
-								<p>Crafts: {this.craftsBoolean.bind(this)()}</p>
-							</div>
-							<div className='col s3 m6 '>
-								<p>Alcohol Served: {this.alcoholBoolean.bind(this)()}</p>
-								<p>Prepared Foods: {this.preparedFoodBoolean.bind(this)()}</p>
+							<div className='col s12 m4 offset-m1 market-extras'>
+								<p>{this.petFriendlyBoolean.bind(this)()}<span>Pet Friendly</span></p>
+								<p>{this.craftsBoolean.bind(this)()} <span>Crafts</span></p>
+								<p>{this.alcoholBoolean.bind(this)()} <span>Alcohol Served</span></p>
+								<p>{this.preparedFoodBoolean.bind(this)()} <span>Prepared Foods</span></p>
 							</div>
 						</div>
 					</div>
-					<MarketVendor market={this.state.market}/>
+					{/*<MarketVendor market={this.state.market}/>*/}
 				</div>
 			</div>
 		)

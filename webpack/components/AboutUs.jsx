@@ -30,14 +30,14 @@ const AboutUs = () => (
 		    <div className="row">
 		      <h3 className="center">The Dream Team</h3>
 		      <div className="col s12 m6 center team-margin">
-		        <img src="https://res.cloudinary.com/jsfowles/image/upload/v1468039859/About/IMG_8305.jpg" className='profile-picture responsive-image' alt="Taylor" />
+		        <img src="https://res.cloudinary.com/jsfowles/image/upload/v1468734688/IMG_8305_sues4j.jpg" className='profile-picture responsive-image' alt="Taylor" />
 		        <h4>Taylor Wu</h4>
 		        <a href="https://github.com/TaylorWu21" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github' alt="Github" /></a>
 		        <a href="https://www.linkedin.com/in/taylorswu" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Taylor Wu's Linkedin" /></a>
 		        <p className="container">I am currently a senior at the University of Utah. I will graduate in spring of 2017 with a BS degree in Information Systems. The summer of 2016 is where I found my passion for programming. Having no prior experience with programming before, I have learned to enjoy the struggle of being a programmer. I hope my understanding of programming will be an integral part of my professional life and hopefully I will be able to create a career out of it.</p>
 		      </div>
 		      <div className="col s12 m6 center team-margin">
-		        <img src="https://res.cloudinary.com/jsfowles/image/upload/v1468039860/About/IMG_8318.jpg" className='profile-picture responsive-image'alt="Jacob" />
+		        <img src="https://res.cloudinary.com/jsfowles/image/upload/v1468734687/IMG_8318_wl17an.jpg" className='profile-picture responsive-image'alt="Jacob" />
 		        <h4>Jacob Fowles</h4>
 		        <a href="https://github.com/jsfowles" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github' alt="Github" /></a>
 		        <a href="https://www.linkedin.com/in/jsfowles" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Jacob Fowles's Linkedin" /></a>
@@ -46,14 +46,14 @@ const AboutUs = () => (
 		    </div>
 		    <div className="row">
 		      <div className="col s12 m6 center team-margin">
-		        <img src="https://res.cloudinary.com/jsfowles/image/upload/v1468039859/About/IMG_8309.jpg" className='profile-picture responsive-image' alt="Mara" />
+		        <img src="https://res.cloudinary.com/jsfowles/image/upload/v1468734687/IMG_8309_tnb2g5.jpg" className='profile-picture responsive-image' alt="Mara" />
 		        <h4 className="s12 m6">Mara Behles Dean</h4>
 		        <a hef="https://github.com/marabd" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github' alt="Github" /></a>
 		        <a href="https://www.linkedin.com/in/marabd/en" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Mara Behles Dean's Linkedin" /></a>
 		        <p className="container">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
 		      </div>
 		      <div className="col s12 m6 center team-margin">
-		        <img src="https://res.cloudinary.com/jsfowles/image/upload/v1468039863/About/IMG_8296.jpg" className='profile-picture responsive-image' alt="Faith" />
+		        <img src="https://res.cloudinary.com/jsfowles/image/upload/v1468734688/IMG_8296_fbaqfm.jpg" className='profile-picture responsive-image' alt="Faith" />
 		        <h4 className="s12 m6">Faith Oladele</h4>
 		        <a href="https://github.com/foladele" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github'alt="Github" /></a>
 		        <a href="https://www.linkedin.com/in/foladele" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon'alt="Faith Oladele's Linkedin" /></a>

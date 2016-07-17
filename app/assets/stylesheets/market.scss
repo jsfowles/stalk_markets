@@ -2,6 +2,7 @@
   background-color:  #003C4F;
   color: white;
   height: 100% !important;
+  margin: 20px auto 0 auto;
 }
 
 .market-text {
@@ -21,4 +22,29 @@
 
 .market-margin {
   margin: 0;
+}
+
+.market-address {
+  line-height: 5px;
+
+}
+
+.market-extras {
+  line-height: 5px;
+}
+
+.market-extras span {
+    vertical-align: super;
+}
+
+.market-div-map-title {
+  margin: 0 auto;
+}
+
+.market-div-props{
+margin-top: 5px;
+  background-color: rgba(255,255,255,.05);
+  border-radius: 3px;
+  max-width: 500px;
+
 }
