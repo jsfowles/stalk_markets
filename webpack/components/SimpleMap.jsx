@@ -38,6 +38,11 @@ class SimpleMap extends React.Component{
               defaultCenter={{ lat, lng }}
               scrollwheel={false}
               draggable={false}
+              scaleControl={false}
+              navigationControl={false}
+              mapTypeControl={false}
+              zoomControl={false}
+              disableDoubleClickZoom={true}
             >
 
             {markers.map((marker, index) => {

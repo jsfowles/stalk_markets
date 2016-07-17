@@ -77,8 +77,8 @@ class Market extends React.Component {
 
 		return(
 			<div className='row market'>
-				<div className='col s12 m8 offset-m2 l6 offset-l4 market-div-map-title'>
-					<p className='market-text market-image valign-wrapper'>{this.state.market.name}</p>
+				<div className='col s12 m8 offset-m2 l6 offset-l4 market-div-map-title valign-wrapper'>
+					<p className='market-text market-image valign center'>{this.state.market.name}</p>
 				</div>
 				<div className='col s12 m8 offset-m2 l6 offset-l4 market-div-map-title'>
 					<SimpleMap market={this.state.market}/>
