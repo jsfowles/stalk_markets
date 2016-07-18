@@ -22,11 +22,11 @@ const Home = () => (
       <div className="col s12 m6">
         <div className="card">
           <div className="card-image">
-            <a href="/vendors"><img src="https://res.cloudinary.com/jsfowles/image/upload/v1467865623/backgrounds/photo-1442906361539-6f7052120e7b.jpg" className='home-img' /></a>
+            <a href="/markets"><img src="https://res.cloudinary.com/jsfowles/image/upload/v1467865623/backgrounds/photo-1442906361539-6f7052120e7b.jpg" className='home-img' /></a>
             <span className="card-title">Markets</span>
           </div>
           <div className="card-content market-content-color">
-            <p className='white-text'>See Utah farmer markets near you!</p>
+            <p className='white-text'>Find Utah farmer markets near you!</p>
           </div>
         </div>
       </div>
