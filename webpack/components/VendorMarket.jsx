@@ -44,6 +44,7 @@ class VendorMarket extends React.Component {
 	}
 
 	addMarkets(allMarket) {
+		debugger
 		if(this.props.vendor.user_id === parseInt(localStorage.getItem('userId')))
 			if(allMarket)
 				return (
