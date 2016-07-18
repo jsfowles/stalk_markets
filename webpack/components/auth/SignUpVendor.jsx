@@ -19,14 +19,14 @@ class SignUpVendor extends React.Component {
 
     const email =  this.refs.email.value
     const password = this.refs.password.value
-    const role = this.refs.roleSelection.value
     const password_confirmation = this.refs.passwordConfirmation.value
+    const role = this.refs.roleSelection.value
     const first_name = this.refs.firstName.value
     const last_name = this.refs.lastName.value
     const business_name = this.refs.businessName.value
     const description = this.refs.description.value
-    const contact_phone = this.refs.contactPhone.value
     const contact_email = this.refs.contactEmail.value
+    const contact_phone = this.refs.contactPhone.value
     const website_link = this.refs.websiteLink.value
     const vendor_type = this.refs.vendorType.value
     this.props.dispatch(handleSignUpVendor(email,

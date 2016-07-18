@@ -16,6 +16,7 @@ class NewVendor extends React.Component {
     const last_name =  this.refs.lastName.value
     const first_name = this.refs.firstName.value
     const business_name = this.refs.businessName.value
+    const description = this.refs.description.value
     const contact_phone =  this.refs.contactPhone.value
     const contact_email = this.refs.contactEmail.value
     const website_link = this.refs.websiteLink.value
@@ -26,6 +27,7 @@ class NewVendor extends React.Component {
       data: {vendor: {first_name,
                       last_name,
                       business_name,
+                      description,
                       contact_email,
                       contact_phone,
                       website_link,

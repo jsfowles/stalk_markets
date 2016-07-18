@@ -83,7 +83,7 @@ class Market extends React.Component {
 		}
 	}
 
-	
+
 	render() {
 		return(
 			<div className='row market'>
@@ -111,6 +111,7 @@ class Market extends React.Component {
 								<p>{this.craftsBoolean.bind(this)()} <span>Crafts</span></p>
 								<p>{this.alcoholBoolean.bind(this)()} <span>Alcohol Served</span></p>
 								<p>{this.preparedFoodBoolean.bind(this)()} <span>Prepared Foods</span></p>
+								{this.setMarketVendor()}
 							</div>
 						</div>
 					</div>

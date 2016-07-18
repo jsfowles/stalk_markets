@@ -82,7 +82,6 @@ class Vendor extends React.Component {
       return (
         <div>
           <button className='btn' onClick={this.toggleEdit}>Edit</button>
-          <button className='btn red'>Delete</button>
         </div>
       );
     }
@@ -109,6 +108,7 @@ class Vendor extends React.Component {
       );
     } else {
       if(this.state.vendor) {
+
         return(
           <div className='row vendor'>
             <div className='col s12 m8 offset-m2 l6 offset-l4 vendor-div-map-title valign-wrapper'>
@@ -118,12 +118,9 @@ class Vendor extends React.Component {
     					<div className="white-text">
     						<div className='row col s12 m12 l12 vendor-div-props'>
     							<div className='col s12 m5 offest-m3 vendor-address'>
+                    <p>ABOUT US:</p>
+                     {this.state.vendor.description}
 
-                    <p>{"ABOUT US:" + this.state.vendor.description}</p>
-                    <Link to='/vendors'>All Vendors</Link>
-                    <Star vendorId={this.state.vendor.id}
-                                              addFavorite={+ this.addFavorite.bind(this) }
-                                              deleteFavorite={this.deleteFavorite.bind(this)} />
                   </div>
                   <div className='col s12 m6 offset-m1 market-extras'>
                     <p>{"OWNER: " + this.state.vendor.first_name}</p>
@@ -134,11 +131,21 @@ class Vendor extends React.Component {
                   </div>
                </div>
                <div>
-                 { this.editButton() }
+               <div className='row col s12 m12 l12 vendor-div-props'>
+                 <div className='col s12 m5 offest-m3 vendor-address'>
+                   <Star vendorId={this.state.vendor.id} addFavorite={ this.addFavorite.bind(this) } deleteFavorite={this.deleteFavorite.bind(this)} />
+                   <Link to='/vendors'>Back To Vendors</Link>
+                 </div>
+                 <div className='col s12 m6 offset-m1 market-extras'>
+                  { this.editButton() }
+                 </div>
+               </div>
+              <div className='row col s12 m12 l12 vendor-div-props'>
+               <VendorMarket vendor={this.state.vendor} />
                </div>
              </div>
-             <VendorMarket vendor={this.state.vendor} />
            </div>
+          </div>
           </div>
         );
       } else {
