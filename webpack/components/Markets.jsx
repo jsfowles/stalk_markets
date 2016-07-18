@@ -41,7 +41,6 @@ class Markets extends React.Component {
 
 
 	computeDistance(lat, lng) {
-
 		let startLatRads = this.degreesToRadians(this.state.latitude);
 		let startLongRads = this.degreesToRadians(this.state.longitude);
 		let destLatRads = this.degreesToRadians(lat);
@@ -95,10 +94,7 @@ class Markets extends React.Component {
 				</div>
 			</div>
 		);
-
 	}
-
-
 }
 
 export default Markets

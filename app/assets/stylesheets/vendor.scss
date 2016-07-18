@@ -1,16 +1,54 @@
+.vendor {
+  background-color:  #003C4F;
+  color: white;
+  height: 100% !important;
+  margin: 20px auto 0 auto;
+}
+
+
 .vendor-image {
   background: url('https://res.cloudinary.com/jsfowles/image/upload/v1468702307/farmer_nhyidw.jpg') no-repeat center;
   background-size: cover;
-  display: block;
-  width: 65%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 500px;
+  height: 100px;
+  margin:0 !important;
+  text-align: center;
+  border-radius: 3px;
+  padding-top: 30px;
 }
 
 .vendor-text {
   font-size: 28px;
-  // display: flex;
+  width: 100%;
   text-align: center;
-  margin-top: 30px;
+}
+
+
+.vendor-margin {
+  margin: 0;
+}
+
+.vendor-address {
+  line-height: 5px;
+
+}
+
+.vendor-extras {
+  line-height: 5px;
+}
+
+.vendor-extras span {
+    vertical-align: super;
+}
+
+.vendor-div-map-title {
+  margin: 0 auto;
+}
+
+.vendor-div-props{
+margin-top: 5px;
+  background-color: rgba(255,255,255,.05);
+  border-radius: 3px;
+  max-width: 500px;
+
 }
