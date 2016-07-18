@@ -12,7 +12,7 @@ class VendorMarket extends React.Component {
 
 	componentWillMount() {
     $.ajax({
-      url: `/api/vendors/${this.props.vendor.id}`,
+      url: `/api/vendors/${this.props.vendor.id}/profile`,
       type: 'GET',
       dataType: 'JSON'
     }).done( markets => {
