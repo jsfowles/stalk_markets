@@ -91,8 +91,8 @@ class Vendor extends React.Component {
   render() {
     if(this.state.editView) {
       return(
-        <div>
-          <h3>Edit Vendor: {this.state.vendor.name}</h3>
+        <div className=' container signupvendor'>
+          <h3 className='center'>Editing: {this.state.vendor.first_name} {this.state.vendor.last_name}</h3>
           <form onSubmit={this.handleEdit.bind(this)} >
             <input ref='first_name' className='white-text' type='text' placeholder='First Name' defaultValue={this.state.vendor.first_name} />
             <input ref='last_name' className='white-text' type='text' placeholder='Last Name' defaultValue={this.state.vendor.last_name} />
@@ -133,7 +133,7 @@ class Vendor extends React.Component {
                     <p>{"TYPE: " + this.state.vendor.vendor_type}</p>
                   </div>
                </div>
-               <div className="card-action">
+               <div>
                  { this.editButton() }
                </div>
              </div>
