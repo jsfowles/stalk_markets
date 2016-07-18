@@ -63,8 +63,8 @@ const AboutUs = () => (
 		  </div>
 		</div>
 		<div className="parallax-container">
-      <div className="parallax img-holder">
-      	<img src="https://res.cloudinary.com/jsfowles/image/upload/c_scale,w_1100/v1467843368/IMG_8246_s0fgmh.jpg" alt='DevPoint Labs' />
+      <div className="parallax img-holder logo">
+      	<img src="https://res.cloudinary.com/jsfowles/image/upload/c_scale,w_1100/v1467843368/IMG_8246_s0fgmh.jpg" className='responsive-img' alt='DevPoint Labs' />
       	<a href="https://www.devpointlabs.com" className="link waves-effect waves-light btn grey" target="_blank">Learn More</a>
       </div>
 		</div>

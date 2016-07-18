@@ -18,7 +18,7 @@ const Home = () => (
   //   </div>
   // </div>
   <div>
-    <div className="row">
+    <div className="row home-row">
       <div className="col s12 m6">
         <div className="card">
           <div className="card-image">
