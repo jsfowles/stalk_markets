@@ -1,5 +1,6 @@
 import React from 'react';
 import Star from './Star';
+import SimpleMap from './SimpleMap';
 import VendorMarket from './VendorMarket';
 import { Link } from 'react-router';
 
@@ -109,46 +110,36 @@ class Vendor extends React.Component {
     } else {
       if(this.state.vendor) {
         return(
-          <div>
-            <span className='vendor-image'>
-            <p className='vendor-text'>{this.state.vendor.business_name}</p>
-            </span>
+          <div className='row vendor'>
+            <div className='col s12 m8 offset-m2 l6 offset-l4 vendor-div-map-title valign-wrapper'>
+              <p className='vendor-text vendor-image valign center'>{this.state.vendor.business_name}</p>
+            </div>
+            <div className="col s12 m10 offset-m2 l6 offset-l4 vendor-margin">
+    					<div className="white-text">
+    						<div className='row col s12 m12 l12 vendor-div-props'>
+    							<div className='col s12 m5 offest-m3 vendor-address'>
+
+                    <p>{"ABOUT US:" + this.state.vendor.description}</p>
+                    <Link to='/vendors'>All Vendors</Link>
+                    <p>ADD TO FAVORITES: <Star vendorId={this.state.vendor.id}
+                                              addFavorite={+ this.addFavorite.bind(this) }
+                                              deleteFavorite={this.deleteFavorite.bind(this)} /></p>
+                  </div>
+                  <div className='col s12 m6 offset-m1 market-extras'>
+                    <p>{"OWNER: " + this.state.vendor.first_name}</p>
+                    <p>PHONE: <a href={"tel:" + this.state.vendor.contact_phone}>{this.state.vendor.contact_phone}</a></p>
+                    <p>{"EMAIL: " + this.state.vendor.contact_email}</p>
+                    <p>{"WEBSITE: " + this.state.vendor.website_link}</p>
+                    <p>{"TYPE: " + this.state.vendor.vendor_type}</p>
+                  </div>
+               </div>
+               <div className="card-action">
+                 { this.editButton() }
+               </div>
+             </div>
+           </div>
           </div>
-          //<div className="col s12 m6">
-          //   <div className="card blue-grey darken-1">
-          //     <div className="card-content white-text">
-          //       <span className="card-title">{this.state.vendor.business_name}</span>
-          //
-          //       <div>
-          //         <label>Description:</label>
-          //         <p>{this.state.vendor.description} </p>
-          //
-          //         <label>Owner name:</label>
-          //         <p>{this.state.vendor.first_name} </p>
-          //
-          //         <label>Contact Phone:</label>
-          //         <p>{this.state.vendor.contact_phone}</p>
-          //
-          //         <label>Contact Email</label>
-          //         <p>{this.state.vendor.contact_email}</p>
-          //
-          //         <label>Website Link</label>
-          //         <p>{this.state.vendor.website_link}</p>
-          //
-          //         <label>Vendor Type</label>
-          //         <p>{this.state.vendor.vendor_type}</p>
-          //       </div>
-          //
-          //       <VendorMarket vendor={this.state.vendor} />
-          //
-          //     </div>
-          //     <div className="card-action">
-          //       { this.editButton() }
-          //       <Link to='/vendors'>All Vendors</Link>
-          //       <Star vendorId={this.state.vendor.id} addFavorite={ this.addFavorite.bind(this) } deleteFavorite={this.deleteFavorite.bind(this)} />
-          //     </div>
-          //   </div>
-          // </div>*/}
+
         );
       } else {
         return(
