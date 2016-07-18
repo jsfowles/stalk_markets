@@ -8,8 +8,7 @@ class AddVendorMarket extends React.Component {
 
 		let selectedMarkets = [];
 
-		const vendor_id = localStorage.vendorId;
-		console.log(vendor_id);
+		const vendor_id = this.props.params.vendor_id;
 
 		$("input:checkbox[name=markets]:checked").each(function(){
     	selectedMarkets.push($(this).val());
