@@ -32,7 +32,7 @@ html, body {
 
 .nav-logo{
   width:125px;
-  margin-top: 12px;
+  margin-top: 0px;
 }
 
 
@@ -58,4 +58,12 @@ main {
 
 .footer-height {
   min-height: 5vh;
+}
+nav i {
+
+  line-height: 48px !important;
+}
+nav {
+  height: 48px !important;
+
 }
