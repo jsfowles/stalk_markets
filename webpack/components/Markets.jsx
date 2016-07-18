@@ -92,10 +92,7 @@ class Markets extends React.Component {
         </div>
 				<div className='col s12 m8 offset-m2 l6 offset-l3 markets-name-div '>
 					{this.displayMarkets.bind(this)()}
-<<<<<<< 7159dd141e5183c81658db97dd6613006402c7b8
 
-=======
->>>>>>> marketVendor1
 				</div>
 			</div>
 		);
