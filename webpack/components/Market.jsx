@@ -74,7 +74,12 @@ class Market extends React.Component {
 
 
 	render() {
+<<<<<<< 7159dd141e5183c81658db97dd6613006402c7b8
 
+=======
+		console.log("Market.jsx")
+		console.log(this.state.market);
+>>>>>>> marketVendor1
 		return(
 			<div className='row market'>
 				<div className='col s12 m8 offset-m2 l6 offset-l4 market-div-map-title valign-wrapper'>
@@ -96,11 +101,27 @@ class Market extends React.Component {
 								<p>{"DAYS OPEN: " + this.state.market.day_of_week}</p>
 								<p>PHONE: <a href={"tel:" + this.state.market.contact_phone}>{this.state.market.contact_phone}</a></p>
 							</div>
+<<<<<<< 7159dd141e5183c81658db97dd6613006402c7b8
 							<div className='col s12 m4 offset-m1 market-extras'>
 								<p>{this.petFriendlyBoolean.bind(this)()}<span>Pet Friendly</span></p>
 								<p>{this.craftsBoolean.bind(this)()} <span>Crafts</span></p>
 								<p>{this.alcoholBoolean.bind(this)()} <span>Alcohol Served</span></p>
 								<p>{this.preparedFoodBoolean.bind(this)()} <span>Prepared Foods</span></p>
+=======
+							<div className='col s12 m1 offest-m3'>
+								<p>{"Season Open: " + this.state.market.start_date + "  -  " + this.state.market.end_date}</p>
+								<p>{"Hours: " + this.state.market.start_time + "  -  " + this.state.market.end_time}</p>
+								<p>{"Days Open: " + this.state.market.day_of_week}</p>
+							</div>
+							<div className='container'>
+								<p>{"Contact Phone: " + this.state.market.contact_phone}</p>
+								<p>{"Pet Friendly: " + this.state.market.pet_friendly}</p>
+								<p>{"Crafts: " + this.state.market.crafts}</p>
+								<p>{"Alcohol Served: " + this.state.market.alcohol}</p>
+								<p>{"Prepared Foods: " + this.state.market.prepared_food}</p>
+								<MarketVendor market={this.state.market}/>
+								<p>all you want</p>
+>>>>>>> marketVendor1
 							</div>
 						</div>
 					</div>
