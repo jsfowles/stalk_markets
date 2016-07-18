@@ -121,9 +121,9 @@ class Vendor extends React.Component {
 
                     <p>{"ABOUT US:" + this.state.vendor.description}</p>
                     <Link to='/vendors'>All Vendors</Link>
-                    <p>ADD TO FAVORITES: <Star vendorId={this.state.vendor.id}
+                    <Star vendorId={this.state.vendor.id}
                                               addFavorite={+ this.addFavorite.bind(this) }
-                                              deleteFavorite={this.deleteFavorite.bind(this)} /></p>
+                                              deleteFavorite={this.deleteFavorite.bind(this)} />
                   </div>
                   <div className='col s12 m6 offset-m1 market-extras'>
                     <p>{"OWNER: " + this.state.vendor.first_name}</p>
@@ -137,9 +137,9 @@ class Vendor extends React.Component {
                  { this.editButton() }
                </div>
              </div>
+             <VendorMarket vendor={this.state.vendor} />
            </div>
           </div>
-
         );
       } else {
         return(
