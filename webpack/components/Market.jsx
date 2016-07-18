@@ -111,6 +111,14 @@ class Market extends React.Component {
 								<p>{this.craftsBoolean.bind(this)()} <span>Crafts</span></p>
 								<p>{this.alcoholBoolean.bind(this)()} <span>Alcohol Served</span></p>
 								<p>{this.preparedFoodBoolean.bind(this)()} <span>Prepared Foods</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="col s12 m10 offset-m2 l6 offset-l4 market-margin">
+					<div className="white-text">
+						<div className='row col s12 m12 l12 market-div-props'>
+							<div className='col s12 m7 offest-m3'>
 								{this.setMarketVendor()}
 							</div>
 						</div>

@@ -6,21 +6,17 @@ class MarketVendor extends React.Component {
 		this.state = { vendors: [] };
 	}
 
-
 	componentDidMount() {
-	  console.log("MarketVendor.jsx")
-		console.log(this.props.market)
-	    $.ajax({
-	      url: `/api/markets/${this.props.market.id}/profile`,
-	      type: 'GET',
-	      dataType: 'JSON'
-	    }).done( vendors => {
-	    	console.log(vendors)
-	      this.setState({ vendors });
-	    }).fail( data => {
-	      console.log(data);
-	    });
-	  
+    $.ajax({
+      url: `/api/markets/${this.props.market.id}/profile`,
+      type: 'GET',
+      dataType: 'JSON'
+    }).done( vendors => {
+    	console.log(vendors)
+      this.setState({ vendors });
+    }).fail( data => {
+      console.log(data);
+    });
   }
 
   render() {
@@ -29,13 +25,13 @@ class MarketVendor extends React.Component {
 			allVendor = this.state.vendors.map(vendor => {
 				return(
 					<div key={vendor.id}>
-						{vendor.business_name}
+						<a href={`/vendors/${vendor.id}`} className='marketvendor-margin'>{vendor.business_name}</a>
 					</div>
 				)
 			})
 			return (
 					<div>
-						<h6>Vendors</h6>
+						<p className='marketvendor-title'>Vendors Here</p>
 						{allVendor}
 					</div>
 				)
