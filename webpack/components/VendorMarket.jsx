@@ -43,37 +43,57 @@ class VendorMarket extends React.Component {
 		})
 	}
 
+<<<<<<< HEAD
 	addMarkets(allMarket) {
 		debugger
 		if(this.props.vendor.user_id === parseInt(localStorage.getItem('userId')))
 			if(allMarket)
+=======
+	addMarkets(allMarkets) {
+		console.log('addMarket')
+		// if(this.props.vendor.user_id === parseInt(localStorage.getItem('userId'))) {
+			if(allMarkets) { 
+				console.log('if allmarket',allMarket)
+				let markets = allMarket.map(market => {
+					return (
+						<div key={market.id}>
+							{market.name}
+						</div>
+					)	
+				})
+>>>>>>> master
 				return (
 					<div>
-						{allMarket}
-						<Link to={`/join_tables`} className='jointable-link'>Add Markets</Link>
+						{markets}
 					</div>
 				)
-			else
-				return (
-					<Link to={`/join_tables`} className='jointable-link'>Add Markets</Link>
-				);
+				
+
+			} else { 
+					return (
+						<div></div>
+					);
+			}
+
+		// }
 	}
 
 	render() {
 		if (this.state.markets.length > 0) {
-			let allMarket = this.state.markets.map(market => {
+			let allMarkets = this.state.markets.map(market => {
 				return(
 					<div key={market.id}>
 						{market.name}
-						<button className="btn red" onClick={() => this.deleteMarket(market.id)}>X</button>
+						<button className="btn red" onClick={() => this.deleteMarket(market.id)}>X</button>		
+						{ this.addMarkets(allMarkets) }
 					</div>
 				)
 			})
-
 			return (
 				<div>
-				<h6>Vendor Markets</h6>
-					{ this.addMarkets(allMarket) }
+					<h6>Vendor Markets</h6> 
+					{allMarkets}
+					<Link to={`/join_tables`} className='jointable-link'>Add Markets</Link>
 				</div>
 			)
 		} else {
@@ -81,6 +101,7 @@ class VendorMarket extends React.Component {
 				<div>
 					<h6>No Markets</h6>
 					{ this.addMarkets() }
+					<Link to={`/join_tables`} className='jointable-link'>Add Markets</Link>
 				</div>
 			)
 		}

@@ -6,14 +6,6 @@
 
 }
 
-.home-div-vendors,
-.home-div-markets{
-/*  background-color: rgba(0,0,0,.4);
-  margin-top: 10em;
-  margin-bottom: 10em;*/
-}
-
-
 .home-div-markets a,
 .home-div-vendors a  {
   width:100%;
@@ -31,4 +23,21 @@
 
 .home-vendors-link {
   margin-top: 1em;
+}
+
+.row:after {
+  content: none !important;
+}
+
+.home-img {
+  width: 40%;
+  height: auto;
+}
+
+.vendor-content-color {
+  background-color: #1F8A70;
+}
+
+.market-content-color {
+  background-color: #003C4F;
 }

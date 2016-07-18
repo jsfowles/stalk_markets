@@ -41,7 +41,6 @@ class Markets extends React.Component {
 
 
 	computeDistance(lat, lng) {
-
 		let startLatRads = this.degreesToRadians(this.state.latitude);
 		let startLongRads = this.degreesToRadians(this.state.longitude);
 		let destLatRads = this.degreesToRadians(lat);
@@ -92,14 +91,10 @@ class Markets extends React.Component {
         </div>
 				<div className='col s12 m8 offset-m2 l6 offset-l3 markets-name-div '>
 					{this.displayMarkets.bind(this)()}
-
 				</div>
 			</div>
 		);
-
 	}
-
-
 }
 
 export default Markets
