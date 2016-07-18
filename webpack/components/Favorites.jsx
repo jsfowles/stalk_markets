@@ -39,7 +39,7 @@ class Favorites extends React.Component {
 			<div>
 			  <div className='row'>
 					<p className="about-title center">YOUR FAVORITES</p>
-			    <div className="col s12 m8 offset-m2 l6 offset-l3 markets-name-div top-margin">
+			    <div className="col s12 m8 offset-m2 l6 offset-l3 markets-name-div">
 			      <span className='markets-link'>VENDORS</span>
 			      <span className='white-text distance'>PHONE</span>
 			    </div>

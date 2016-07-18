@@ -89,7 +89,7 @@ class Markets extends React.Component {
             <span className='white-text distance'>DISTANCE</span>
           </div>
         </div>
-				<div className='col s12 m8 offset-m2 l6 offset-l3 markets-name-div '>
+				<div className='col s12 m8 offset-m2 l6 offset-l3'>
 					{this.displayMarkets.bind(this)()}
 				</div>
 			</div>

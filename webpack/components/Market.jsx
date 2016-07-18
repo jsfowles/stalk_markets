@@ -114,9 +114,6 @@ class Market extends React.Component {
 							</div>
 						</div>
 					</div>
-					<div className='col s12'>
-						{this.setMarketVendor()}
-					</div>
 				</div>
 			</div>
 		)

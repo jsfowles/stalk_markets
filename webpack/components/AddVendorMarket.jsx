@@ -34,12 +34,12 @@ class AddVendorMarket extends React.Component {
 					checkboxes.push( 
 						<div key={key}>
 				  		<input name="markets" type="checkbox" id={market.id} value={market.id} defaultVaule="true" />
-				  		<label htmlFor={market.id}>{market.name}</label>
+				  		<label className='white-text' htmlFor={market.id}>{market.name}</label>
 				  	</div> 
 					)
 		});
 		return(
-			<div>
+			<div className='vendor-market-margin container'>
 			  {checkboxes}
 				<form ref='vendorForm' onSubmit={(e) => this.submitMarket(e)} >
 					{markets}
