@@ -109,7 +109,11 @@ class Vendor extends React.Component {
     } else {
       if(this.state.vendor) {
         return(
-          <p className='vendor-image vendor-text center'>{this.state.vendor.business_name}</p>
+          <div>
+            <span className='vendor-image'>
+            <p className='vendor-text'>{this.state.vendor.business_name}</p>
+            </span>
+          </div>
           //<div className="col s12 m6">
           //   <div className="card blue-grey darken-1">
           //     <div className="card-content white-text">
