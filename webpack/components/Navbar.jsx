@@ -48,7 +48,7 @@ class Navbar extends React.Component {
     return (
       <header>
         <nav>
-          <div className="nav-wrapper col s12 m8 offset-m2 l6 offset-l4 market-div-map-title z-depth-2">
+          <div className="nav-wrapper col s12 m8 offset-m2 l6 offset-l4 z-depth-2">
             <Link to="/" className="brand-logo center"><img src='https://res.cloudinary.com/jsfowles/image/upload/v1468708498/stalkmarket-white_pc4som.png' className='nav-logo'/></Link>
             <a href="#" data-activates="mobile-demo" className="button-collapse show-on-large"><i className="material-icons">menu</i></a>
             <ul className="side-nav" id="mobile-demo">

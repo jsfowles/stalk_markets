@@ -67,7 +67,7 @@ class Markets extends React.Component {
     let ordered_markets = unordered_markets.sort( (a, b) => {
     	return (a.distance - b.distance)
     })
-		
+
 		let markets = ordered_markets.map( market => {
 			all_market.push(
 					<div key={`market-${market.id}`} className='row'>
@@ -86,14 +86,14 @@ class Markets extends React.Component {
 		return(
 			<div>
 				<div className='row'>
-          <div className="col s12 m8 offset-m2 l6 offset-l3 markets-name-div top-margin">
+          <div className="col s12 m8 offset-m2 l6 offset-l3 markets-name-div top-margin markets-row-float">
             <span className='markets-link'>MARKETS</span>
             <span className='white-text distance'>DISTANCE</span>
           </div>
         </div>
-				<div className='col s4 m4 l4 box-shadow'>
+				<div className='col s12 m8 offset-m2 l6 offset-l3 markets-name-div '>
 					{this.displayMarkets.bind(this)()}
-					
+
 				</div>
 			</div>
 		);
