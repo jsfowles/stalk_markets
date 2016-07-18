@@ -24,9 +24,18 @@ class Market extends React.Component {
 		});
 	}
 
+	setMarketVendor() {
+		console.log('setmarket')
+		if (this.state.market.id) {
+			return (
+				<div>
+					<MarketVendor market={this.state.market}/>
+				</div>
+			)
+		}
+	}
+
 	render() {
-		console.log("Market.jsx")
-		console.log(this.state.market);
 		return(
 			<div className='row market'>
 				<div className='col s12 m4 offset-m4 market-margin'>
@@ -56,8 +65,7 @@ class Market extends React.Component {
 								<p>{"Crafts: " + this.state.market.crafts}</p>
 								<p>{"Alcohol Served: " + this.state.market.alcohol}</p>
 								<p>{"Prepared Foods: " + this.state.market.prepared_food}</p>
-								<MarketVendor market={this.state.market}/>
-								<p>all you want</p>
+								{this.setMarketVendor()}
 							</div>
 						</div>
 					</div>
