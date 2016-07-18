@@ -1,4 +1,5 @@
 class SignupMailer < ApplicationMailer
+ include SendGrid
  default from: ENV['MAIL_FROM']
 
  def new_signup(user)
