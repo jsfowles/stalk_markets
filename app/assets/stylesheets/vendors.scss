@@ -9,17 +9,31 @@
   color: white;
 }
 
-.vendors-mile-div {
-  background-color: rgba(255,255,255,.05);
-  width: 100px !important;
-  border-radius: 4px;
-  height: 35px;
+.vendors-div {
+  height: 100%;
   line-height: 35px;
-  text-align: center !important;
-
+  border-bottom-width:.5px;
+  border-bottom-color:White;
+  border-bottom-style: solid;
 }
 
 .vendors-name-div {
   height: 35px;
   line-height: 35px;
+}
+
+.vendors-row-float {
+  float:none !important;
+}
+
+.vendor-phone-float {
+  float:right !important;
+}
+
+.vendors-name-div {
+  height: 100%;
+  line-height: 35px;
+  border-bottom-width:.5px;
+  border-bottom-color:White;
+  border-bottom-style: solid;
 }
