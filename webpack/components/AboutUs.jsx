@@ -57,7 +57,7 @@ const AboutUs = () => (
 						<h4>Jacob Fowles</h4>
 						<a href="https://github.com/jsfowles" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github' alt="Github" /></a>
 						<a href="https://www.linkedin.com/in/jsfowles" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Jacob Fowles's Linkedin" /></a>
-						<p className="container">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+						<p className="container">"Once a professional guitarist and banker, now following my passion for software engineering.  I enjoy all thing related to AI and the neurosciences, especially learning machines. Lover of photography, music, fishing, and basically anything with an engine."</p>
 		      </div>
 		    </div>
 		  </div>
