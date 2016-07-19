@@ -8,6 +8,11 @@ ol {
 	font-size: 30px;
 }
 
+.about-us-title {
+	font-size: 40px;
+	margin: 15px !important;
+}
+
 .team-margin {
 	margin-bottom: 30px;
 }
@@ -68,8 +73,7 @@ ol {
 /*.img-holder {position: relative;}*/
 .img-holder .link {
   position: absolute;
-  right: 40%;
-  left: 40%; /*your button position*/
+  left: 43%; /*your button position*/
   top: 45%; /*your button position*/
   z-index: 95;
 }

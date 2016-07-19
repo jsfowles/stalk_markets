@@ -134,7 +134,6 @@ class Vendor extends React.Component {
     							<div className='col s12 m5 offest-m3 vendor-about'>
                     <p>ABOUT US:</p>
                      {this.state.vendor.description}
-
                   </div>
                   <div className='col s12 m6 offset-m1 market-extras'>
                     <p>OWNER: </p><p>{this.state.vendor.first_name} {this.state.vendor.last_name}</p>

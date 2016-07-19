@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 
 const Home = () => (
   <div>
-    <div className="row">
+    <div className="row home-row">
       <div className="col s12 m6">
         <div className="card">
           <div className="card-image">
