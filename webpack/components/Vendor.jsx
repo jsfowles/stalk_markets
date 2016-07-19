@@ -117,7 +117,7 @@ class Vendor extends React.Component {
             <div className="col s12 m10 offset-m2 l6 offset-l4 vendor-margin">
     					<div className="white-text">
     						<div className='row col s12 m12 l12 vendor-div-props'>
-    							<div className='col s12 m5 offest-m3 vendor-address'>
+    							<div className='col s12 m5 offest-m3 vendor-about'>
                     <p>ABOUT US:</p>
                      {this.state.vendor.description}
 
