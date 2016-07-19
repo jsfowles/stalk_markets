@@ -34,10 +34,10 @@ export const handleLogin = (email, password, redirect, history) => {
 			dispatch(loggedIn(response.id, response.api_key));
 			// redirect
 			history.push('/')
+			Materialize.toast('Login successful, Welcome!', 2000);
 		}).fail( response => {
-			// TODO: handle this better
 			dispatch(logout());
-			console.log(response);
+			Materialize.toast('Failed to Login. Check email and password', 4000);
 		});
 	})
 }
@@ -55,8 +55,7 @@ export const handleFacebookLogin = (auth, history) => {
       dispatch(loggedIn(response.id, response.api_key));
       history.push('/');
     }).fail( response => {
-      // TODO: Handle this better
-      console.log(response);
+      Materialize.toast('Failed to login with facebook', 4000);
     })
   }
 }
@@ -78,27 +77,27 @@ export const handleSignUpShopper = (email, password, password_confirmation, role
 			dispatch(loggedIn(response.id, response.api_key));
 			// redirect
       history.push('/')
+			Materialize.toast('You have signed up as a shopper!', 4000);
 		}).fail( response => {
-			// TODO: handle this better
+			Materialize.toast('Failed to sign up as a shopper', 4000);
 			dispatch(logout());
-			console.log(response);
 		});
 	})
 }
 
 export const handleSignUpVendor = (email,
-																	  password,
-																		password_confirmation,
-																		role,
-																		first_name,
-																		last_name,
-																		business_name,
-																		description,
-																		contact_email,
-																		contact_phone,
-																		website_link,
-																		vendor_type,
-																	  history ) => {
+																	 password,
+																   password_confirmation,
+																	 role,
+																	 first_name,
+																   last_name,
+																	 business_name,
+																	 description,
+																	 contact_email,
+																	 contact_phone,
+																	 website_link,
+																	 vendor_type,
+																	 history ) => {
   return(dispatch => {
 		$.ajax({
 			url:'/users',
@@ -119,6 +118,8 @@ export const handleSignUpVendor = (email,
 			localStorage.setItem('userId', id);
 			// dispatch the action
 			dispatch(loggedIn(id, api_key));
+			// Success message
+			Materialize.toast('Signed up as vendor!', 4000);
 			// redirect
          //ajax call to create vendor here
 				 $.ajax({
@@ -134,8 +135,10 @@ export const handleSignUpVendor = (email,
 													 vendor_type,
 												 	 user_id: id}},
 					 dataType: 'JSON'
-				 }).done( data => {history.push(`/vendors/${data.id}`)})
+				 }).done( data => {
+				 	history.push(`/vendors/${data.id}`)});
 		}).fail( data => {
+			Materialize.toast('Failed to signup as a vendor, please finish filling out the form', 4000);
 			dispatch(logout());
 		});
 
@@ -154,10 +157,10 @@ export const handleLogout = (history) => {
 			localStorage.removeItem('apiKey');
 			dispatch(logout());
 			history.push('/');
+			Materialize.toast('You have logged out', 4000);
 		}).fail( response => {
-			// TODO: handle this better
 			dispatch(logout());
-			console.log(response);
+			Materialize.toast('You have logged out', 4000);
 		})
 	}
 }

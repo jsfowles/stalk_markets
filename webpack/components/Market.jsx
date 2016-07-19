@@ -15,12 +15,9 @@ class Market extends React.Component {
 			type: 'GET',
 			dataType: 'JSON'
 		}).done( market => {
-
 			this.setState({ market });
-
 		}).fail(data => {
-			console.log('fail' + data);
-			//TODO Handle it better
+			Materialize.toast('Failed to get market', 4000);
 		});
 	}
 
@@ -73,7 +70,6 @@ class Market extends React.Component {
   }
 
 	setMarketVendor() {
-		console.log('setmarket')
 		if (this.state.market.id) {
 			return (
 				<div>

@@ -18,6 +18,7 @@ class VendorMarket extends React.Component {
     }).done( markets => {
       this.setState({ markets });
     }).fail( data => {
+    	Materialize.toast('Failed to get markets of vendor', 4000);
       console.log(data);
     });
   }
@@ -37,8 +38,9 @@ class VendorMarket extends React.Component {
 					...markets.slice(index + 1, markets.length )
 				]
 			});
-
+			Materialize.toast('Deleted Market', 2000);
 		}).fail (data => {
+			Materialize.toast('Failed to delete market from your markets', 4000);
 			console.log(data);
 		})
 	}

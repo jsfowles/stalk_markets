@@ -15,7 +15,7 @@ class Vendors extends React.Component {
     }).done( vendors => {
       this.setState({ vendors });
     }).fail( data => {
-      console.log(data);
+      Materialize.toast('Failed to get all vendors', 4000);
     });
   }
 
@@ -33,8 +33,9 @@ class Vendors extends React.Component {
           ...vendors.slice(index + 1, vendors.length)
         ]
       })
+      Materialize.toast('Deleted Vendor', 4000);
     }).fail( data => {
-      console.log(data);
+      Materialize.toast('Failed to delete vendor', 4000);
     })
   }
 

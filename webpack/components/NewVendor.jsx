@@ -34,11 +34,10 @@ class NewVendor extends React.Component {
                       vendor_type}},
       dataType: 'JSON'
     }).done (data => {
-      console.log(data.id, data )
       this.props.history.push(`/vendors/${data.id}`)
+      Materialize.toast('Welcome new vendor!', 4000);
     }).fail (data => {
-      //TODO: handle errors better
-      console.log(data)
+      Materialize.toast('Failed to create new vendor', 4000);
     });
   }
 
