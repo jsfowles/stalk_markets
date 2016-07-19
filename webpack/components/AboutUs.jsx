@@ -22,7 +22,7 @@ const AboutUs = () => (
 		<div className="container">
 		  <div className="center">
 		    <h3>Our Goal</h3>
-		    <p>We want to demonstrate our web development skills to potential employers or clients. We want to Show that we are capable of building a full functional interactive website with an impressive front end and also back end.</p>
+		    <p>We want to demonstrate our web development skills to potential employers or clients. We want to show that we are capable of building a full functional interactive website with an impressive front end and also back end.</p>
 		  </div>
 		</div>
 		<div className="dream-team">
@@ -48,9 +48,9 @@ const AboutUs = () => (
 		      <div className="col s12 m6 center team-margin">
 		        <img src="https://res.cloudinary.com/jsfowles/image/upload/v1468734687/IMG_8309_tnb2g5.jpg" className='profile-picture responsive-image' alt="Mara" />
 		        <h4 className="s12 m6">Mara Behles Dean</h4>
-		        <a hef="https://github.com/marabd" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github' alt="Github" /></a>
+		        <a href="https://github.com/marabd" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github' alt="Github" /></a>
 		        <a href="https://www.linkedin.com/in/marabd/en" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Mara Behles Dean's Linkedin" /></a>
-		        <p className="container">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+		        <p className="container">"I am a Chicagoland native, University of Wisconsin at Madison grad, and most recently a web developer. Although I haven't been coding very long, I am very passionate about it and love the challenges that go along with programming. I love the field and am excited for a career in web development. Offline I love to cook, be outdoors, travel, make and enjoy a good cocktail, and eat all the cheese."</p>
 		      </div>
 		      <div className="col s12 m6 center team-margin">
 		        <img src="https://res.cloudinary.com/jsfowles/image/upload/v1468734688/IMG_8296_fbaqfm.jpg" className='profile-picture responsive-image' alt="Faith" />

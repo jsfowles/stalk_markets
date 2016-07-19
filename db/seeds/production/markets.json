@@ -49,9 +49,9 @@
       "state":"UT",
       "zip":84078,
       "contact_phone":"435-789-1352",
-      "pet_friendly":"",
-      "prepared_food":"",
-      "crafts":"",
+      "pet_friendly":"yes",
+      "prepared_food":"yes",
+      "crafts":"no",
       "alcohol":"no"
     },
     {
@@ -67,9 +67,9 @@
       "state":"UT",
       "zip":84074,
       "contact_phone":"435-882-7678",
-      "pet_friendly":"",
-      "prepared_food":"",
-      "crafts":"",
+      "pet_friendly":"yes",
+      "prepared_food":"no",
+      "crafts":"yes",
       "alcohol":"no"
     },
     {
@@ -85,7 +85,7 @@
       "state":"UT",
       "zip":84010,
       "contact_phone":"801-721-1642",
-      "pet_friendly":"",
+      "pet_friendly":"yes",
       "prepared_food":"yes",
       "crafts":"yes",
       "alcohol":"no"
@@ -103,7 +103,7 @@
       "state":"UT",
       "zip":84602,
       "contact_phone":"801-422-9444",
-      "pet_friendly":"",
+      "pet_friendly":"no",
       "prepared_food":"yes",
       "crafts":"yes",
       "alcohol":"no"
@@ -121,7 +121,7 @@
       "state":"UT",
       "zip":84321,
       "contact_phone":"435-754-7402",
-      "pet_friendly":"",
+      "pet_friendly":"yes",
       "prepared_food":"yes",
       "crafts":"yes",
       "alcohol":"no"
@@ -282,10 +282,10 @@
       "city":"Huntington",
       "state":"UT",
       "zip":84528,
-      "contact_phone":"",
-      "pet_friendly":"",
-      "prepared_food":"",
-      "crafts":"",
+      "contact_phone":"yes",
+      "pet_friendly":"no",
+      "prepared_food":"yes",
+      "crafts":"yes",
       "alcohol":"no"
     },
     {
@@ -301,7 +301,7 @@
       "state":"UT",
       "zip":84758,
       "contact_phone":"435-648-2073",
-      "pet_friendly":"",
+      "pet_friendly":"no",
       "prepared_food":"yes",
       "crafts":"yes",
       "alcohol":"no"
@@ -570,7 +570,7 @@
     "city":"Park City",
     "state":"UT",
     "zip":84098,
-    "contact_phone":"",
+    "contact_phone":"435-671-1455",
     "pet_friendly":"yes",
     "prepared_food":"yes",
     "crafts":"yes",

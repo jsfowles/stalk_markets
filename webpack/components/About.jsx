@@ -16,11 +16,11 @@ const About = () => (
 		  </div>
 		  <p className="about-title center">Why Did We Build This Website?</p>
 		  <div className='container'>
-		  	<p className="center container">We've notice that there is no real place online to look for infomation on farmer markets in Utah, so we've created a website that will display information about Farmer Markets and the vendors who are a part of that market.</p>
+		  	<p className="center container">Given how popular farmers markets have become recently, we were surprised to find how inconvenient it was to find reliable information about farmers markets in Utah. In addition, most markets provided no reliable information about the vendors that participate. StalkMarkets is designed to fix that by providing accurate information about markets, listing them in order of proximity to your current location, showing you the vendors that attend them, and allowing you to star your favorite vendors. You can also find each vendor’s market schedule. StalkMarkets was created to help easily connect people with their closest market and more easily engage with the local food movement.</p>
 		  </div>
 		  <p className="about-title center">What Problems Did We Solve?</p>
 		  <div className='container'>
-		  	<p className="center container about-bottom-margin">We have made it easier to find your favorite farmers market and give you a chance to connect with hardworking vendors who want to share their amazing produce with people like you!</p>
+		  	<p className="center container about-bottom-margin">We have made it easier to find your favorite farmers markets, based on proximity to your current location, and give you a chance to connect with hardworking vendors who want to share their amazing produce with people like you!</p>
 		  </div>
 		</div>
 	</div>
