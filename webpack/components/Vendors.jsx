@@ -19,6 +19,18 @@ class Vendors extends React.Component {
     });
   }
 
+  componentDidMount() {
+    $('.nav-wrapper').css('backgroundColor', '#1F8A70')
+    $('#app').css('backgroundColor', '#1F8A70')
+
+  }
+
+  componentWillUnmount() {
+    $('.nav-wrapper').css('backgroundColor', '#003C4F')
+    $('#app').css('backgroundColor', '#003C4F')
+
+  }
+
   deleteVendor(id) {
     $.ajax({
       url: `/api/vendors/${id}`,

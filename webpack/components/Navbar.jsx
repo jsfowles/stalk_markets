@@ -44,11 +44,18 @@ class Navbar extends React.Component {
     }
   }
 
+  vendors() {
+    if (location.pathname.match(/vendor{1}s*/))
+      return { backgroundColor: '#1F8A70'}
+    else
+      return {}
+  }
+
   render() {
     return (
       <header>
         <nav>
-          <div className="nav-wrapper col s12 m8 offset-m2 l6 offset-l4 z-depth-2">
+          <div className="nav-wrapper col s12 m8 offset-m2 l6 offset-l4 z-depth-2" style={this.vendors()}>
             <Link to="/" className="brand-logo center"><img src='https://res.cloudinary.com/jsfowles/image/upload/v1468708498/stalkmarket-white_pc4som.png' className='nav-logo'/></Link>
             <a href="#" data-activates="mobile-demo" className="button-collapse show-on-large"><i className="material-icons">menu</i></a>
             <ul className="side-nav" id="mobile-demo">

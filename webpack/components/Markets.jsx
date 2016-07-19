@@ -9,6 +9,7 @@ class Markets extends React.Component {
 		this.showPosition = this.showPosition.bind(this);
 		this.userLoc = this.userLoc.bind(this);
 		this.computeDistance = this.computeDistance.bind(this);
+		this.displayMarkets = this.displayMarkets.bind(this);
 		this.state = { markets: [], latitude: 0.00, longitude: 0.00 };
 	}
 
@@ -24,6 +25,7 @@ class Markets extends React.Component {
 			Materialize.toast('Failed to get markets', 4000);
 		});
 	}
+
 
 	userLoc() {
 		if (navigator.geolocation) {
@@ -80,6 +82,7 @@ class Markets extends React.Component {
 	}
 
 	render() {
+		let markets = this.displayMarkets();
 		return(
 			<div>
 				<div className='row'>
@@ -89,7 +92,7 @@ class Markets extends React.Component {
           </div>
         </div>
 				<div className='col s12 m8 offset-m2 l6 offset-l3'>
-					{this.displayMarkets.bind(this)()}
+					{markets}
 				</div>
 			</div>
 		);
