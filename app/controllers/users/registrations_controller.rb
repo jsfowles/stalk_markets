@@ -4,6 +4,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def create
   	super
-  	SignupMailer.new_signup(@user).deliver if @user
+  	# SignupMailer.new_signup(@user).deliver if @user
   end
 end
