@@ -104,7 +104,7 @@ class Vendor extends React.Component {
   render() {
     if(this.state.editView) {
       return(
-        <div className=' container signupvendor'>
+        <div className='container signupvendor'>
           <h3 className='center'>Editing: {this.state.vendor.first_name} {this.state.vendor.last_name}</h3>
           <form onSubmit={this.handleEdit.bind(this)} >
             <input ref='first_name' className='white-text' type='text' placeholder='First Name' defaultValue={this.state.vendor.first_name} />

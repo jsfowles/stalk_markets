@@ -4,15 +4,8 @@ const About = () => (
 	<div>
 		<div className="container">
 		  <p className='about-title center'>What Can You Do Here?</p>
-		  <div className="row">
-		    <div>
-		      <ul className='col s12 m6 offset-m4'>
-		        <li>1. Find your favorite farmers market and vendors.</li>
-		        <li>2. Find out more information about the vendors you support.</li>
-		        <li>3. Learn more about farmers market you are interested in.</li>
-		        <li>4. Connect with local vendors and follow them!</li>
-		      </ul>
-		    </div>
+		  <div className="container">
+		    <p>You can come here and find your favorite farmers market and vendors. If you are curious about any vendors in Utah you can find more information about them and favorite them! Learn more about farmers market that are near you.</p>
 		  </div>
 		  <p className="about-title center">Why Did We Build This Website?</p>
 		  <div className='container'>
