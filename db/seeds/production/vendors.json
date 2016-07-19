@@ -7,8 +7,9 @@
       "business_name":"Amour Spreads",
       "contact_phone":"888.554.6845",
       "contact_email":"",
-      "website_link":"amourspreads.com",
-      "vendor_type":""
+      "website_link":"https://www.amourspreads.com",
+      "vendor_type":"",
+      "description":"Amour Spreads is located in Salt Lake City, UT. We make our preserves fresh and in season when crops are ripe and luscious primarily using Utah's amazing mountain-grown fruit."
     },
     {
       "sprig_id":501,
@@ -18,7 +19,8 @@
       "contact_phone":"801.891.8944",
       "contact_email":"asian-heirlooms@msn.com",
       "website_link":"https://www.facebook.com/Asian-Heirlooms-428654720614640/?fref=ts",
-      "vendor_type":""
+      "vendor_type":"",
+      "description":"Back Yard Urban Farm - Organically Grown Asian Vegetables, Herbs, Heirloom Tomatoes, Cucumbers, Beans, Sweet & Hot Peppers, & more"
     },
     {
       "sprig_id":502,
@@ -27,8 +29,9 @@
       "business_name":"Beehive Cheeses",
       "contact_phone":"801.645.0950",
       "contact_email":"tom@beehivecheese.com",
-      "website_link":"www.beehivecheese.com",
-      "vendor_type":""
+      "website_link":"https://www.beehivecheese.com",
+      "vendor_type":"",
+      "description":"Since 2005, brothers-in-law Tim Welsh and Pat Ford have been lovingly crafting the creamiest milk in Utah into superior cheese."
     },
     {
       "sprig_id":503,
@@ -38,7 +41,8 @@
       "contact_phone":"435.279.0563",
       "contact_email":"bluespringfarm.ut@gmail.com",
       "website_link":"https://www.facebook.com/Blue-Spring-Farm-262100187173695/",
-      "vendor_type":""
+      "vendor_type":"",
+      "description":""
     },
     {
       "sprig_id":504,
@@ -47,18 +51,20 @@
       "business_name":"Clifford Family Farm",
       "contact_phone":"801.368.7250",
       "contact_email":"cliffordfarm@aol.com",
-      "website_link":"http://www.cliffordfamilyfarm.com/",
-      "vendor_type":""
+      "website_link":"https://www.cliffordfamilyfarm.com/",
+      "vendor_type":"",
+      "description":"At Clifford Family Farm we care about how we impact the land, the animals we raise, and especially you. We have dedicated the last decade to providing the freshest and most delicious home-grown products."
     },
     {
       "sprig_id":505,
-      "first_name":"",
-      "last_name":"",
+      "first_name":"John",
+      "last_name":"Winder",
       "business_name":"Winder Farms",
       "contact_phone":"800.946.3371",
       "contact_email":"",
       "website_link":"https://www.winderfarms.com/",
-      "vendor_type":""
+      "vendor_type":"",
+      "description":"Started by John R. Winder in 1880, Winder Farms has been always been a family business. Today, fifth and sixth generation Winders are still involved in operation of the business, and are committed to delivering our customers the highest quality customer service around."
     },
     {
       "sprig_id":506,
@@ -67,8 +73,9 @@
       "business_name":"Borski Farms",
       "contact_phone":"801.941.9620",
       "contact_email":"borskifarms@outlook.com",
-      "website_link":"www.borskifarms.org",
-      "vendor_type":""
+      "website_link":"https://www.borskifarms.org",
+      "vendor_type":"",
+      "description":"Borski Farms has been in existence since 1992, and is based in Kaysville, Utah. We grow a wide variety of vegetables, herbs and fruit. We are up early on pick-up days, so most fruits and vegetables are picked that morning."
     },
     {
       "sprig_id":507,
@@ -78,7 +85,8 @@
       "contact_phone":"801.255.6455",
       "contact_email":"soap@drakefamilyfamrs.com",
       "website_link":"www.drakefamilyfarms.org",
-      "vendor_type":""
+      "vendor_type":"",
+      "description":"Drake Family Farms cheeses are both “farmstead” and “artisan”. “Farmstead” means made on the farm with milk exclusively from the farm’s own animals."
     },
     {
       "sprig_id":508,
@@ -88,7 +96,8 @@
       "contact_phone":"435.770.5644",
       "contact_email":"firstfrostfarm@gmail.com",
       "website_link":"http://www.firstfrostfarm.com/",
-      "vendor_type":""
+      "vendor_type":"",
+      "description":"Our five-acre farm is located in the Cache Valley of Northern Utah in the small community of Nibley. We have been certified Organic by the state of Utah since 2002 and are expanding every year to meet an increasing local demand for quality organic produce. We strive to offer the freshest and highest quality organic produce to our customers in Northern Utah."
     },
     {
       "sprig_id":509,
@@ -98,7 +107,8 @@
       "contact_phone":"435.671.0896",
       "contact_email":"russel@hebervalleycheese.com",
       "website_link":"https://hebervalleyartisancheese.com",
-      "vendor_type":""
+      "vendor_type":"",
+      "description":"At Heber Valley Artisan Cheese our mission is to help others experience the difference of the farmer’s touch. Our fully integrated dairy farm to creamery delivers a true farm-to-table experience.  In fact, we believe the finest handcrafted cheeses, fresh or aged,  begins with the perfect base:  premium milk – pure, rich and creamy; a “recipe” we’ve been perfecting on our farm  for nearly 100 years."
     },
     {
       "sprig_id":510,
@@ -108,17 +118,19 @@
       "contact_phone":"435.757.9310",
       "contact_email":"info@laziz-foods.com",
       "website_link":"http://www.laziz-foods.com/",
-      "vendor_type":""
+      "vendor_type":"",
+      "description":"Laziz was founded in February 2012 by Moudi Sbeity and Derek Kitchen in Salt Lake City, Utah, with the mission to integrate a culinary dynamic between middle eastern flavors and your home cuisine. We began with hummus at the farmers market, and soon thereafter added muhammara and toum, with plans to introduce additional food items."
     },
     {
       "sprig_id":511,
-      "first_name":"Mama",
-      "last_name":"Chari",
+      "first_name":"Kristy",
+      "last_name":"Jensen",
       "business_name":"Mamachari Kombucha",
       "contact_phone":"385.202.3391",
       "contact_email":"info@mamachari.cc",
       "website_link":"http://www.mamachari.cc/",
-      "vendor_type":""
+      "vendor_type":"",
+      "description":"Mamachari Kombucha is a craft kombucha brewery based in Salt Lake City.  We focus on brewing the finest kombucha, using organic and natural ingredients to produce distinct flavor profiles that result in great aroma, taste and mouth-feel."
     },
     {
       "sprig_id":512,
@@ -128,7 +140,8 @@
       "contact_phone":"801.376.0038",
       "contact_email":"info@morganvalleylamb.com",
       "website_link":"http://morganvalleylamb.com/",
-      "vendor_type":""
+      "vendor_type":"",
+      "description":"You’re going to love Morgan Valley Lamb! Whether you eat a choice cut at one of the delightful restaurants it is sold at, or whether you buy our tender meat from a farmer’s market for your own special recipes at home, remember all the thought and care we’ve put into providing good food for you."
     },
     {
       "sprig_id":513,
@@ -138,17 +151,19 @@
       "contact_phone":"801.376.1925",
       "contact_email":"wayne@pioneermarket.com",
       "website_link":"http://pioneermarket.com/",
-      "vendor_type":""
+      "vendor_type":"",
+      "description":"Fancy home-made jams, jellies, and syrups made the way the pioneers made them! We make them by hand in small batches with premium all natural ingredients and from family recipes passed down and improved over five generations."
     },
     {
       "sprig_id":514,
       "first_name":"John",
-      "last_name":"",
+      "last_name":"Garofalo",
       "business_name":"Ranui Gardens",
       "contact_phone":"435.640.0894",
       "contact_email":"chaos@ranui.com",
       "website_link":"http://www.ranui.com/",
-      "vendor_type":""
+      "vendor_type":"",
+      "description":"Ranui, pronounced rah-new-e, means 'abudant sunshine' in the Maori language of the native New Zealanders. We run a commercial herb, flower and vegetable farm supporting over 20 CSA members, farmer's markets, several grocery stores and restaurants in the surrounding communities."
     },
     {
       "sprig_id":515,
@@ -158,7 +173,8 @@
       "contact_phone":"801.718.2650",
       "contact_email":"info@snuckfarm.com",
       "website_link":"http://snuckfarm.com/",
-      "vendor_type":""
+      "vendor_type":"",
+      "description":"At Snuck Farm we are dedicated to growing produce we can feel good about eating and feeding our own families. All of our greens are hydroponically grown and are free of chemical pesticides and herbicides. Our farming methods allow us to save land and water, and eliminate soil erosion and run-off, while efficiently producing high-quality, local produce, year-round."
     }
   ]
 }

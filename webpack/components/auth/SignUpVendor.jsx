@@ -66,20 +66,20 @@ class SignUpVendor extends React.Component {
                 <input defaultValue='' className='white-text' ref="lastName" />
               </div>
               <div>
-                <label>Business Name</label>
-                <input defaultValue='' className='white-text' ref="businessName" />
+                <label>Business Name *</label>
+                <input defaultValue='' className='white-text' ref="businessName" required />
               </div>
               <div>
                 <label>Description</label>
                 <input defaultValue='' className='white-text' ref="description" />
               </div>
               <div>
-                <label>Contact Phone</label>
-                <input defaultValue='' className='white-text' ref="contactPhone" />
+                <label>Contact Phone *</label>
+                <input defaultValue='' type='tel' className='white-text' ref="contactPhone" required />
               </div>
               <div>
-                <label>Contact Email</label>
-                <input defaultValue='' className='white-text' ref="contactEmail" />
+                <label>Contact Email *</label>
+                <input defaultValue='' type='email' className='white-text' ref="contactEmail" required />
               </div>
               <div>
                 <label>Website Link</label>
@@ -88,7 +88,7 @@ class SignUpVendor extends React.Component {
               <div>
                 <input type='hidden' className='white-text' ref='roleSelection' defaultValue='vendor'>
                 </input>
-                <label>Type of Vendor?</label>
+                <label>Type of Vendor? *</label>
                 <select className='white-text' ref='vendorType' defaultValue="food">
                   <option value="" disabled>What Type of Vendor Are You?</option>
                   <option className='white-text' value="crafts">Crafts</option>

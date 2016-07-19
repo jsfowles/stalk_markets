@@ -12,10 +12,9 @@ class MarketVendor extends React.Component {
       type: 'GET',
       dataType: 'JSON'
     }).done( vendors => {
-    	console.log(vendors)
       this.setState({ vendors });
     }).fail( data => {
-      console.log(data);
+    	Materialize.toast('Failed to get vendors from this market', 4000);
     });
   }
 

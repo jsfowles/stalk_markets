@@ -14,9 +14,8 @@ class Favorites extends React.Component {
 			dataType: "JSON"
 		}).done( vendors => {
 			this.setState({ vendors });
-			console.log(vendors);
 		}).fail( data => {
-			console.log(data);
+			Materialize.toast('Failed to get your favorite vendors', 4000);
 		})
 	}
 

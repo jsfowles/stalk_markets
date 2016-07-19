@@ -7,7 +7,7 @@ export const getMarkets = () => {
 			let obj = { type: 'GET_MARKETS', markets }
 			dispatch(obj);
 		}).fail( response => {
-			console.log(response);
+			Materialize.toast('Cannot get markets', 4000);
 		});
 	})
 }
@@ -21,7 +21,7 @@ export const getVendorMarket = () => {
 			let obj = { type: 'GET_VENDORMARKET', vendorMarket }
 			dispatch(obj);
 		}).fail( response => {
-			console.log(response);
+			Materialize.toast('Cannot find vendor market', 4000);
 		});
 	})
 }

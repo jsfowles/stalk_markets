@@ -21,8 +21,9 @@ class AddVendorMarket extends React.Component {
 	  	dataType: 'JSON'
 	  }).done(data => {
 	  	this.props.history.push(`/vendors/${vendor_id}`)
+	  	Materialize.toast('Added markets', 4000);
 	  }).fail(data => {
-	  	console.log(data);
+	  	Materialize.toast('Failed to add vendor to market', 4000);
 	  })   
 	}
 

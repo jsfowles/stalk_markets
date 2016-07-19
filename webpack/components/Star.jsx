@@ -18,7 +18,9 @@ class Star extends React.Component{
 		  data: { vendor_id: this.props.vendorId }
 		}).done( starred => {
 			this.setState({ starred })
-		})
+		}).fail( data => {
+			Materialize.toast('Failed to favorite', 4000);
+		});
 	}
 
 	addStar() {

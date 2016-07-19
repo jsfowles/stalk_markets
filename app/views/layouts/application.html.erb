@@ -17,10 +17,12 @@
   <% end %>
   <!-- Materialize icons fontset -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  
 </head>
 <body>
 
   <%= yield %>
   <%= javascript_include_tag *webpack_asset_paths('application') %>
+  
 </body>
 </html>

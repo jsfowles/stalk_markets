@@ -21,8 +21,7 @@ class Markets extends React.Component {
 		}).done(markets => {
 			this.setState({ markets });
 		}).fail(data => {
-			// TODO : handle fail
-			console.log(data);
+			Materialize.toast('Failed to get markets', 4000);
 		});
 	}
 

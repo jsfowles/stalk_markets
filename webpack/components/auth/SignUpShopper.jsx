@@ -36,8 +36,8 @@ class SignUpShopper extends React.Component {
             <p className='signupshopper-title'>SIGN UP</p>
             <form onSubmit={ this.handleSubmit.bind(this) } >
               <input type='email' className='white-text' placeholder='Email' ref='email' required />
-              <input type='password' className='white-text' placeholder='Password' ref='password' require />
-              <input type='password' className='white-text' placeholder='Password Confirmation' ref='passwordConfirmation' require />
+              <input type='password' className='white-text' placeholder='Password' ref='password' required />
+              <input type='password' className='white-text' placeholder='Password Confirmation' ref='passwordConfirmation' required />
               <input type='submit' className='btn white-text' value='Sign up' />
               <select className='white-text' ref='roleSelection' defaultValue='shopper'>
              </select>

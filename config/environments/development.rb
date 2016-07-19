@@ -1,5 +1,5 @@
 Rails.application.configure do
-  config.action_mailer.delivery_method = :letter_opener
+  # config.action_mailer.delivery_method = :letter_opener
   # Settings specified here will take precedence over those in config/application.rb.
   Paperclip.options[:command_path] = "/usr/local/bin/convert"
   # In the development environment your application's code is reloaded on
