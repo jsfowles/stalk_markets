@@ -23,7 +23,7 @@ class MarketVendor extends React.Component {
   	if (this.state.vendors.length) {
 			allVendor = this.state.vendors.map(vendor => {
 				return(
-					<div key={vendor.id}>
+					<div key={vendor.id} className='allvendor-margin'>
 						<a href={`/vendors/${vendor.id}`} className='marketvendor-margin white-text'>{vendor.business_name}</a>
 					</div>
 				)
