@@ -95,7 +95,7 @@ class Vendor extends React.Component {
     if(this.state.vendor.user_id === parseInt(localStorage.getItem('userId'))) {
       return (
         <div>
-          <button className='btn' onClick={this.toggleEdit}>Edit</button>
+          <button className='btn blue no-margin-btn' onClick={this.toggleEdit}>EDIT PROFILE</button>
         </div>
       );
     }
@@ -133,31 +133,32 @@ class Vendor extends React.Component {
     						<div className='row col s12 m12 l12 vendor-div-props'>
     							<div className='col s12 m5 offest-m3 vendor-about'>
                     <p>ABOUT US:</p>
-                     {this.state.vendor.description}
+                      {this.state.vendor.description}
                   </div>
                   <div className='col s12 m6 offset-m1 market-extras'>
                     <p>OWNER: </p><p>{this.state.vendor.first_name} {this.state.vendor.last_name}</p>
-                    <p>PHONE: <a href={"tel:" + this.state.vendor.contact_phone}>{this.state.vendor.contact_phone}</a></p>
-                    <p>EMAIL: </p><a href={"mailto:" + this.state.vendor.contact_email} target="_top">{this.state.vendor.contact_email}</a>
-                    <p>WEBSITE: </p><a href={this.state.vendor.website_link} target='_blank'>{this.state.vendor.business_name}</a>
+                    <p>PHONE: </p><a href={"tel:" + this.state.vendor.contact_phone} className='darker-vendor-link'>{this.state.vendor.contact_phone}</a>
+                    <p>EMAIL: </p><a href={"mailto:" + this.state.vendor.contact_email} className='darker-vendor-link' target="_top">{this.state.vendor.contact_email}</a>
+                    <p>WEBSITE: </p><a href={this.state.vendor.website_link} className='darker-vendor-link' target='_blank'>{this.state.vendor.business_name}</a>
                     <p>{"TYPE: " + this.state.vendor.vendor_type}</p>
                   </div>
                </div>
                <div>
-               <div className='row col s12 m12 l12 vendor-div-props'>
-                 <div className='col s12 m5 offest-m3'>
-                   <span className='float-right'>Favorite This Vendor</span><Star vendorId={this.state.vendor.id} addFavorite={ this.addFavorite.bind(this) } deleteFavorite={this.deleteFavorite.bind(this)} />
-                 </div>
-                 <div className='col s12 m6 offset-m1'>
-                   <Link to='/vendors'>Back To Vendors</Link>
-                  { this.editButton() }
-                 </div>
-               </div>
+               <div className='row col s12 m12 l12 vendor-div-props favorite-vendor-component'>
+                  <div className='col s12 m5 offest-m3'>
+                    <p className='favorite-float-right'>Favorite This Vendor</p>
+                    <Star vendorId={this.state.vendor.id} addFavorite={ this.addFavorite.bind(this) } deleteFavorite={this.deleteFavorite.bind(this)} />
+                  </div>
+                  <div className='col s12 m6 offset-m1'>
+                    <Link to='/vendors' className='darker-vendor-link'>Back To Vendors</Link>
+                    { this.editButton() }
+                  </div>
+                </div>
               <div className='row col s12 m12 l12 vendor-div-props'>
-               <VendorMarket vendor={this.state.vendor} />
-               </div>
-             </div>
-           </div>
+                <VendorMarket vendor={this.state.vendor} />
+                </div>
+              </div>
+            </div>
           </div>
           </div>
         );

@@ -1,5 +1,5 @@
 .vendor {
-  // background-color: #1F8A70;
+  background-color: #1F8A70;
   color: white;
   height: 100% !important;
   margin: 20px auto 0 auto;
@@ -10,11 +10,11 @@
   background: url('https://res.cloudinary.com/jsfowles/image/upload/v1468702307/farmer_nhyidw.jpg') no-repeat center;
   background-size: cover;
   max-width: 500px;
-  height: 100px;
+  height: 200px;
   margin:0 !important;
   text-align: center;
   border-radius: 3px;
-  padding-top: 30px;
+  padding-top: 80px !important;
 }
 
 .vendor-text {
@@ -46,13 +46,29 @@
 }
 
 .vendor-div-props{
-margin-top: 5px;
+  margin-top: 5px;
   background-color: rgba(255,255,255,.05);
   border-radius: 3px;
   max-width: 500px;
 }
 
 
-.float-right {
-  float: right;
+.darker-vendor-link {
+  color: #003C4F;
+}
+
+.favorite-float-right {
+  margin: 0 auto !important;
+}
+
+.favorite-vendor-component {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.no-margin-btn {
+  margin-top: 10px;
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
