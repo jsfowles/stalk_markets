@@ -16,7 +16,7 @@ const AboutUs = () => (
 		<div className="story-color section">
 		  <div className="container row center">
 		    <p className='about-us-title'>Our Development Story</p>
-		    <p>We want to demonstrate our web development skills to potential employers or clients. We want to show that we are capable of building a full functional interactive website with an impressive front end and also back end.</p>
+		    <p>We built this app as the culminating project for our bootcamp through DevPoint Labs. We incorporated many of the technologies covered in the course, including React, Ruby on Rails, JavaScript (ES6), Babel, Ajax, Redux, jQuery, Materialize, Postgresql, Sprig, Devise, Geocoder, Google Maps API, CSS3, HTML5, Heroku and SSL. All of the components are written in react giving us ample practice with JavaScript. Together as a group, this was the first project we worked on, which provided us with a great real-world experience learning how to adapt to each other's programming styles.  Some of the technological challenges we had were the has_many_through relationship associating markets and vendors.</p>
 		  </div>
 		</div>
 		<div className="dream-team">
@@ -28,7 +28,7 @@ const AboutUs = () => (
 						<h4 className="s12 m6">Mara Behles Dean</h4>
 						<a href="https://github.com/marabd" target="_blank"><img src="https://camo.githubusercontent.com/d934489ecd7f4e10b556ea93f19e235ae33de17b/687474703a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f6461667470756e6b746f6361742d6775792e676966" className='self-github' alt="Github" /></a>
 						<a href="https://www.linkedin.com/in/marabd/en" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Mara Behles Dean's Linkedin" /></a>
-						<p className="container">I am a Chicagoland native, University of Wisconsin at Madison grad, and most recently a web developer. Although I haven't been coding very long, I am very passionate about it and love the challenges that go along with programming. I love the field and am excited for a career in web development. Offline I love to cook, be outdoors, travel, make and enjoy a good cocktail, and eat all the cheese.</p>
+						<p className="container">I am a Chicagoland native, University of Wisconsin at Madison grad, and most recently, a web developer. Although I haven't been coding very long, I am very passionate about it and love the challenges that go along with programming. I love the field and am excited for a career in web development. Offline I love to cook, be outdoors, travel, make and enjoy a good cocktail, and eat all the cheese.</p>
 		      </div>
 		      <div className="col s12 m6 center team-margin">
 						<img src="https://res.cloudinary.com/jsfowles/image/upload/v1468734688/IMG_8305_sues4j.jpg" className='profile-picture responsive-image' alt="Taylor" />
@@ -44,14 +44,14 @@ const AboutUs = () => (
 						<h4 className="s12 m6">Faith Oladele</h4>
 						<a href="https://github.com/foladele" target="_blank"><img src="https://res.cloudinary.com/jsfowles/image/upload/v1467837826/About/octocat_giq7ew.png" className='self-github'alt="Github" /></a>
 						<a href="https://www.linkedin.com/in/foladele" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon'alt="Faith Oladele's Linkedin" /></a>
-						<p className="container">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+						<p className="container">Born in Nigeria West Africa and currently attending the University of Utah as a Computer Science Major. I am also in the Air Force Reserves as a Traffic Management officer, and work for JC Penny Shared Services. I love to read, sew, cook and I enjoy learning new programming languages.</p>
 		      </div>
 		      <div className="col s12 m6 center team-margin">
 						<img src="https://res.cloudinary.com/jsfowles/image/upload/v1468734687/IMG_8318_wl17an.jpg" className='profile-picture responsive-image'alt="Jacob" />
 						<h4>Jacob Fowles</h4>
 						<a href="https://github.com/jsfowles" target="_blank"><img src="https://res.cloudinary.com/jsfowles/image/upload/v1468958450/oktobercat_ifrw9r.png" className='self-github' alt="Github" /></a>
-						<a href="https://www.linkedin.com/in/jsfowles" target="_blank"><img src="http://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Jacob Fowles's Linkedin" /></a>
-						<p className="container">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+						<a href="https://www.linkedin.com/in/jsfowles" target="_blank"><img src="https://res.cloudinary.com/jsfowles/image/upload/v1467837846/About/linkedin-icon_dbu1no.png" className='linkedin-icon' alt="Jacob Fowles's Linkedin" /></a>
+						<p className="container">Once a professional guitarist and banker, now following my passion for software engineering.  I enjoy all thing related to AI and the neurosciences, especially learning machines. Lover of photography, fishing, and basically anything with an engine.</p>
 		      </div>
 		    </div>
 		  </div>
