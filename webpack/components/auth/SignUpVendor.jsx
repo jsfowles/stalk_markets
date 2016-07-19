@@ -92,7 +92,9 @@ class SignUpVendor extends React.Component {
                 <select className='white-text' ref='vendorType' defaultValue="food">
                   <option value="" disabled>What Type of Vendor Are You?</option>
                   <option className='white-text' value="crafts">Crafts</option>
-                  <option className='white-text' value="vendor">Food</option>
+                  <option className='white-text' value="pack_food">Packaged Food</option>
+                  <option className='white-text' value="produce">Produce</option>
+                  <option className='white-text' value="ready_to_eat">Ready To Eat</option>
                 </select>
               </div>
 
