@@ -123,20 +123,20 @@ class Vendor extends React.Component {
 
                   </div>
                   <div className='col s12 m6 offset-m1 market-extras'>
-                    <p>{"OWNER: " + this.state.vendor.first_name}</p>
+                    <p>OWNER: </p><p>{this.state.vendor.first_name} {this.state.vendor.last_name}</p>
                     <p>PHONE: <a href={"tel:" + this.state.vendor.contact_phone}>{this.state.vendor.contact_phone}</a></p>
-                    <p>{"EMAIL: " + this.state.vendor.contact_email}</p>
-                    <p>{"WEBSITE: " + this.state.vendor.website_link}</p>
+                    <p>EMAIL: </p><a href={"mailto:" + this.state.vendor.contact_email} target="_top">{this.state.vendor.contact_email}</a>
+                    <p>WEBSITE: </p><a href={this.state.vendor.website_link} target='_blank'>{this.state.vendor.business_name}</a>
                     <p>{"TYPE: " + this.state.vendor.vendor_type}</p>
                   </div>
                </div>
                <div>
                <div className='row col s12 m12 l12 vendor-div-props'>
-                 <div className='col s12 m5 offest-m3 vendor-address'>
-                   <Star vendorId={this.state.vendor.id} addFavorite={ this.addFavorite.bind(this) } deleteFavorite={this.deleteFavorite.bind(this)} />
-                   <Link to='/vendors'>Back To Vendors</Link>
+                 <div className='col s12 m5 offest-m3'>
+                   <span className='float-right'>Favorite This Vendor</span><Star vendorId={this.state.vendor.id} addFavorite={ this.addFavorite.bind(this) } deleteFavorite={this.deleteFavorite.bind(this)} />
                  </div>
-                 <div className='col s12 m6 offset-m1 market-extras'>
+                 <div className='col s12 m6 offset-m1'>
+                   <Link to='/vendors'>Back To Vendors</Link>
                   { this.editButton() }
                  </div>
                </div>

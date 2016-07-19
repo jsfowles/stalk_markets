@@ -32,7 +32,7 @@ export default (
       <Route path="/vendors" component={Vendors} />
       <Route path="/vendors/:id" component={Vendor} />
       <Route path="/markets" component={Markets} />
-      <Route path="/join_tables" component={AddVendorMarket} />
+      <Route path="/join_tables/:vendor_id" component={AddVendorMarket} />
       <Route path="/markets/:id" component={Market} />
       <Route path="/about" component={About} />
       <Route path="/aboutUs" component={AboutUs} />

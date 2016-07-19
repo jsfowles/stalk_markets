@@ -44,42 +44,44 @@ class VendorMarket extends React.Component {
 	}
 
 	addMarkets(allMarket) {
-		// if(this.props.vendor.user_id === parseInt(localStorage.getItem('userId')))
-			if(allMarket)
-				return (
-					<div>
-						{allMarket}
-						<Link to={`/join_tables`} className='jointable-link'>Add Markets</Link>
-					</div>
-				)
-			else
-				return (
-					<Link to={`/join_tables`} className='jointable-link'>Add Markets</Link>
-				);
+		let addMarketsButton;
+		if(this.props.vendor.user_id === parseInt(localStorage.getItem('userId')))
+			addMarketsButton = <Link to={`/join_tables/${this.props.vendor.id}`} className='jointable-link'>Add Markets</Link>;
+		return (
+		  <div>
+			  {allMarket}
+			  {addMarketsButton}
+			</div>)
+	}
+
+	deleteButton(market) {
+		if(this.props.vendor.user_id === parseInt(localStorage.getItem('userId')))
+			return(<a className="float-right" onClick={() => this.deleteMarket(market.id)}>Delete</a>)
 	}
 
 	render() {
+		let allMarket = [];
 		if (this.state.markets.length > 0) {
-			let allMarket = this.state.markets.map(market => {
+			allMarket = this.state.markets.map(market => {
 				return(
-					<div key={market.id}>
-						{market.name}
-						<button className="btn red" onClick={() => this.deleteMarket(market.id)}>X</button>
+					<div key={market.id} className='vendormarket-margin'>
+						<a href={`/markets/${market.id}`} className='white-text'>{market.name}</a>
+						{this.deleteButton.bind(this)(market)}
 					</div>
 				)
 			})
 
 			return (
 				<div>
-				<h6>Vendor Markets</h6>
+				<p className='vendormarket-title'>Vendor Markets</p>
 					{ this.addMarkets(allMarket) }
 				</div>
 			)
 		} else {
 			return (
 				<div>
-					<h6>No Markets</h6>
-					{ this.addMarkets() }
+					<p className='vendormarket-title'>No Markets</p>
+					{ this.addMarkets(allMarket) }
 				</div>
 			)
 		}
