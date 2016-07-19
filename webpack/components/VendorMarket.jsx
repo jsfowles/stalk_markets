@@ -56,7 +56,7 @@ class VendorMarket extends React.Component {
 
 	deleteButton(market) {
 		if(this.props.vendor.user_id === parseInt(localStorage.getItem('userId')))
-			return(<button className="btn red" onClick={() => this.deleteMarket(market.id)}>X</button>)
+			return(<a className="float-right" onClick={() => this.deleteMarket(market.id)}>Delete</a>)
 	}
 
 	render() {
@@ -64,8 +64,8 @@ class VendorMarket extends React.Component {
 		if (this.state.markets.length > 0) {
 			allMarket = this.state.markets.map(market => {
 				return(
-					<div key={market.id}>
-						{market.name}
+					<div key={market.id} className='vendormarket-margin'>
+						<a href={`/markets/${market.id}`} className='white-text'>{market.name}</a>
 						{this.deleteButton.bind(this)(market)}
 					</div>
 				)
@@ -73,14 +73,14 @@ class VendorMarket extends React.Component {
 
 			return (
 				<div>
-				<h6>Vendor Markets</h6>
+				<p className='vendormarket-title'>Vendor Markets</p>
 					{ this.addMarkets(allMarket) }
 				</div>
 			)
 		} else {
 			return (
 				<div>
-					<h6>No Markets</h6>
+					<p className='vendormarket-title'>No Markets</p>
 					{ this.addMarkets(allMarket) }
 				</div>
 			)
