@@ -28,6 +28,7 @@ class Vendor extends React.Component {
   componentDidMount() {
     $('.nav-wrapper').css('backgroundColor', '#1F8A70')
     $('#app').css('backgroundColor', '#1F8A70')
+    $('.vendor-form').css('backgroundColor', '#1F8A70')
   }
 
   componentWillUnmount() {
@@ -104,10 +105,10 @@ class Vendor extends React.Component {
   render() {
     if(this.state.editView) {
       return(
-        <div className='container signupvendor'>
-          <h3 className='center'>Editing: {this.state.vendor.first_name} {this.state.vendor.last_name}</h3>
-          <form onSubmit={this.handleEdit.bind(this)} >
-            <input ref='first_name' className='white-text' type='text' placeholder='First Name' defaultValue={this.state.vendor.first_name} />
+        <div className='container vendor-form signupvendor'>
+          <h3 className='center vendor-form'>Editing: {this.state.vendor.first_name} {this.state.vendor.last_name}</h3>
+          <form className= 'vendor-form' onSubmit={this.handleEdit.bind(this)} >
+            <input ref='first_name' className='vendor-form white-text' type='text' placeholder='First Name' defaultValue={this.state.vendor.first_name} />
             <input ref='last_name' className='white-text' type='text' placeholder='Last Name' defaultValue={this.state.vendor.last_name} />
             <input ref='business_name' className='white-text' type='text' placeholder='Business Name' defaultValue={this.state.vendor.business_name} />
             <input ref='description' className='white-text' type='text' placeholder='Description' defaultValue={this.state.vendor.description} />
