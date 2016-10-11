@@ -16,8 +16,8 @@
 /public/webpack
 /coverage
 /config/sendgrid.yml
-.Jake Notes
-.server.crt
-.server.csr
-.server.key
-.server.pass.key
+Jake Notes
+server.crt
+server.csr
+server.key
+server.pass.key
