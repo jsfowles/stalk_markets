@@ -52,7 +52,7 @@ class SimpleMap extends React.Component{
                 />
               );
             })}
-            }
+            
             </GoogleMap>
           }
         />
